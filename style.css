@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/earlyaccess/hanna.css);
+#world {
+    background: #ffffff;
+    position:absolute;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    cursor:move;
+  }
+
+#img {
+    position: relative;
+    text-align: center;
+}
+#img_dog {
+    position: relative;
+}
+
+#text {
+    font-family: 'Hanna', fantasy;
+    font-style: normal;
+    font-weight: 400;
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    margin: auto;
+    margin-top: 60px;
+    color:#5e524f;
+    font-size:2em;
+    text-align:center;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+
+}
+#btn1 {
+    width:200px;
+    background-color: #66B0E4;
+    color: #000000;
+    border:none;
+    font-family: 'Hanna', fantasy;
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+    border-radius: 20px;
+    font-size: 1.0em;
+    margin: 10px;
+    cursor: pointer;
+    outline:none;
+    box-shadow: none;
+}
