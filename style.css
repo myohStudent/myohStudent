@@ -26,7 +26,7 @@
     margin: auto;
     margin-top: 60px;
     color:#5e524f;
-    font-size:2em;
+    font-size:1.5m;
     text-align:center;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -36,7 +36,7 @@
 
 }
 #btn1 {
-    width:200px;
+    width:170px;
     background-color: #66B0E4;
     color: #000000;
     border:none;
@@ -44,7 +44,7 @@
     padding: 10px 10px 10px 10px;
     display: inline-block;
     border-radius: 20px;
-    font-size: 1.0em;
+    font-size: 1.4em;
     margin: 10px;
     cursor: pointer;
     outline:none;
