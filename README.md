@@ -1,4 +1,7 @@
-### Hi there 👋
+### 사북공공도서관 비대면수업 👋
+### 7월 16일 3시 이후부터 접근 가능합니다
+### 😄😄😄
+
 
 <!--
 **myohStudent/myohStudent** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
