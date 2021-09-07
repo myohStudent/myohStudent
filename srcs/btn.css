@@ -1,0 +1,154 @@
+#hamburger {
+	position: absolute;
+	
+	top: 57px;
+    left: 50px;
+    z-index:2;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+#ham-navi {
+	position:absolute;
+	z-index:3;
+	display:none;
+}
+#hamburger span {
+	position: absolute;
+	width: 50px;
+	height: 4px;
+	top: 50%;
+	left: 50%;
+	background: white;
+	border-radius: 2px;
+	overflow: hidden;
+	transition: all 0.3s linear;
+}
+
+#hamburger span::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 100%;
+	top: 0;
+	right: 0;
+	transition: all 0.3s linear;
+}
+
+#hamburger span:nth-child(1) {
+	animation: span-first-off 0.5s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+#hamburger span:nth-child(2) {
+	animation: span-second-off 0.5s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+#hamburger span:nth-child(3) {
+	animation: span-third-off 0.5s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+#hamburger.on:hover span::before {
+	width: 100%;
+	transition: all 0.3s linear;
+}
+
+#hamburger.on span:nth-child(1) {
+	animation: span-first-on 0.5s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+#hamburger.on span:nth-child(2) {
+	animation: span-second-on 0.5s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+#hamburger.on span:nth-child(3) {
+	animation: span-third-on 0.5s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes span-first-on {
+	0% {
+		transform: translate(-50%, -300%);
+	}
+	30% {
+		transform: translate(-50%, -50%);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(-45deg);
+	}
+}
+
+@keyframes span-first-off {
+	0% {
+		transform: translate(-50%, -50%) rotate(-45deg);
+	}
+	30% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	100% {
+		transform: translate(-50%, -300%);
+	}
+}
+
+@keyframes span-second-on {
+	0% {
+		transform: translate(-50%, -50%);
+	}
+	25% {
+		background: gray;
+	}
+	50% {
+		transform: translate(-50%, -50%) scale(1);
+	}
+	100% {
+		transform: translate(-150%, -50%) scale(0);
+	}
+}
+
+@keyframes span-second-off {
+	0% {
+		transform: translate(-150%, -50%) scale(0);
+	}
+	25% {
+		background: gray;
+	}
+	50% {
+		transform: translate(-50%, -50%) scale(1);
+	}
+	100% {
+		transform: translate(-50%, -50%);
+	}
+}
+
+@keyframes span-third-on {
+	0% {
+		transform: translate(-50%, 200%);
+	}
+	30% {
+		transform: translate(-50%, -50%);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(45deg);
+	}
+}
+
+@keyframes span-third-off {
+	0% {
+		transform: translate(-50%, -50%) rotate(45deg);
+	}
+	30% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	100% {
+		transform: translate(-50%, 200%);
+	}
+}
+
+@media (max-width: 968px) {
+    #hamburger {
+        display:on; 
+    }
+} 
