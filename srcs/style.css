@@ -5,6 +5,7 @@
     font-style: normal;
 }
 
+h1{font-size: 20px;}
 .hidden { padding:0 100px; }
 
 html,body { 
@@ -78,7 +79,7 @@ header .left > div > div, header h2 { display: none; } */
     .container .logo {
         padding: 10px 0;
         left: 42vw;
-        width: 130px;
+        width: 20%;
     }
     .container .slider {
         position: absolute;
@@ -95,7 +96,7 @@ header .left > div > div, header h2 { display: none; } */
     .container .logo {
         padding: 10px 0;
         left: 40vw;
-        width:80px;
+        width:15%;
     }
     #hamburger { 
         padding-top:0px;

@@ -17,11 +17,15 @@
         }
 
 /* Grid */
+
+.videos {
+  padding: 0 0;
+}
 main{padding: 0rem 0; font-size:15px; color:black;}
 #featured-videos h1 {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0em 0em;
+  padding: 0em 2em;
   color: black;
 }
  .video-grid.front-page {
@@ -80,7 +84,7 @@ main{padding: 0rem 0; font-size:15px; color:black;}
 
 a{
   text-decoration:none;
-  color:black; 
+  color:#616161; 
 }
 .video-featured figcaption {
   position: absolute;

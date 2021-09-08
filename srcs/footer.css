@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+footer {
+    overflow:hidden;
+    background-color: #3a558e;
+    width: 100%;
+    height:200px;
+    padding: 2em 0em 0em 0em;
+    font-family: 'BMJUA';
+    color:white;
+}
+.copyrights {
+    width: 100%;
+    padding: 5em;
+    margin: 10px 0 0 10px;
+    text-align: center;
+    font-family: 'BMJUA';
+    font-size:11px;
+    color:lightsteelblue;
+}
+
+footer ul { float: left; margin: 0px 0px 0 30px;}
+footer li { position:relative; display: inline-block; margin-top:0px;padding:0px 10px 0 10px;}
+footer h2{font-size: 18px;}
+
+

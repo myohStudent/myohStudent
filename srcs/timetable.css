@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);	
+
+depth1 {
+  max-width:1280px;
+  height: 600px;
+  margin-top: 0;
+  background-color: #512387;
+  padding-top:70px;
+}
+.timetable {
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+hr { width:90vw;}
+
+.timetable h1 {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+    color: black;
+    padding: 1em 2em;
+  }
+.timetable-slider {text-align:center;}
+.timetable-slider img{
+  position: relative;
+  display:block;
+  max-width:90%;
+  height: auto;
+  margin-left:auto;
+  margin-right:auto;
+}
+
