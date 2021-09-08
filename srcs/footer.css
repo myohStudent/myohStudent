@@ -28,4 +28,13 @@ footer ul { float: left; margin: 0px 0px 0 30px;}
 footer li { position:relative; display: inline-block; margin-top:0px;padding:0px 10px 0 10px;}
 footer h2{font-size: 18px;}
 
+@media screen and (max-width: 1023px) {
+    
+    footer h2{font-size: 13px;}
+    .copyrights {font-size:9px;}
+}
+@media screen and (max-width: 767px) {
+    footer h2{font-size: 12px;}
+    .copyrights {font-size:9px;}
+}
 

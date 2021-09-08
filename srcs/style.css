@@ -90,13 +90,15 @@ header .left > div > div, header h2 { display: none; } */
     }
     #hamburger { display:on; }
     .preview { margin-top: 40vh;}
+    footer h2{font-size: 13px;}
+    .copyrights {font-size:9px;}
 }
 @media screen and (max-width: 767px) {
     nav {display:none;}
     .container .logo {
         padding: 10px 0;
-        left: 40vw;
-        width:15%;
+        left: 32vw;
+        width:10%; height:10%;
     }
     #hamburger { 
         padding-top:0px;
@@ -110,4 +112,6 @@ header .left > div > div, header h2 { display: none; } */
         z-index: 0;
     }
     .preview { margin-top: 40vh;}
+    footer h2{font-size: 12px;}
+    .copyrights {font-size:9px;}
 }
