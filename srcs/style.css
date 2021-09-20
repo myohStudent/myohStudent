@@ -29,17 +29,18 @@ nav a {
     color:#ffffff; 
 }
 .container { position: relative; width: 100%; }
-
-.container .logo { 
-    display:block;
-    float: center;
-    top:10px;
-    width:150px;
-    left: 44vw;
+header { margin-top:0px;}
+ .logo { 
+    width:100%;
+    height:auto;
+    clear:both;
+    left: 50%;
+    transform: translate(-50%, 0%);
     text-align:center; 
     position:absolute;
     z-index: 2;
 }
+.logo img {display: inline-block;}
 
 nav { 
     text-decoration:none;
@@ -56,7 +57,12 @@ nav {
     width: 100%;
     text-align: center;
 }
-nav ul {float:center; margin-top:0px;margin-left:30px;}
+#nav-content {
+    position: relative;
+    float:center;
+    text-align:center;
+}
+nav ul {float:center; margin-top:0px;}
 nav li {display:inline-block; margin-top:0px;padding:0px 10px;}
 /* header .all, header .close,
 header .left > div > div, header h2 { display: none; } */
@@ -76,11 +82,13 @@ header .left > div > div, header h2 { display: none; } */
 
 @media screen and (max-width: 1023px) {
     nav {display:none;}
-    .container .logo {
+     .logo {
         padding: 10px 0;
-        left: 42vw;
-        width: 20%;
+        text-align:center;
+        left:50%;
     }
+    header { margin-top:0px;}
+    .logo img { width:160px; height: auto;}
     .container .slider {
         position: absolute;
         overflow: clip;
@@ -95,11 +103,13 @@ header .left > div > div, header h2 { display: none; } */
 }
 @media screen and (max-width: 767px) {
     nav {display:none;}
-    .container .logo {
-        padding: 10px 0;
-        left: 32vw;
-        width:10%; height:10%;
+    .logo {
+        text-align:center;
+        width:80px;
+        left:50%;
     }
+    header {margin-top:0px;}
+    .logo img { width:100px; height: auto;}
     #hamburger { 
         padding-top:0px;
         display:on;
