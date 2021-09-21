@@ -19,7 +19,9 @@
 }
 .dropdown-content
 {
-    margin-top:50px;
+    font-size:17px;
+    color:lightcyan;
+    margin-top:50px; margin-left:20px;
     display: block;
     opacity:0;
     position: absolute;
@@ -42,7 +44,7 @@
 }
 
 .dropdown-content ul {
-    margin-left:30px;
+    margin-left:50px;
     display: flex;
     height: 250px;
     align-content: flex-start;
@@ -54,7 +56,7 @@
     padding-left: 80px;
 }
 .dropdown-content li {
-    padding-left: 30px;
+    padding-left: 40px;
 }
 .left:hover .dropdown-content {
     opacity:100%;
