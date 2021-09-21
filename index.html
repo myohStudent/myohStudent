@@ -10,6 +10,7 @@
     <link href="./srcs/grid.css" rel="stylesheet" />
     <link href="./srcs/timetable.css" rel="stylesheet" />
     <link href="./srcs/footer.css" rel="stylesheet" />
+    <link href="./srcs/dropdown.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="./srcs/btn.js"></script>
     <script type="text/javascript" src="./srcs/timetable.js"></script>
@@ -30,29 +31,74 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </div>
-            <div id="nav-content" tabindex="0">
+            <!-- <div id="nav-content" tabindex="0">
               <ul>
-                <li class="small"><a href="#0">로그인</a><a href="#0">회원가입</a></li>
+                <li class="small"><a href="login.html">로그인</a><a href="register.html">회원가입</a></li>
                 <li><a href="#0">징검다리스쿨소개</a></li>
                 <li><a href="#0">교육과정</a></li>
                 <li><a href="#0">영상강좌</a></li>
                 <li><a href="#0">학사일정</a></li>
-                <li><a href="#0">공지사항</a></li>
+                <li><a href="#0">공지사항</a></li> 
               </ul>
-            </div>
+            </div> -->
           </div>
         <header>
-          <div><div class="logo"><a href="#a"><img src="img/sss2.png"></a></div>
+          <div class="logo"><a href="index.html"><img src="img/sss2.png"></a></div>
             <div class = "left">
                 <nav>
-                    <ul>
-                    <li><a href="#a">징검다리스쿨소개</a></li>
-                    <li><a href="#a">교육과정</a></li>
-                    <li><a href="#a"><div class="hidden">&nbsp; </div></a></li>
-                    <li><a href="#a">영상강좌</a></li>
-                    <li><a href="#a">학사일정</a></li>
-                     <li><a href="#a">공지사항</a></li>
-                    </ul>
+                    <div class="dropdown">
+                      <ul>
+                      <button class="dropbtn" style="cursor:pointer">
+                        <li>징검다리스쿨소개</li>
+                        <li>교육과정</li>
+                        <li><div class="hidden"></div></li>
+                        <li>영상강좌</li>
+                        <li>학사일정</li>
+                        <li>공지사항</li></button>
+                      </ul>
+                      <div class="dropdown-content">
+                        <hr></hr>
+                         <ul>
+                            <li><a href="introduction.html">교육철학</a></li>
+                            <li><a href="introduction.html">걸어온 길</a></li>
+                            <li><a href="introduction.html">교장 인사말</a></li>
+                            <li><a href="introduction.html">교육위원회</a></li>
+                           <li><a href="introduction.html">오시는 길</a></li>
+
+                           <li><a href="introduction.html">초등인재</a></li>
+                           <li><a href="introduction.html">중등인재</a></li>
+                           <li><a href="introduction.html">초등교양</a></li>
+                           <li><a href="introduction.html">중등교양</a></li>
+                           <li><a href="introduction.html">학부모/성인</a></li>
+
+                           <li><div class="spacing">&nbsp;</div></li>
+                           <li>&nbsp;</li>
+                           <li>&nbsp;</li>
+                           <li>&nbsp;</li>
+                           <li>&nbsp;</li>
+
+                           <li><a href="introduction.html">과목별 목록</a></li>
+                           <li>&nbsp;</li>
+                           <li>&nbsp;</li>
+                           <li>&nbsp;</li>
+                           <li>&nbsp;</li>
+
+                           <li><a href="introduction.html">월별학사일정</a></li>
+                           <li>&nbsp;</li>
+                           <li>&nbsp;</li>
+                           <li>&nbsp;</li>
+                           <li>&nbsp;</li>
+
+                           <li><a href="notice.html">게시판</a></li>
+                           <li>&nbsp;</li>
+                           <li>&nbsp;</li>
+                           <li>&nbsp;</li>
+                           <li>&nbsp;</li>
+
+                         </ul>
+                    <hr></hr>
+                      </div>  
+                      </div>
                 </nav>
                 <div>
                     <a href="#a">로그인</a>
@@ -137,7 +183,7 @@
     <footer>
       <h2>
         <ul>
-          <li><a href="#a">홈으로</a></li><li><a href="#a">약관</a></li>
+          <li><a href="index.html">홈으로</a></li><li><a href="#a">약관</a></li>
            <li><a href="#a">개인정보처리방침</a></li><li><a href="#a">이메일무단수집거부</a></li><li><a href="#a">사이트맵</a></li>
         </h2>
         </ul>

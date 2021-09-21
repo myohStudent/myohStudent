@@ -14,6 +14,7 @@ footer {
     font-family: 'BMJUA';
     color:white;
 }
+footer a:visited { color:white;}
 .copyrights {
     width: 100%;
     padding: 5em;
@@ -29,12 +30,15 @@ footer li { position:relative; display: inline-block; margin-top:0px;padding:0px
 footer h2{font-size: 18px;}
 
 @media screen and (max-width: 1023px) {
-    
+    footer {height:250px;}
     footer h2{font-size: 13px;}
-    .copyrights {font-size:9px;}
+    footer h3{margin-top:10px;}
+    .copyrights {font-size:11px; margin-left: 0px; padding: 0 0 20 0px;}
 }
 @media screen and (max-width: 767px) {
-    footer h2{font-size: 12px;}
-    .copyrights {font-size:9px;}
+    footer {height:250px;}
+    footer li { display: block; padding: 0px 0 10px 0px; }
+    footer h2{font-size: 11px; padding: 0 0 0 0px;}
+    footer h3{margin-top:10px;}
+    .copyrights {font-size:9px; margin-left: 0px; margin-bottom:10px;padding: 0 0 10 10px;}
 }
-
