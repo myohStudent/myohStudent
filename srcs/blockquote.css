@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+
+.intro-banner{
+  font-family: 'Gowun Batang', 'Special Elite';
+  background-color:#edf5fa;
+  height: 200px;
+}
+
+.quote-space {
+    align-items:center;
+    justify-content: center;
+    display: flex;
+    text-align :center;
+} 
+
+blockquote {
+    position:relative;
+    float:center;
+    margin-top:50px;
+    font-size: 20px;
+    line-height: 1.8em;
+    color: rgb(150, 147, 159);
+    /* text-decoration:underline; */
+}
+blockquote:before,blockquote:after {
+    z-index:0;
+    position: relative;
+    line-height:0.5em; 
+    color: rgb(255, 224, 171);
+    font-family: 'Special Elite';
+   position:absolute;
+	font-size: 8rem;
+} 
+
+ blockquote:before {
+    content: '“';
+    top:50%;
+    left:-15%;
+ }
+ blockquote:after {
+    content: '”';
+	top: 70%;
+    right: -15%;
+}
