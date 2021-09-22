@@ -58,8 +58,8 @@
     padding-left: 130px;
 }
 .dropdown-content li {
-    
-    padding-right: 18px;
+    padding-left: 17px;
+    padding-right: 17px;
 }
 .left:hover .dropdown-content {
     opacity:100%;
