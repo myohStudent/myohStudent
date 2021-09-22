@@ -23,14 +23,17 @@ header{
     padding-top:30px;
 }
 main {
-    font-size:15px; color:black;
+    font-size:15px; color:rgb(52, 52, 52);
     margin-top:50vh;
     padding: 0rem 0;
     font-size: 1.5rem; line-height: 1.2;
     font-family: 'Nanum Gothic';
   }
-ul { list-style: none; width:100%; }
-nav a { color:#ffffff; }
+ul { list-style: none; width:100%; margin-left:0px;}
+nav a { 
+     color:#d9e6e6; 
+    text-decoration: none;
+}
 .container { position: relative; width: 100%;}
 header { margin-top:0px;}
  .logo { 
@@ -41,7 +44,7 @@ header { margin-top:0px;}
 nav { 
     text-decoration:none;
     background-color: transparent;
-    color:#ffffff;
+    /* color:#ffffff; */
     position: relative;
     z-index:1;
     font-size:20px;
