@@ -1,9 +1,38 @@
+/*
+** Fonts
+*/
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
 @font-face {
     font-family: 'BMJUA';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.eot);
+    src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+         url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.woff2) format('woff2'),
+         url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.woff) format('woff'),
+         url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.ttf) format('truetype');
+}
+@font-face { 
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot);
+    src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+         url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff2) format('woff2'),
+         url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff) format('woff'),
+         url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.ttf) format('truetype');
+  }
+
+ /*
+ **
+ */
 
 h1{font-size: 20px;}
 .hidden { padding:0 80px; }
@@ -78,6 +107,158 @@ nav li {display:inline-block; margin-top:0px;padding:0px 20px;}
     background-color: gray;
 }
 
+/*
+** blockquotes
+*/
+
+.intro-banner{
+    padding: 0 0 px; margin:0 0px;
+  font-family: 'Gowun Batang', 'Special Elite';
+  background-color:#edf5fa;
+  height:160px;
+}
+
+.quote-space {
+    align-items:center;
+    justify-content: center;
+    display: flex;
+    text-align :center;
+} 
+
+blockquote {
+    position:relative;
+    float:center;
+    margin-top:45px;
+    font-size: 20px;
+    line-height: 1.8em;
+    color: rgb(150, 147, 159);
+    /* text-decoration:underline; */
+}
+blockquote:before,blockquote:after {
+    z-index:0;
+    position: relative;
+    line-height:0.5em; 
+    color: rgb(255, 224, 171);
+    font-family: 'Special Elite';
+   position:absolute;
+	font-size: 8rem;
+} 
+
+ blockquote:before {
+    content: '“';
+    top:48%;
+    left:-15%;
+ }
+ blockquote:after {
+    content: '”';
+	top: 72%;
+    right: -15%;
+}
+
+/* middle */
+
+.middle-banner {
+    padding: 10px; margin:0px 0px;
+    height: 263px;
+    background-color: rgb(255, 255, 242);
+}
+
+.middle-banner .banner-space {
+    margin-left:auto;margin-right:auto;
+}
+.middle-banner .banner-space .direct-01 > p, 
+.middle-banner .banner-space .direct-02 > p  {
+    display: block;
+    float:left;
+    font-family: 'Nanum Gothic';
+    width:50%;
+    height:100%;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+.middle-banner .banner-space .direct-01 a {
+    background-color:rgb(175, 226, 255);
+    background-image:url('../img/direct1.png');
+    color:rgb(100, 100, 100);
+    font-size:17px;
+    background-repeat:no-repeat;
+    background-position:90% 80%;
+}
+.middle-banner .banner-space .direct-02 a {
+    background-color:rgb(255, 247, 175);
+    color:rgb(100, 100, 100);
+    font-size:17px;
+    background-repeat:no-repeat;
+    background-image:url('../img/direct2.png');
+    color:rgb(100, 100, 100);
+    background-position:90% 80%;
+    font-size:17px;
+}
+.middle-banner .banner-space > div a {
+    overflow:hidden;
+    display:block;
+    min-height:220px; 
+    padding:40px 50px;
+    vertical-align: top;
+    font-size:17px;
+    line-height:1.5em;
+    box-sizing: border-box;
+    letter-spacing: -0.5px;
+    border-radius:55px;
+    height:100%;
+}
+/* .middle-banner .banner-space .direct-02 > div a {
+
+} */
+
+.title {
+    font-weight:700;
+    font-size:21px;
+}
+
+/*
+** Timetables
+*/
+
+depth1 {
+    max-width:1280px;
+    height: 600px;
+    margin-top: 0;
+    background-color: #512387;
+    padding-top:70px;
+  }
+  .timetable {
+      max-width: 1280px;
+      margin: 0 auto;
+      margin-top: 60px;
+      overflow: hidden;
+  }
+  
+  hr { width:90vw;}
+  
+  .timetable h1 {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0;
+      color: black;
+      padding: 1em 2em;
+    }
+  .timetable-slider {text-align:center;}
+  .timetable-slider img{
+    position: relative;
+    display:block;
+    max-width:90%;
+    height: auto;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+ 
+
+/*
+** media query
+*/
+
 @media screen and (max-width: 1023px) {
     nav {display:none;}
      .logo {
@@ -99,6 +280,46 @@ nav li {display:inline-block; margin-top:0px;padding:0px 20px;}
     footer h2{font-size: 13px;}
     .copyrights {font-size:9px;}
 }
+
+
+@media screen and (min-width: 1340px) {
+    .middle-banner .banner-space { max-width:1200px;}
+}
+@media (min-width: 768px) and (max-width:1339) {
+    
+}
+@media(max-width:767px){
+blockquote { font-size:16px;}
+
+.middle-banner .banner-space .direct-01 a {background-size: auto 50px;}
+.middle-banner .banner-space .direct-02 a {background-size: auto 60px;}
+.middle-banner .banner-space .direct-01 > p, 
+.middle-banner .banner-space .direct-02 > p  {
+    display: block;
+    float:left;
+    font-family: 'Nanum Gothic';
+    width:100%;
+    height:100%;
+    padding: 25 25px;
+    box-sizing: border-box;
+}
+.middle-banner {
+    width:100%;
+    height: 100%;
+    background-color: rgb(255, 255, 242);
+    margin:0 auto;
+    text-align:center;
+}
+
+.middle-banner .banner-space > div a { 
+    padding:40px;
+    height:100%;
+    vertical-align: top;
+    text-align:left;
+    font-size:15px;   
+}
+}
+
 @media screen and (max-width: 767px) {
     nav {display:none;}
     .logo {
