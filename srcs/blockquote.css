@@ -99,6 +99,10 @@ blockquote:before,blockquote:after {
     color:rgb(100, 100, 100);
     font-size:17px;
     background-repeat:no-repeat;
+    background-image:url('../img/direct2.png');
+    color:rgb(100, 100, 100);
+    background-position:90% 80%;
+    font-size:17px;
 }
 .middle-banner .banner-space > div a {
     overflow:hidden;
@@ -131,9 +135,8 @@ blockquote:before,blockquote:after {
 @media(max-width:767px){
 blockquote { font-size:16px;}
 
-.middle-banner .banner-space .direct-01 a {
-    background-size: auto 50px;
-}
+.middle-banner .banner-space .direct-01 a {background-size: auto 50px;}
+.middle-banner .banner-space .direct-02 a {background-size: auto 60px;}
 .middle-banner .banner-space .direct-01 > p, 
 .middle-banner .banner-space .direct-02 > p  {
     display: block;
