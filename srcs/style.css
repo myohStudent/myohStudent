@@ -120,6 +120,7 @@ nav li {display:inline-block; margin-top:0px;padding:0px 20px;}
     position: absolute;
     -webkit-transform: translate3d(0,0,0);
     width: 800px;
+    height: 330px;
     float: center;
     text-align: center;
     position: absolute;
