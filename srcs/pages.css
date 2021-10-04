@@ -165,6 +165,8 @@ main {
 .page-main { 
     background-color:rgb(255, 254, 235);
     margin-top:0px;
+    padding: 50px;
+    line-height:1.5em;
 }
 
 /*
