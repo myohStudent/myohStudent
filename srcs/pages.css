@@ -27,7 +27,7 @@
 
 .page-nav .btn1 > a,.page-nav .btn2 > a, .page-nav .btn3 > a,.page-nav .btn4 > a,
 .page-nav .btn5 > a,.page-nav .btn6 > a, .page-nav .btn7 > a { color:#164097;}
-
+.page-right-nav {margin-top: -80px;}
   
 /* main */
 main {
@@ -44,7 +44,28 @@ main {
 ** media
 */
 
+@media screen and (max-width: 1278px) {
+    /* .right-nav, .page-right-nav { display:none;} */
+    .page-nav { 
+        text-decoration:none;
+        background-color: transparent;
+        /* position: absolute; */
+        width:50%;
+        z-index:1;
+        font-size:17px;
+        font-family: 'BMJUA'; 
+        font-weight: normal; 
+        display: inline-block; 
+        height: 115px;
+        padding: 0 0px;
+        line-height: 25px;
+        text-align: center;
+    }
+    .btn1, .btn2, .btn3, .btn4, .btn5, .btn6, .btn7 { border-left:none;border-right:none;}
+}
 @media screen and (max-width: 1023px) {
+    .page-right-nav, .page-nav {display:none;}
+    .right-nav, .page-right-nav  { display:none;}
     .page-container .dropbtn {display:none;}
     .page-container .logo {
         padding: 0px 0;
@@ -64,6 +85,7 @@ main {
 @media screen and (min-width: 1340px) {
 }
 @media (min-width: 768px) and (max-width:1339) {
+    .page-right-nav, .page-nav {display:none;}
     .page-container .logo {
         text-align:center;
         width:80px;
@@ -74,7 +96,7 @@ main {
 }
 
 @media screen and (max-width: 767px) {
-    .page-container .dropbtn {display:none;}
+    .page-container .page-nav {display:none;}
     .page-main{ margin-top:10vh;}
     .page-container .logo {
         text-align:center;

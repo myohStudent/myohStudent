@@ -58,7 +58,7 @@ main {
 
 ul { list-style: none; width:100%; margin-left:0px;}
 
-nav { 
+nav, .page-nav{ 
     text-decoration:none;
     background-color: transparent;
     /* position: absolute; */
