@@ -24,15 +24,10 @@
   }
 
  /*header*/
-.page-dropbtn1, .page-dropbtn2 {
-    background-color: transparent;
-    background-image:none !important;
-    border-color: transparent;
-    border: none;
-    font-size:20px;
-    font-family: 'BMJUA'; 
-    font-weight: normal; color:#146097; 
-}
+
+.page-nav .btn1 > a,.page-nav .btn2 > a, .page-nav .btn3 > a,.page-nav .btn4 > a,
+.page-nav .btn5 > a,.page-nav .btn6 > a, .page-nav .btn7 > a { color:#164097;}
+
   
 /* main */
 main {
