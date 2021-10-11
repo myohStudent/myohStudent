@@ -54,18 +54,18 @@ main {
     line-height:1.5em;
     margin: 0 auto;
     padding: 2em 2em 0em 2em;
-    color: rgb(100,100,100);
+    color: rgb(141,141,141);
     font-size:16px;
 }
 .login-text {
     max-width: 800px;
     line-height:1.5em;
     margin: 0 auto;
-    padding: 2em 2em 0em 2em;
+    padding: 1em 2em 0em 2em;
     font-size:18px;
     text-align: center;
 }
-.login-text p {text-align:left; color: rgb(100,100,100);}
+.login-text p {text-align:left; color: rgb(141, 141, 141);}
 .login-text hr{ border:1px solid lightgray;}
 .login-text h4 {
     text-align:left;
@@ -199,8 +199,11 @@ main {
 }
   
 .info-text {
+    font-size:16px;
+    color: rgb(141,141,141);
     text-align: center;
 }
+.info-text a { color: rgb(185, 138, 111); text-decoration-line:none;}
 
 /*
 ** media
