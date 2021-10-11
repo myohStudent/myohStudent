@@ -34,7 +34,7 @@ main {
     margin-top:0px;
 }
 .page-main { 
-    background-color:rgb(255, 254, 243);
+    background-color:rgb(245, 244, 244);
     border-top: solid 1px #d5d6da;
     margin-top:0px;
     padding: 50px;
@@ -48,20 +48,158 @@ main {
     padding: 0 0 px; margin:0 0px;
 }
 .home-img { padding-bottom:0px; margin-bottom:0px;}
-.front-text {
+.front-text {   
+    font-family: 'Nanum Gothic';
     max-width: 1000px;
-  line-height:2.5em;
-  margin: 0 auto;
-  padding: 2em 2em 0em 2em;
-  color: rgb(100,100,100);
-  font-size:16px;
+    line-height:1.5em;
+    margin: 0 auto;
+    padding: 2em 2em 0em 2em;
+    color: rgb(100,100,100);
+    font-size:16px;
 }
 .login-text {
     max-width: 800px;
-    line-height:2.5em;
+    line-height:1.5em;
     margin: 0 auto;
     padding: 2em 2em 0em 2em;
+    font-size:18px;
+    text-align: center;
+}
+.login-text p {text-align:left; color: rgb(100,100,100);}
+.login-text hr{ border:1px solid lightgray;}
+.login-text h4 {
+    text-align:left;
+    line-height:1em;
+    color:rgb(100, 100, 100);
+    
+}
+.loginForm {
+    position:absolute;
+    width:300px;
+    height:400px;
+    background-color:#FFFFFF;
+    text-align:center;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+  }
+
+  .loginForm h2{
+    text-align: left;
+    margin: 30px;
+  }
+  .login-box {
+      margin: 0 auto;
+      padding: 10 10 10 10px;
+      /* border: 1px rgba(37, 37, 37, 0.2) solid; */
+      border-radius: 5px;
+      display:block;
+      width:70%;
+      /* box-shadow: 1px 1px 15px gray; */
+      /* border:solid 1px lightgray; */
+  }
+  .idForm{
+     
+    /* margin-top: 10px; */
+    padding: 5px 10px;
+    text-align:center;
+  }
+  .idForm h4 { text-align:left; padding:10px 10px 10px 10px;}
+  
+  .passForm{
+    text-align:center;
+    
+    padding: 5px 10px;
+  }
+  
+  .id {
+    width: 50%;
+    color:rgb(100,100,100);
     font-size:16px;
+    height:25px;
+    border: 1px solid lightgray;
+    padding-left:10px;
+
+  }
+  
+  .pw {
+    padding-left:10px;
+    width: 50%;
+    color: rgb(100,100,100);
+    font-size:16px;
+    height:25px;
+    border: 1px solid lightgray;
+    border-radius:30;
+  }
+  
+  .login-btn {
+        font-family: 'Nanum Gothic';
+        font-size:1em;
+        
+        margin-bottom: 40px;
+        margin-top:10px;
+        width:40%;
+        height:40px;
+        border:0;
+        background-color:#3a558e;
+        border-radius:30px;
+        color:white;
+        font-weight: bold;
+        cursor:pointer;
+        transition: 0.4s;
+        /* display:inline; */
+  }
+  
+
+  .checkbox {
+    display: center;
+    align-items: center;
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(100,100,100);
+    width: 50%;
+    padding-left:50px;
+    padding-top:3px;
+}
+
+.checkbox input {
+    width: 18px;
+    height: 18px;
+    -webkit-appearance: none;
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-bottom:-5px;
+    margin-left:-4px;
+    cursor: pointer;
+}
+
+.checkbox .fa-check {
+    position: absolute;
+    color: rgb(199, 199, 199);
+    font-size: 1.1rem;
+    width: 24px;
+    text-align: center;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.checkbox input:checked {
+    background-color: #867c7c;
+}
+
+.checkbox input:checked + .fa-check {
+    opacity: 1;
+}
+
+.btn:hover {
+    background-position: right;
+}
+  
+.info-text {
+    text-align: center;
 }
 
 /*
