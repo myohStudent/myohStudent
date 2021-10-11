@@ -20,37 +20,40 @@
 
 .videos {
   padding: 0 0;
+  background-color:rgb(255, 247, 247);
+  
 }
 
 #featured-videos h1 {
   max-width: 1280px;
   line-height:2.5em;
   margin: 0 auto;
-  padding: 0em 2em;
-  color: black;
+  padding: 2em 2em 0em 2em;
+  color: rgb(100,100,100);
 }
- .video-grid.front-page {
+.video-grid.front-page {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0em 0em;
-  }
+    padding: 0em 2em 2em 2em;
+}
   
-  ul.video-list {
+ul.video-list {
     display: flexbox;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 0 0;
-  }
+}
   
-  li.video {
+li.video {
     flex-grow: 1;
     position: relative;
     overflow: hidden;
       width: 33.333333333%;
       width: -webkit-calc(100% / 3);
       width: calc(100% / 3);
-    border: solid 0.2em transparent;}
+    border: solid 0.2em transparent;
+  }
     
 /*         
     &:before {

@@ -9,8 +9,9 @@
     <link href="./srcs/grid.css" rel="stylesheet" />
     <link href="./srcs/footer.css" rel="stylesheet" />
     <link href="./srcs/dropdown.css" rel="stylesheet" />
+    <link href="./srcs/calendar.css" rel="stylesheet" />
+    <script src="js/index.js"></script>
     <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="./srcs/index.js"></script>
 </head>
     <body>
     <div class="container">
@@ -138,23 +139,64 @@
                 </figure>
               </a>
             </li>
+            <li class="video featured">
+              <a data-fancybox href="https://www.youtube.com/embed/oUVL69T6vEY?autoplay=1&controls=0&showinfo=0&color=white&rel=0" class="featured-video">
+                <figure style="background-image: url(./img/thumb5.jpg);background-repeat:no-repeat;">
+                  <img src="./img/thumb5.jpg" />
+                  <figcaption>000 선생님의 재미있는 코딩 강의 (03:00)</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="video featured">
+              <a data-fancybox href="https://www.youtube.com/embed/oUVL69T6vEY?autoplay=1&controls=0&showinfo=0&color=white&rel=0" class="featured-video">
+                <figure style="background-image: url(./img/thumb5.jpg);background-repeat:no-repeat;">
+                  <img src="./img/thumb5.jpg" />
+                  <figcaption>000 선생님의 재미있는 코딩 강의 (03:00)</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="video featured">
+              <a data-fancybox href="https://www.youtube.com/embed/oUVL69T6vEY?autoplay=1&controls=0&showinfo=0&color=white&rel=0" class="featured-video">
+                <figure style="background-image: url(./img/thumb5.jpg);background-repeat:no-repeat;">
+                  <img src="./img/thumb5.jpg" />
+                  <figcaption>000 선생님의 재미있는 코딩 강의 (03:00)</figcaption>
+                </figure>
+              </a>
+            </li>
           </ul>
         </div>
       </section>
 
-
+      
       <section>
-        <depth1><div><h1> </h1></div></depth1>
-        </section>
-        <section>
-        <div class="timetable">
-          <h1>과정별 시간표</h1>
-          <div class="timetable-slider">
-            <a href="#a"><img src="./img/timetable0.jpg"></a>
-          </div>
-        </div>
-        </section>
+        <div class="videos" id="featured-videos">
+          <div class="video-grid front-page" id="front-page-videos">
+              <h1>월별 학사일정</h1>
+		  <div class="calendar-text">아래의 ★을 클릭하시면 상세 일정을 보실 수 있습니다.</div>
+		  <div class="calendar">
+          <div class="month">
+          <ul>
+      			<li class="prev">&#10094;</li><li class="next">&#10095;</li>
+    			<li>11월<br><span style="font-size:18px">2021</span></li>
+  			</ul>
+			</div>
+		<ul class="weekdays">
+  		<li>Mo</li>	<li>Tu</li>	<li>We</li>	<li>Th</li> <li>Fr</li> <li>Sa</li> <li>Su</li>
+		</ul>
+		<ul class="days">  
+  		<li>1</li>	<li>2</li>	<li>3</li>	<li>4</li>	<li>5</li>	<li>6</li>	<li>7</li>
+  		<li>8</li>	<li>9</li>	<li><span class="active">10</span></li>	<li>11</li>	<li>12</li>
+  		<li>13</li>	<li>14</li>	<li>15</li>	<li>16</li>	<li>17</li>	<li>18</li>	<li>19</li>
+  		<li>20</li>	<li>21</li>	<li>22</li>	<li>23</li>	<li>24</li>	<li>25</li>	<li>26</li>
+  		<li>27</li>	<li>28</li>	<li>29</li>	<li>30</li>	<li>31</li>
+		</ul>
+      </div>
+      </div>
+	</div>
+    </section>
+  
     </main>
+    
     <footer>
       <h2>
         <ul>
@@ -170,9 +212,8 @@
             </ul>
           </div>
        </h3>
-      </footer>
-    
-</div>
-    </div>
-    </body>
+    </footer>
+  </div>
+  </div>
+  </body>
 </html>
