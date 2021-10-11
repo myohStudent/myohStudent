@@ -56,7 +56,7 @@ main {
     font-family: 'Nanum Gothic';
 }
 
-ul { list-style: none; width:100%; margin-left:0px;}
+ul { list-style: none; width:100%; padding-left:2px;}
 
 nav, .page-nav{ 
     text-decoration:none;
@@ -167,7 +167,7 @@ nav li {display:inline-block; margin-top:0px;padding-left:1vw;}
     left: 50%; transform: translate(-50%, 0%);
 }
 
-.btn1-hover
+.btn1-hover, .btn2-hover
 {
     font-size:17px;
     color:#585a5d;
@@ -175,10 +175,9 @@ nav li {display:inline-block; margin-top:0px;padding-left:1vw;}
     display: none;
     position: absolute;
     -webkit-transform: translate3d(0,0,0);
-    /* width: 140px; */
     opacity:60;
     line-height:2em;
-    height: 20vh;
+    /* height: 20vh; */
     /* float: center; */
     text-align: center;
     transition:opacity 200ms ease-out 0ms;
@@ -186,8 +185,10 @@ nav li {display:inline-block; margin-top:0px;padding-left:1vw;}
     background-color: rgba(233, 240, 255, 0.8); 
     /* left: 130%; transform: translate(-50%, 0%); */
 }
-.btn1-hover ul { margin-left:-30px;}
-.btn1-hover a { color: #585a5d; border-left:none; border-right:none;}
+.btn2-hover {width:100px;}
+.btn2-smol {font-size:13px;}
+.btn1-hover ul, .btn2-hover ul { margin-left:-10px;}
+.btn1-hover a, .btn2-hover a { color: #585a5d; border-left:none; border-right:none;}
 .dropdown-content hr {
     width:95%; left:0%;
    /* transform: translate(-50%, 0%); */
@@ -214,7 +215,8 @@ nav li {display:inline-block; margin-top:0px;padding-left:1vw;}
 }
 li:hover {cursor:pointer;}
 
-.btn1:hover .btn1-hover {display:block; }
+.btn1:hover .btn1-hover {display:block;}
+.btn2:hover .btn2-hover {display:block;}
 /* .dropdown-introduction.hover {display:block; pointer-events:none;} */
 
 .preview {
@@ -471,11 +473,14 @@ depth1 {
 /*
 ** media query
 */
+@media screen and (min-width: 2900px) {
+    .middle-banner .banner-space { max-width:1200px;}
+    .btn1-hover, .btn2-hover {font-size:14px;}
+}
 
 @media screen and (min-width: 1340px) {
     .middle-banner .banner-space { max-width:1200px;}
-    .btn1-hover {font-size:15px;} 
-    
+    .btn1-hover, .btn2-hover  {font-size:15px;}
 }
 @media screen and (max-width: 1278px) {
     /* .right-nav, .page-right-nav { display:none;} */
@@ -495,7 +500,7 @@ depth1 {
         text-align: center;
     }
     .btn1 a, .btn2 a, .btn3 a, .btn4 a, .btn5 a, .btn6 a, .btn7 a { border-left:none;border-right:none;}
-    .btn1-hover {font-size:13px; height:15vh;}
+    .btn1-hover, .btn2-hover  {font-size:13px; }
 }
 @media screen and (max-width: 1023px) {
     .right-nav, .page-right-nav  { display:none;}
@@ -592,7 +597,6 @@ depth1 {
     height:100%;
     vertical-align: top;
     text-align:left;
-    font-size:15px;   
+    font-size:15px;
 }
-
 }

@@ -1,3 +1,3 @@
-$('.btn1').mouseup(function(){
-   $('.hover').style.display(block);
-});
+// $('.btn1').mouseup(function(){
+//    $('.hover').style.display(block);
+// });
