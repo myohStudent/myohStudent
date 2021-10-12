@@ -118,7 +118,13 @@ main {
     border-bottom: 6px solid #30d1a1;
     border-right: 6px solid #30d1a1;
   }
-.cb-text { line-height:1.5em; font-weight:800; font-size:15px;}
+#cb1, #cb2, #cb3 { 
+   margin-top:20px;
+	width: 20px;
+	border: 2px solid #bcbcbc;
+	cursor: pointer;
+}
+.cb-text { line-height:1.5em; font-weight:800; font-size:15px; }
 /*
 ** login page
 */
