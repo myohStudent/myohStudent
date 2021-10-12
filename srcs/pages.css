@@ -1,14 +1,13 @@
 /*
  ** pages
  */
-
  /* introduction */
 
  /*
 ** menutoggle
 */  
   /* hamburger */
-  #menuToggle .page-toggle {
+#menuToggle .page-toggle {
     display: block;
     width: 33px;
     height: 4px;
@@ -21,7 +20,7 @@
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 opacity 0.55s ease;
-  }
+}
 
  /*header*/
 
@@ -30,15 +29,13 @@
 .page-right-nav {margin-top: -80px;}
   
 /* main */
-main {
-    margin-top:0px;
-}
+main {margin-top:0px;}
 .page-main { 
     background-color:rgb(245, 244, 244);
     border-top: solid 1px #d5d6da;
     margin-top:0px;
     padding: 50px;
-    line-height:1.5em;
+	line-height:1.5em;
 }
 /*
 ** introduction pages
@@ -77,7 +74,6 @@ main {
         width: 1.5em;
         padding:5px 0 0 5px;;
 }
-    
 .chevron.right:before {
         left: 0;
         transform: rotate(45deg);
@@ -88,13 +84,13 @@ main {
     margin-top:50px;
     width:100%;
 }
-.membership.type {height:150px;}
+.membership.type {height:100px;}
 .membership.type span { float:left; }
 .membership.terms { margin-top:0px; }
 .membership.terms span { float:left; }
 
 .terms-box {
-    padding-top:20px;
+    padding-top:15px;
     background-color: rgb(255, 255, 255);
     margin: 0 auto;
     width:600px;
@@ -125,12 +121,51 @@ main {
 	cursor: pointer;
 }
 .cb-text { line-height:1.5em; font-weight:800; font-size:15px; }
+
+.info-banner{
+	margin:20px;
+	height: auto;
+	display:flex;
+}
+.info-box{flex:1;}
+.info-box p{
+	display: block;
+	background-color: #f0e9e9;
+	border-radius:8px;
+    float:left;
+	font-family: 'Nanum Gothic';
+	font-size:15px;
+    height:100%;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:20px;
+	padding-bottom:15px;
+    box-sizing: border-box;
+}
+.register-btn{
+	font-family: 'Nanum Gothic';
+	font-size:1em;
+	margin-bottom: 40px;
+	margin-top:50px;
+	width:20%;
+	height:40px;
+	border:0;
+	background-color:#3a558e;
+	border-radius:10px;
+	color:white;
+	font-weight: bold;
+	cursor:pointer;
+	transition: 0.4s;
+}
+.register-btn.no{background-color:#d6d1d1;}
+
 /*
 ** login page
 */
 .login, .introduction, .registration {
     padding: 0 0 px; margin:0 0px;
 }
+.registration {min-height:2100px;}
 .home-img { padding-bottom:0px; margin-bottom:0px;}
 .front-text {   
     font-family: 'Nanum Gothic';
@@ -168,13 +203,12 @@ main {
     left:50%;
     transform: translate(-50%,-50%);
     border-radius: 15px;
-  }
-
-  .loginForm h2{
+}
+.loginForm h2{
     text-align: left;
     margin: 30px;
-  }
-  .login-box {
+}
+.login-box {
       margin: 0 auto;
       padding: 10 10 10 10px;
       /* border: 1px rgba(37, 37, 37, 0.2) solid; */
@@ -183,32 +217,28 @@ main {
       width:70%;
       /* box-shadow: 1px 1px 15px gray; */
       /* border:solid 1px lightgray; */
-  }
-  .idForm{
-     
+}
+.idForm{
     /* margin-top: 10px; */
     padding: 5px 10px;
     text-align:center;
-  }
-  .idForm h4 { text-align:left; padding:10px 10px 10px 10px;}
-  
-  .passForm{
+}
+.idForm h4 { text-align:left; padding:10px 10px 10px 10px;}
+.passForm{
     text-align:center;
-    
     padding: 5px 10px;
-  }
+}
   
-  .id {
+.id {
     width: 50%;
     color:rgb(141,141,141);
     font-size:16px;
     height:25px;
     border: 1px solid lightgray;
     padding-left:10px;
-
-  }
+}
   
-  .pw {
+.pw {
     padding-left:10px;
     width: 50%;
     color: rgb(141,141,141);
@@ -216,30 +246,27 @@ main {
     height:25px;
     border: 1px solid lightgray;
     border-radius:30;
-  }
+}
   
-  .login-btn {
-        font-family: 'Nanum Gothic';
-        font-size:1em;
-        
-        margin-bottom: 40px;
-        margin-top:10px;
-        width:40%;
-        height:40px;
-        border:0;
-        background-color:#3a558e;
-        border-radius:30px;
-        color:white;
-        font-weight: bold;
-        cursor:pointer;
-        transition: 0.4s;
-        /* display:inline; */
-  }
-  
+.login-btn {
+    font-family: 'Nanum Gothic';
+    font-size:1em;
+    margin-bottom: 40px;
+    margin-top:10px;
+    width:40%;
+    height:40px;
+    border:0;
+    background-color:#3a558e;
+    border-radius:30px;
+    color:white;
+    font-weight: bold;
+    cursor:pointer;
+    transition: 0.4s;
+    /* display:inline; */
+}
 
-  .checkbox {
-    display: center;
-    align-items: center;
+.checkbox {
+	display: center;    align-items: center;
     position: relative;
     font-size: 0.8rem;
     font-weight: 500;
@@ -338,7 +365,8 @@ main {
         margin-right:15px;
         width:100px; height:100px;
         border-radius:100px;
-        float:left;
+		float:left;
+	}
 }
 @media screen and (min-width: 1340px) {
 }
