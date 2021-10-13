@@ -53,7 +53,7 @@
 
       <main>
         <div class="page-main">
-          <section class="registration">
+          <section class="registration-phase2">
             <div class="front-text">
             <a href="index.html"><img src="./img/home.png" /></a>&nbsp; > &nbsp;&nbsp;회원가입</div>
             <div class="login-text">
@@ -67,18 +67,33 @@
                 <i class="chevron right"></i>
                 <div class="progress-circle inactive"><span><br/>04.<br/>가입<br/>완료</span></div>
               </div>
+              <div class="verification-space"></div>
               <div class="membership type">
-				  <span>법정 대리인 본인 인증</span>		
-			  </div>
-			<div class="membership terms">
-				  
+                <span>법정대리인 본인 인증</span><br />
+                <button type="button" class="verify-1" onclick="fcn1()">
+                  <img src="./img/phone.svg" width="50%" height="50%"><br/>
+                  법정대리인(부모님)<br/>휴대폰으로 본인 인증</button>
+                <p>본인인증 문의 : 1600-1522</p>
+                <div class="verification-space"></div><p>&nbsp;</p>
+              </div><p>&nbsp;</p><p>&nbsp;</p>
+              <div class="verification-space"></div> <div class="verification-space"></div>
+              <div class="membership type">
+                <span>회원가입 신청자 본인 인증</span><br />
+                <button type="button" class="verify-1" onclick="fcn2()">
+                  <img src="./img/phone.svg" width="50%" height="50%"><br/>
+                  회원가입 신청자<br/>휴대폰으로 본인 인증</button>
+              <p>본인인증 문의 : 1600-1522</p><p>&nbsp;</p></div>
+              <div class="verification-space"></div><p>&nbsp;</p>
+              <div class="verification-space"></div> <div class="verification-space"></div>
+            <p>휴대폰 본인 인증은 나이스아이디(1600-1522, https://www.niceid.co.kr/prod_mobile.nc)를 통해 
+              제공하고 있습니다.</p>
 				<button type="button" class="register-btn no" onclick="location.href='index.html'">
 					가입취소
 				</button>&nbsp;&nbsp;&nbsp;&nbsp;
-				<button type="button" class="register-btn yes" id="ifReg" onclick="ifAllChecked()">
-					확  인
-				</button>
-			</div>
+				<button type="button" class="register-btn yes" id="ifReg" onclick="verifyChecked()">
+					다   음
+        </button></div>
+        </div> 
 			</section>
     </main>
       <footer>

@@ -158,7 +158,45 @@ main {margin-top:0px;}
 	transition: 0.4s;
 }
 .register-btn.no{background-color:#d6d1d1;}
+/*
+** verification page
+*/
+.verify-1, .verify-2 {
+    cursor: pointer;
+    width:40%;
+    height:250px;
+    font-family:Nanum Gothic;
+    font-size:16px;
+    font-weight:600;
+    line-height:1.8em;
+    color: #867c7c;
+    border-radius:10px;
+    border:none;    
+    background-color: #d6d1d1;
+}
+.membership.type p{ text-align:center;}
+.verification-space { 
+    height :30px;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+.mobile-verify {
+    position: absolute; left: 50%; transform: translateX(-50%);
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:20px;
+}
 
+.mobile-box {
+    width:300px;
+    height:200px;
+    background-color: #d6d1d1;
+    border-radius: 10px;
+    font-size:17px;
+    text-align:center;
+    padding-top:20px;
+    margin-bottom:20px;   
+}
 /*
 ** login page
 */
@@ -408,9 +446,9 @@ main {margin-top:0px;}
 }
 
 @media screen and (max-width: 767px) {
-
+    .registration{height:2300px;}
     .page-container .page-nav {display:none;}
-    .page-main{ margin-top:10vh; height:2500px;}
+    .page-main{ margin-top:10vh;}
     .page-container .logo {
         text-align:center;
         width:80px;
@@ -445,12 +483,36 @@ main {margin-top:0px;}
     }
 }
 @media screen and (max-width: 650px) {
-    .page-main{height:3000px;}
+    .registration {height:2500px;}
     .login-btn {font-size:0.9em;}
     .id {width:100%;}
     .pw {width:100%;}
     .checkbox {width:80%;right:40%;}
-    .terms-box {width:80%;}
+    .terms-box {width:100%;}
     .terms-headline {padding-left:10px;}
     .register-btn {font-size:12px;}
+    .info-box p{
+        background-color: #f0e9e9;
+        border-radius:8px;
+        font-family: 'Nanum Gothic';
+        font-size:11px;
+        width:100%;
+        height:100%;
+        padding-left:5px;
+        padding-right:5px;
+        padding-top:15px;
+        padding-bottom:15px;
+        box-sizing: border-box;
+    }
+    .verify-1, .verify-2 {font-size:12px; width:100%;}
+    .verification-space {height:60px;}
+    .login-text p {font-size:12px;}
 } 
+@media screen and (max-width:456px){
+    .registration{min-height:3000px;}
+    /* .page-main{min-height:2800px;} */
+}
+@media screen and (max-width:424px){
+    .registration{min-height:3400px;}
+    /* .page-main{min-height:3400px;} */
+}
