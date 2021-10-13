@@ -340,6 +340,26 @@ main {margin-top:0px;}
     }
     .page-nav a {color:#164097;}
     .btn1, .btn2, .btn3, .btn4, .btn5, .btn6, .btn7 { border-left:none;border-right:none;}
+    .progress-box {
+        width:100%;
+        margin: 0 30px auto;
+        overflow:hidden;
+        line-height:1em;
+    }
+    .chevron::before {
+        border-style: solid;
+        border-width: 0.1em 0.1em 0 0;
+        content: '';
+        float:left;
+        height: 1em;
+        left: 0.7em;
+        position: relative;
+        top: 2.1em;
+        transform: rotate(-45deg);
+        vertical-align: top;
+        width: 1em;
+        padding:5px 0 0 5px;;
+    }
 }
 @media screen and (max-width: 1023px) {
     .page-right-nav, .page-nav {display:none;}
@@ -356,7 +376,6 @@ main {margin-top:0px;}
         width:100px;
         left:50%;
     }
-    
     .page-container .logo img { width:100px; height: auto;}
     .page-main{ margin-top:10vh;}
 
@@ -366,7 +385,11 @@ main {margin-top:0px;}
         width:100px; height:100px;
         border-radius:100px;
 		float:left;
-	}
+    }
+    .membership.type span {font-size:15px;}
+    .membership.terms span {font-size:15px;}
+    .terms-box {width:500px;}
+
 }
 @media screen and (min-width: 1340px) {
 }
@@ -379,15 +402,55 @@ main {margin-top:0px;}
     }
     header {margin-top:0px;}
     .page-container .logo img { width:80px; height: auto;}
+    .progress-box span{
+        font-size:10px;
+    }
 }
 
 @media screen and (max-width: 767px) {
+
     .page-container .page-nav {display:none;}
-    .page-main{ margin-top:10vh;}
+    .page-main{ margin-top:10vh; height:2500px;}
     .page-container .logo {
         text-align:center;
         width:80px;
         left:50%;
         margin-top: 0px;
     }
+    .id {width:80%;}
+    .pw {width:80%;}
+    .checkbox {width:70%;margin-right:0px;}
+    label {font-size:14px;}
+    .membership{margin-top:10px;}
+    .membership.type {margin-top:10px;}
+    .progress-circle {width:100px; height:100px;}
+    .progress-circle span{font-size:12px; line-height:normal;}
+    .info-banner{
+        height: auto;
+        display:block;
+    }
+    .info-box{width:100%;}
+    .info-box p{
+        background-color: #f0e9e9;
+        border-radius:8px;
+        font-family: 'Nanum Gothic';
+        font-size:11px;
+        width:100%;
+        height:100%;
+        padding-left:20px;
+        padding-right:20px;
+        padding-top:20px;
+        padding-bottom:15px;
+        box-sizing: border-box;
+    }
 }
+@media screen and (max-width: 650px) {
+    .page-main{height:3000px;}
+    .login-btn {font-size:0.9em;}
+    .id {width:100%;}
+    .pw {width:100%;}
+    .checkbox {width:80%;right:40%;}
+    .terms-box {width:80%;}
+    .terms-headline {padding-left:10px;}
+    .register-btn {font-size:12px;}
+} 
