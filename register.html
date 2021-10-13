@@ -7,7 +7,8 @@
     <link href="./srcs/style.css" rel="stylesheet" />
     <link href="./srcs/pages.css" rel="stylesheet" />
     <link href="./srcs/footer.css" rel="stylesheet" />
-    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="./js/btns.js"></script>
     </head>
 
     <body  class="main-body">
@@ -18,13 +19,14 @@
             <span class="page-toggle"></span>
             <span class="page-toggle"></span>
             <span class="page-toggle"></span>
-            <ul id="menu">
-              <a href="#"><li>w l d r j a e k f l</li></a>
-              <a href="#"><li>asdf</li></a>
-              <a href="#"><li>sfdsf</li></a>
-              <a href="#"><li>asdfasf</li></a>
-              <a href="#" target="_blank"><li>ddd</li></a>
-            </ul>
+			<ul id="menu">
+				<a href="login.html"><li>로그인</li></a>
+				<a href="register.html"><li>회원가입</li></a>
+				<a href="./introduction_pages/introduction.html"><li>교육과정</li></a>
+				<a href="./curriculum_pages/primary_potential.html"><li>학사일정</li></a>
+				<a href="./videos.html"><li>영상강좌</li></a>
+				<a href="./notice.html"><li>공지사항</li></a>
+			  </ul>
         </div>
         <nav class="page-nav">
           <div class="logo"><a href="index.html"><img src="./img/sss.png"></a></div>
@@ -281,10 +283,10 @@
 									</p>
 							</div>
 						</div>
-						<button type="button" class="register-btn no" onclick="button()">
+						<button type="button" class="register-btn no" onclick="location.href='index.html'">
 							가입취소
 						  </button>&nbsp;&nbsp;&nbsp;&nbsp;
-						  <button type="button" class="register-btn yes" onclick="button()">
+						  <button type="button" class="register-btn yes" id="ifReg" onclick="ifAllChecked()">
 							확  인
 						  </button>
 				</div>
@@ -293,7 +295,7 @@
       <footer>
         <h2>
           <ul>
-            <li><a href="index.html">홈으로</a></li><li><a href="#a">약관</a></li>
+            <li><a href="./index.html">홈으로</a></li><li><a href="#a">약관</a></li>
             <li><a href="#a">개인정보처리방침</a></li><li><a href="#a">이메일무단수집거부</a></li><li><a href="#a">사이트맵</a></li>
           </h2>
           </ul><hr></hr>

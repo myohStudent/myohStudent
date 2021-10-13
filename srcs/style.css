@@ -162,35 +162,10 @@ nav li {display:inline-block; margin-top:0px;padding-left:1vw;}
 .page-nav .btn1-hover, .page-nav .btn2-hover { background-color: #3a558e; color:#ffffff;}
 .page-nav .btn1-hover a, .page-nav .btn2-hover a {color:#ffffff;}
 
-.dropdown-content hr {
-    width:95%; left:0%;
-   /* transform: translate(-50%, 0%); */
-    color: lightslategrey;
-}
-
-.dropdown-content ul {
-    margin-left:0px; margin-right:0px;
-    text-align:center;
-    display: flex;
-    height: 270px;
-    font-size:18px; color:rgb(217, 230, 230);
-    align-content: flex-start;
-    flex-direction: column;
-    flex-wrap:wrap;
-    overflow: auto;
-}
-.dropdown-content .spacing {
-    padding-left: 130px;
-}
-.dropdown-content li {
-    padding-left: 17px;
-    padding-right: 17px;
-}
 li:hover {cursor:pointer;}
 
 .btn1:hover .btn1-hover {display:block;}
 .btn2:hover .btn2-hover {display:block;}
-/* .dropdown-introduction.hover {display:block; pointer-events:none;} */
 
 .preview {
     position:relative;
@@ -222,7 +197,7 @@ li:hover {cursor:pointer;}
   transition: color 0.3s ease;
 }
 
-#menuToggle a:hover { color: tomato;}
+#menuToggle a:hover { color: rgb(107, 102, 148);}
 
 #menuToggle input {
   display: block;
@@ -253,44 +228,40 @@ li:hover {cursor:pointer;}
               opacity 0.55s ease;
 }
 
-#menuToggle span:first-child {   transform-origin: 0% 0%; }
-#menuToggle span:nth-last-child(2) {   transform-origin: 0% 100%;}
-
+#menuToggle span:first-child { transform-origin: 0% 0%; }
+#menuToggle span:nth-last-child(2) { transform-origin: 0% 100%; }
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
 }
-
 #menuToggle input:checked ~ span:nth-last-child(3){
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
-
-
 #menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-/* menu toggle position  */
+/* menu toggle content */
 #menu {
   position: absolute;
   width: 100%;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  
   background: #ededed;
   list-style-type: none;
-  -webkit-font-smoothing: antialiased;  /* to stop flickering of text in safari */
+  -webkit-font-smoothing: antialiased; /*사파리*/
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #menu li {
-  padding: 10px 0;
-  font-size: 22px;
+    font-family:"Nanum Gothic";
+    padding: 10px 0;
+    font-size: 20px;
 }
 
 /*  * slide from the left */

@@ -7,10 +7,11 @@
     <link href="./srcs/style.css" rel="stylesheet" />
     <link href="./srcs/pages.css" rel="stylesheet" />
     <link href="./srcs/footer.css" rel="stylesheet" />
-    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="./js/btns.js"></script>
     </head>
 
-    <body>
+    <body  class="main-body">
       <header>
         <div class="hidden-logo"><a href="index.html"><img src="./img/sss.png"></a></div>
           <div id="menuToggle">
@@ -38,11 +39,11 @@
             <div class="btn2-hover">
               <ul><li><a href="./introduction_pages/introduction.html">&nbsp;초등인재</a></li> <li>&nbsp;중등인재</li> <li>&nbsp;초등교양</li> <li>&nbsp;중등교양</li> <li class="btn2-smol">학부모 및 성인</li></ul>
             </div></div>
-          <div class = "btn3"><a href="./schedule.html">&nbsp;학사일정&nbsp;</a></div>
-          <div class = "btn4"><a href="./videos.html">&nbsp;영상강좌&nbsp;</a></div>
-          <div class = "btn5"><a href="./notice.html">&nbsp;공지사항&nbsp;</a></div>
-          <div class = "btn6"><a href="./register.html">&nbsp;회원가입&nbsp;</a></div>
-          <div class = "btn7"><a href="./login.html">&nbsp;로그인&nbsp;</a></div>
+          <div class = "btn3"><a href="curriculum.html">&nbsp;학사일정&nbsp;</a></div>
+          <div class = "btn4"><a href="videos.html">&nbsp;영상강좌&nbsp;</a></div>
+          <div class = "btn5"><a href="notice.html">&nbsp;공지사항&nbsp;</a></div>
+          <div class = "btn6"><a href="register.html">&nbsp;회원가입&nbsp;</a></div>
+          <div class = "btn7"><a href="login.html">&nbsp;로그인&nbsp;</a></div>
          
           <div class="right-nav"><a href="http://www.jeongseon.go.kr/intro.html"><img src="./img/jeongsunlogo.png"></a></div>
           </nav>
@@ -51,42 +52,39 @@
     </header>
 
       <main>
-      <div class="page-main">
-        <section class="login">
-          <div class="front-text">
-          <a href="index.html"><img src="./img/home.png" /></a>&nbsp; > &nbsp;&nbsp;로그인</div>
-          <div class="login-text">
-            <p>로그인</p><hr><p>&nbsp;</p>
-            <img src="img/account.svg" />
-           <div class="login-box">
-            <div class="idForm">
-              <input type="text" class="id" placeholder="아이디">
-            </div>
-            <div class="passForm">
-              <input type="password" class="pw" placeholder="비밀번호">
-            </div>
-            <div class="checkbox"><input type="checkbox">
-              <div class="fas fa-check"></div><span>아이디 저장</span>
-            </div>
-        	</div>
-            <p></p>
-            <button type="button" class="login-btn" onclick="loginStudent()">
-              로그인
-            </button>
-            <div class="info-text">계정을 잃어버리신 분은 <a href="lost.html">🔒︎ 아이디 찾기 / 비밀번호 바꾸기</a>를 이용해 주십시오.</div><span>&nbsp;</span>
-            
-        </div>
-      </div>
-        </div>
-
-        </section>
-
-      </div>
+        <div class="page-main">
+          <section class="registration">
+            <div class="front-text">
+            <a href="index.html"><img src="./img/home.png" /></a>&nbsp; > &nbsp;&nbsp;회원가입</div>
+            <div class="login-text">
+              <p>회원가입 : 만 14세 미만</p><hr><p>&nbsp;</p>
+              <div class="progress-box">
+                <div class="progress-circle inactive"><span><br/>01.<br/>회원 구분 및 <br/>약관 동의</span></div> 
+                <i class="chevron right"></i>
+                <div class="progress-circle active"><span><br/>02.<br/>본인<br/>인증</span></div>
+                <i class="chevron right"></i>
+                <div class="progress-circle inactive"><span><br/>03.<br/>신청서<br/>작성</span></div>
+                <i class="chevron right"></i>
+                <div class="progress-circle inactive"><span><br/>04.<br/>가입<br/>완료</span></div>
+              </div>
+              <div class="membership type">
+				  <span>법정 대리인 본인 인증</span>		
+			  </div>
+			<div class="membership terms">
+				  
+				<button type="button" class="register-btn no" onclick="location.href='index.html'">
+					가입취소
+				</button>&nbsp;&nbsp;&nbsp;&nbsp;
+				<button type="button" class="register-btn yes" id="ifReg" onclick="ifAllChecked()">
+					확  인
+				</button>
+			</div>
+			</section>
     </main>
       <footer>
         <h2>
           <ul>
-            <li><a href="index.html">홈으로</a></li><li><a href="#a">약관</a></li>
+            <li><a href="./index.html">홈으로</a></li><li><a href="#a">약관</a></li>
             <li><a href="#a">개인정보처리방침</a></li><li><a href="#a">이메일무단수집거부</a></li><li><a href="#a">사이트맵</a></li>
           </h2>
           </ul><hr></hr>
