@@ -4,3 +4,10 @@ function ifAllChecked(){
     */
     window.location = "verification.html"; 
 }
+
+function verifyChecked(){
+    /*
+    if verified,
+    */
+   window.location = "entryform.html"; 
+}

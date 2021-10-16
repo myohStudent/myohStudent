@@ -46,8 +46,6 @@ html,body {
     width:100%;
     overflow-x:clip;
     overflow-y:auto;
-    transition: 0.4s;
-
 }
 .container { width: 100%; }
 header{text-align:center; justify-content: center; align-items:center; margin-top:0px; padding-top:0px; }

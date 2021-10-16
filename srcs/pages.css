@@ -198,6 +198,28 @@ main {margin-top:0px;}
     margin-bottom:20px;   
 }
 /*
+** registration form page
+*/
+.registration-phase3 {
+    min-height: 1000px;
+    width: 100%;
+}
+/* form ul li label { left:float; width:150px;} */
+form label { display:inline-block; width:200px;}
+.right-align { float:right; }
+.entry-form { 
+    text-align:left;
+    color:#867c7c;
+    line-height:1.5em;
+}
+.entry-form li {
+    padding-top:5px; 
+    padding-bottom:5px;
+}
+.red-text {
+    color: #d45d48;
+}
+    /*
 ** login page
 */
 .login, .introduction, .registration {
@@ -485,6 +507,7 @@ main {margin-top:0px;}
 @media screen and (max-width: 650px) {
     .registration {height:2500px;}
     .login-btn {font-size:0.9em;}
+    .register-btn{width:30%;}
     .id {width:100%;}
     .pw {width:100%;}
     .checkbox {width:80%;right:40%;}
@@ -506,10 +529,11 @@ main {margin-top:0px;}
     }
     .verify-1, .verify-2 {font-size:12px; width:100%;}
     .verification-space {height:60px;}
-    .login-text p {font-size:12px;}
+    .login-text p {font-size:12px; text-align:center;}
 } 
 @media screen and (max-width:456px){
     .registration{min-height:3000px;}
+    .register-btn{width:40%;}
     /* .page-main{min-height:2800px;} */
 }
 @media screen and (max-width:424px){
