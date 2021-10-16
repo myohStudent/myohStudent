@@ -75,7 +75,8 @@
 				<form name ="registration-form" action="" method="">
 					<ul>
 						<li><label>이름 <span class="red-text">*</span></label> <input class="input-name" type = "text" max-length="16" placeholder = "본명을 입력하세요" /></li>
-            <li><label>생년월일 <span class="red-text">*</span></label> 
+            <li><label>생년월일 <span class="red-text">*</span></label>
+               <div class="select-box">
               <select name="input-birth-year" class="input-year">
                 <option value="1940">1940</option><option value="1941">1941</option>
                 <option value="1942">1942</option><option value="1943">1943</option>
@@ -139,25 +140,25 @@
               <option value="28">28</option><option value="29">29</option><option value="30">30</option>
               <option value="31">31</option>
             </select> 일&nbsp; 
-            
+          </div>
             </li>
-						<li><label>성별</label> <span><input class="input-sex" type="radio" name="sex" value="" />남자 &nbsp;&nbsp;<input type="radio" name="sex" value="" />여자 &nbsp;&nbsp;<input type="radio" name="sex" value="" checked/>해당없음 </span></li> 
+						<li><label>성별</label> <div class="select-box"><span class="input-sex"><input type="radio" name="sex" value="" />남자 &nbsp;&nbsp;<input type="radio" name="sex" value="" />여자 &nbsp;&nbsp;<input type="radio" name="sex" value="" checked/>해당없음 </span></div></li>
 						<li><label>아이디 <span class="red-text">*</span></label> <input class="input-id" type = "text" max-length="20" placeholder = "아이디를 입력하세요" /></li>
 						<li><label>비밀번호 <span class="red-text">*</span></label> <input type="password" class="input-pw" max-length="16" placeholder="비밀번호 : 9~16글자, 영문자·숫자·특수문자(! @ $ % ^ & *) 포함" /></li>
 						<li><label>비밀번호 재확인 <span class="red-text">*</span></label> <input type="password" class="input-pwconf" max-length="20" placeholder="비밀번호 재확인" /></li>
 						<li><label>이메일 <span class="red-text">*</span></label> <input type="text" class="input-email" max-length="40" placeholder="이메일 주소" /></li>
-						<li><label>이메일 수신여부</label> <input class="input-mailing" type="radio" name="mailing" value="" checked/>예 &nbsp;&nbsp; <input type="radio" name="mailing" value="" />아니오</span></li>
+						<li><label>이메일 수신여부</label> <div class="select-box"><input class="input-mailing" type="radio" name="mailing" value="" checked/>예 &nbsp;&nbsp; <input type="radio" name="mailing" value="" />아니오</div></span></li>
 						<li><label>연락처 <span class="red-text">*</span></label> <input class="input-mobile" type = "text" max-length="16" placeholder = "전화번호 : - 없이 입력" /></li>
             <li><label>주소 <span class="red-text">*</span></label> 
               <input type="text" class="input-zip" name="zip" placeholder="우편번호" />
-              &nbsp;<button type="button" style="width:80px; height:31px;" onclick="openZipSearch()">주소검색</button>&nbsp;
-             <input type="text" class="input-addr1" name="addr1" placeholder="주 소" readonly /></li>
-              <li><label>&nbsp;</label> <input type="text" class="input-addr2" name="addr2" placeholder="나머지 주소 입력" /></li>
+              &nbsp;<button type="button" style="width:80px; height:31px;" onclick="openZipSearch()">주소검색</button></li>
+            <li><label class="hidden-label">&nbsp;</label><input type="text" class="input-addr1" name="addr1" placeholder="주 소" readonly /></li>
+            <li><label class="hidden-label">&nbsp;</label><input type="text" class="input-addr2" name="addr2" placeholder="나머지 주소 입력" /></li>
             
 						<li><hr /></li>
 						<li><label>법정대리인(부모) 이름 <span class="red-text">*</span></label>  <input class="input-name" type = "text" max-length="16" placeholder = "홍길동" /></li>
             <li><label>법정대리인 생년월일 <span class="red-text">*</span></label>
-              <select name="parent-birth-year" class="input-year">
+              <div class="select-box"><select name="parent-birth-year" class="input-year">
                 <option value="1940">1940</option><option value="1941">1941</option>
                 <option value="1942">1942</option><option value="1943">1943</option>
                 <option value="1944">1944</option><option value="1945">1945</option>
@@ -220,7 +221,7 @@
               <option value="28">28</option><option value="29">29</option><option value="30">30</option>
               <option value="31">31</option>
             </select> 일&nbsp; 
-          
+          </div>
             </li>
 						<li><label>이메일 <span class="red-text">*</span></label> <input type="text" class="input-email" max-length="40" placeholder="이메일 주소" /></li>
           </ul>
