@@ -219,7 +219,23 @@ form label { display:inline-block; width:200px;}
 .red-text {
     color: #d45d48;
 }
-    /*
+.input-name, .input-id, .input-pw, .input-pwconf, .input-email,
+.input-mobile {
+    width:550px;
+    font-size:16px;
+    /* padding-top:2px; padding-bottom:2px; padding-left:2px; padding-right:2px; */
+    padding: 5px 5px 5px 5px;
+}
+.regi-btn {
+    text-align:center;
+}
+
+/*
+** registration success / failed
+*/
+.result-text { color:#867c7c; padding: 10 10 10 10px; margin-bottom:30px;}
+
+/*
 ** login page
 */
 .login, .introduction, .registration {

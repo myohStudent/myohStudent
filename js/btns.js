@@ -9,5 +9,15 @@ function verifyChecked(){
     /*
     if verified,
     */
-   window.location = "entryform.html"; 
+   window.location = "entryformUnder14.html"; 
+//    window.location = "entryformOver14.html"; 
+}
+
+function ifInputChecked(){
+    /*
+    if completed,
+    */
+   window.location = "registrationSuccess.html";
+   /* if not */
+//    window.location = "registrationFailed.html";
 }
