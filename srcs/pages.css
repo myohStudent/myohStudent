@@ -513,6 +513,9 @@ form label {
 }
 @media screen and (max-width:885px){
     .hidden-label {display:none;}
+    form label {
+        width:700px;
+    }
     .input-name, .input-id, .input-pw, .input-pwconf, .input-email,
 .input-mobile, .input-addr2, .input-addr1, .input-sex  {
     width:100%;
