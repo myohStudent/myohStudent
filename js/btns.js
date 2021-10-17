@@ -1,3 +1,27 @@
+/* all terms checking buttons */
+$( document ).ready( function() {
+  $( '.check-all' ).click( function() {
+    $( '.cb' ).prop( 'checked', this.checked );
+  } );
+} );
+
+/* if all terms checked, go to the next page */
+function ifAllChecked(){
+  /*
+  if checked,
+  */
+ $( document ).ready( function() {
+   if ($('input[name="chk1"]').prop('checked') && $('input[name="chk2"]').prop('checked')
+          && $('input[name="chk3"]').prop('checked') && 
+          ($('.f1').prop('checked') || $('.f2').prop('checked')))
+      window.location = "verification.html"; 
+    else
+      alert('모든 약관에 체크해 주세요.');
+ });
+  
+}
+
+/* for address input */ 
 function openZipSearch() {
   new daum.Postcode({
     oncomplete: function(data) {
@@ -6,13 +30,6 @@ function openZipSearch() {
       $('[name=addr2]').val(data.buildingName);
     }
   }).open();
-}
-
-function ifAllChecked(){
-    /*
-    if checked,
-    */
-    window.location = "verification.html"; 
 }
 
 function verifyChecked(){
@@ -31,3 +48,4 @@ function ifInputChecked(){
    /* if not */
 //    window.location = "registrationFailed.html";
 }
+
