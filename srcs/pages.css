@@ -57,9 +57,10 @@ main {margin-top:0px;}
     float:left;
     line-height:1.2em;
 }
-.progress-box span {font-weight:800;margin-top:10px;color:rgb(133,133,133);font-size:15px;}
+.progress-box .box {width:100%; padding-left:0px; margin-left:0px;}
+/* .progress-box span {font-weight:800;margin-top:10px;color:rgb(133,133,133);font-size:15px;}
 .progress-circle.active { background-color: rgb(255, 242, 121);}
-.progress-circle.inactive {background-color: rgb(209, 209, 209);}
+.progress-circle.inactive {background-color: rgb(209, 209, 209);} */
 .chevron::before {
         border-style: solid;
         border-width: 0.1em 0.1em 0 0;
@@ -447,7 +448,7 @@ form label {
     .btn1, .btn2, .btn3, .btn4, .btn5, .btn6, .btn7 { border-left:none;border-right:none;}
     .progress-box {
         width:100%;
-        margin: 0 30px auto;
+        margin: 0 auto;
         overflow:hidden;
         line-height:1em;
     }
