@@ -567,7 +567,7 @@ form label {
 }
 @media screen and (max-width: 958px){
     .input-year, .input-month, .input-date, .input-zip {
-        width:10%;
+        width:65px;
     }
     /* .entry-form {text-align:center;} */
 }
@@ -599,7 +599,7 @@ form label {
         box-sizing: border-box;
     }
     .verify-1, .verify-2 {font-size:12px; width:100%;}
-    .verification-space {height:80px;}
+    .verification-space {height:30px;}
     .login-text p {
         font-size:12px; 
         /* text-align:center;*/

@@ -1,3 +1,10 @@
+/* login button */
+function loginStudent(){
+  /* 
+  */
+ window.location = "indexLoggedIn.html"; 
+}
+
 /* all terms checking buttons */
 $( document ).ready( function() {
   $( '.check-all' ).click( function() {

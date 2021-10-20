@@ -93,7 +93,7 @@ nav a {
 
 
 nav ul {float:center; }
-nav li {display:inline-block; margin-top:0px;padding-left:1vw;} 
+nav li {display:inline-block; margin-top:0px;padding-left:2vw;} 
 
 /*right-nav*/
 
@@ -128,7 +128,7 @@ nav li {display:inline-block; margin-top:0px;padding-left:1vw;}
 .btn4 {left: 60%; }
 .btn5 {left: 67%; }
 .btn6 {left: 74%; }
-.btn7 {left: 80%; }
+.btn7 {left: 81%; }
 
 .btn1 a, .btn2 a, .btn3 a {border-left: solid 1px #ffffff;}
 .btn4 a, .btn5 a, .btn6 a, .btn7 a {border-right: solid 1px #ffffff;}
