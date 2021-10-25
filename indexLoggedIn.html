@@ -1,227 +1,313 @@
-
-<!-- session 기능 없어서 임시로 때워 놓은 페이지
-  여기서 대충 마이페이지 메뉴로 접근 가능합니다 나중에 수정
+<!-- 
+  여기서 대충 마이페이지 메뉴로 접근 가능합니다 
 -->
 
 <!DOCTYPE html>
-<html lang="kor">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>징검다리스쿨</title>
-    <link href="./srcs/style.css" rel="stylesheet" />
-    <link href="./srcs/slider.css" rel="stylesheet" />
-    <link href="./srcs/grid.css" rel="stylesheet" />
-    <link href="./srcs/footer.css" rel="stylesheet" />
-    <link href="./srcs/dropdown.css" rel="stylesheet" />
-    <link href="./srcs/calendar.css" rel="stylesheet" />
-    <script src="js/index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>징검다리스쿨</title>
+	<link href="./srcs/style.css" rel="stylesheet" />
+	<link href="./srcs/slider.css" rel="stylesheet" />
+	<link href="./srcs/grid.css" rel="stylesheet" />
+	<link href="./srcs/footer.css" rel="stylesheet" />
+	<link href="./srcs/dropdown.css" rel="stylesheet" />
+	<link href="./srcs/calendar.css" rel="stylesheet" />
+	<script src="js/index.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
-    <body>
-    <div class="container">
-        <div class="slider">
-            <div class="slide slide1"></div>
-            <div class="slide slide2"></div>
-            <div class="slide slide3"></div>
-            <div class="slide slide4"></div>
-            <div class="slide slide1"></div>
-        </div>
 
-      <header>
-        <div class="hidden-logo"><a href="index.html"><img src="img/sss2.png"></a></div>
-          <div id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul id="menu">
-              <a href="index.html"><li>로그아웃</li></a>
-              <a href="mypage.html"><li>마이페이지</li></a>
-              <a href="./introduction_pages/introduction.html"><li>교육과정</li></a>
-              <a href="./curriculum_pages/primary_potential.html"><li>학사일정</li></a>
-              <a href="./videos.html"><li>영상강좌</li></a>
-              <a href="./notice.html"><li>공지사항</li></a>
-            </ul>
-        </div>
-        <nav>
-          <div class="logo"><a href="index.html"><img src="img/sss2.png"></a></div>
-          <div class="btn1"><a href="#">&nbsp;징검다리스쿨소개&nbsp;</a>
-            <div class="btn1-hover">
-              <ul><li><a href="./introduction_pages/introduction.html">&nbsp;교육철학</a></li> <li>&nbsp;걸어온 길</li> <li>&nbsp;교장 인사말</li> <li>&nbsp;교육위원회</li></ul>
-            </div>
-          </div>
-          <div class = "btn2"><a href="#">&nbsp;교육과정&nbsp;</a>
-            <div class="btn2-hover">
-              <ul><li><a href="./curriculum.html">&nbsp;초등인재</a></li> <li>&nbsp;중등인재</li> <li>&nbsp;초등교양</li> <li>&nbsp;중등교양</li> <li class="btn2-smol">학부모 및 성인</li></ul>
-            </div>
-          </div>
-          <div class = "btn3"><a href="schedule.html">&nbsp;학사일정&nbsp;</a></div>
-          <div class = "btn4"><a href="videos.html">&nbsp;영상강좌&nbsp;</a></div>
-          <div class = "btn5"><a href="notice.html">&nbsp;공지사항&nbsp;</a></div>      
-          <div class = "btn6_loggedin"><a href="#">&nbsp;마이페이지&nbsp;</a>
-                <div class="btn6-hover">
-                    <ul><li><a href="./my_pages/mypage.html">&nbsp;내강의</a></li><li><a href="./my_pages/mentoring.html">&nbsp;멘토링보고서</a></li> <li><a href="./my_pages/settings.html">&nbsp;정보수정</a></li> <li><a href="./my_pages/letterbox.html">&nbsp;받은메시지함</a></li></ul>
-                </div>
-          </div>
-         <div class = "btn7_loggedin"><a href="./index.html">&nbsp;로그아웃&nbsp;</a></div>
-                <div class="right-nav"><a href="http://www.jeongseon.go.kr/intro.html"><img src="img/jeongsunlogo.png"></a></div>
-        </nav>
-        </div> 
-    </header>
-        
-    <main>
-        
-    <section class="intro-banner">
-      <div class="quote-space">
-         <blockquote cite="introduction.html">
-          다함께 배우고 익히는<br />자기주도 위주의 학습 프로그램</blockquote>
-      </div> <br />   </section>
-    <section class="middle-banner">
-      <div class="banner-space">
-          <div class="direct-01">
-            <p><a href="./introduction_pages/introduction.html">
-              <span class="title">징검다리스쿨소개</span>
-            <br/><br/>정선군 학생들의 성장을 지원하는 <br />
-            징검다리스쿨을 소개합니다<br /></a> 
-          </p>
-          </div>
-          <div class="direct-02">
-            <p><a href="login.html"><span class="title">교육과정</span>
-            <br/><br/>학년별 커리큘럼과
-            <br />강의내용을 확인하세요<br/></a>
-            </p>
-          </div>
-      </div>
-    </section>
-    
-    <section class="videos" id="featured-videos">
-        <div class="video-grid front-page" id="front-page-videos">
-            <h1>인기 강좌</h1>
-          <ul class="video-list featured">
-            <li class="video featured">
-              <a data-fancybox href="https://www.youtube.com/embed/oUVL69T6vEY?autoplay=1&controls=0&showinfo=0&color=white&rel=0" class="featured-video">
-                <figure style="background-image: url('./img/thumb0.jpg'); background-repeat:no-repeat;">
-                  <img src="./img/thumb0.jpg" />
-                  <figcaption>00 선생님의 재미있는 과학 강의 (03:00)</figcaption>
-                </figure>
-              </a>
-            </li>
-            <li class="video featured">
-              <a data-fancybox href="#a" class="featured-video">
-                <figure style="background-image: url(./img/thumb1.jpg); background-repeat:no-repeat;">
-                  <img src="./img/thumb1.jpg" />
-                  <figcaption>00 선생님의 재미있는 예술 강의 (03:00)</figcaption>
-                </figure>
-              </a>
-            </li>
-            <li class="video featured">
-              <a data-fancybox href="https://www.youtube.com/embed/oUVL69T6vEY?autoplay=1&controls=0&showinfo=0&color=white&rel=0" class="featured-video">
-                <figure style="background-image: url(./img/thumb2.jpg);background-repeat:no-repeat;">
-                  <img src="./img/thumb2.jpg" />
-                  <figcaption>00 선생님의 재미있는 문학 강의 (03:00)</figcaption>
-                </figure>
-              </a>
-            </li>
-            <li class="video featured">
-              <a data-fancybox href="https://www.youtube.com/embed/oUVL69T6vEY?autoplay=1&controls=0&showinfo=0&color=white&rel=0" class="featured-video">
-                <figure style="background-image: url(./img/thumb3.jpg);background-repeat:no-repeat;">
-                  <img src="./img/thumb3.jpg" />
-                  <figcaption>00 선생님의 재미있는 화학 강의 (03:00)</figcaption>
-                </figure>
-              </a>
-            </li>
-            <li class="video featured">
-              <a data-fancybox href="https://www.youtube.com/embed/oUVL69T6vEY?autoplay=1&controls=0&showinfo=0&color=white&rel=0" class="featured-video">
-                <figure style="background-image: url(./img/thumb4.jpg); background-repeat:no-repeat;">
-                  <img src="./img/thumb4.jpg" />
-                  <figcaption>000 선생님의 재미있는 코딩 강의 (03:00)</figcaption>
-                </figure>
-              </a>
-            </li>
-            <li class="video featured">
-              <a data-fancybox href="https://www.youtube.com/embed/oUVL69T6vEY?autoplay=1&controls=0&showinfo=0&color=white&rel=0" class="featured-video">
-                <figure style="background-image: url(./img/thumb5.jpg);background-repeat:no-repeat;">
-                  <img src="./img/thumb5.jpg" />
-                  <figcaption>000 선생님의 재미있는 코딩 강의 (03:00)</figcaption>
-                </figure>
-              </a>
-            </li>
-            <li class="video featured">
-              <a data-fancybox href="https://www.youtube.com/embed/oUVL69T6vEY?autoplay=1&controls=0&showinfo=0&color=white&rel=0" class="featured-video">
-                <figure style="background-image: url(./img/thumb5.jpg);background-repeat:no-repeat;">
-                  <img src="./img/thumb5.jpg" />
-                  <figcaption>000 선생님의 재미있는 코딩 강의 (03:00)</figcaption>
-                </figure>
-              </a>
-            </li>
-            <li class="video featured">
-              <a data-fancybox href="https://www.youtube.com/embed/oUVL69T6vEY?autoplay=1&controls=0&showinfo=0&color=white&rel=0" class="featured-video">
-                <figure style="background-image: url(./img/thumb5.jpg);background-repeat:no-repeat;">
-                  <img src="./img/thumb5.jpg" />
-                  <figcaption>000 선생님의 재미있는 코딩 강의 (03:00)</figcaption>
-                </figure>
-              </a>
-            </li>
-            <li class="video featured">
-              <a data-fancybox href="https://www.youtube.com/embed/oUVL69T6vEY?autoplay=1&controls=0&showinfo=0&color=white&rel=0" class="featured-video">
-                <figure style="background-image: url(./img/thumb5.jpg);background-repeat:no-repeat;">
-                  <img src="./img/thumb5.jpg" />
-                  <figcaption>000 선생님의 재미있는 코딩 강의 (03:00)</figcaption>
-                </figure>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+<body>
+	<div class="container">
+		<div class="slider">
+			<div class="slide slide1"></div>
+			<div class="slide slide2"></div>
+			<div class="slide slide3"></div>
+			<div class="slide slide4"></div>
+			<div class="slide slide1"></div>
+		</div>
 
-      
-      <section>
-        <div class="videos" id="featured-videos">
-          <div class="video-grid front-page" id="front-page-videos">
-              <h1>월별 학사일정</h1>
-		  <div class="calendar-text">아래의 ★을 클릭하시면 상세 일정을 보실 수 있습니다.</div>
-		  <div class="calendar">
-          <div class="month">
-          <ul>
-      			<li class="prev">&#10094;</li><li class="next">&#10095;</li>
-    			<li>11월<br><span style="font-size:18px">2021</span></li>
-  			</ul>
+		<header>
+			<div class="hidden-logo"><a href="index.html"><img src="img/sss2.png"></a></div>
+			<div id="menuToggle">
+				<input type="checkbox" />
+				<span></span>
+				<span></span>
+				<span></span>
+				<ul id="menu">
+					<a href="index.html">
+						<li>로그아웃</li>
+					</a>
+					<a href="mypage.html">
+						<li>마이페이지</li>
+					</a>
+					<a href="./introduction_pages/introduction.html">
+						<li>교육과정</li>
+					</a>
+					<a href="./curriculum_pages/primary_potential.html">
+						<li>학사일정</li>
+					</a>
+					<a href="./videos.html">
+						<li>영상강좌</li>
+					</a>
+					<a href="./notice.html">
+						<li>공지사항</li>
+					</a>
+				</ul>
 			</div>
-		<ul class="weekdays">
-  		<li>Mo</li>	<li>Tu</li>	<li>We</li>	<li>Th</li> <li>Fr</li> <li>Sa</li> <li>Su</li>
-		</ul>
-		<ul class="days">  
-  		<li>1</li>	<li>2</li>	<li>3</li>	<li>4</li>	<li>5</li>	<li>6</li>	<li>7</li>
-  		<li>8</li>	<li>9</li>	<li><span class="active">10</span></li>	<li>11</li>	<li>12</li>
-  		<li>13</li>	<li>14</li>	<li>15</li>	<li>16</li>	<li>17</li>	<li>18</li>	<li>19</li>
-  		<li>20</li>	<li>21</li>	<li>22</li>	<li>23</li>	<li>24</li>	<li>25</li>	<li>26</li>
-  		<li>27</li>	<li>28</li>	<li>29</li>	<li>30</li>	<li>31</li>
-		</ul>
-      </div>
-      </div>
+			<nav>
+				<div class="logo"><a href="index.html"><img src="img/sss2.png"></a></div>
+				<div class="btn1"><a href="#">&nbsp;징검다리스쿨소개&nbsp;</a>
+					<div class="btn1-hover">
+						<ul>
+							<li><a href="./introduction_pages/introduction.html">&nbsp;교육철학</a></li>
+							<li>&nbsp;걸어온 길</li>
+							<li>&nbsp;교장 인사말</li>
+							<li>&nbsp;교육위원회</li>
+						</ul>
+					</div>
+				</div>
+				<div class="btn2"><a href="#">&nbsp;교육과정&nbsp;</a>
+					<div class="btn2-hover">
+						<ul>
+							<li><a href="./curriculum.html">&nbsp;초등인재</a></li>
+							<li>&nbsp;중등인재</li>
+							<li>&nbsp;초등교양</li>
+							<li>&nbsp;중등교양</li>
+							<li class="btn2-smol">학부모 및 성인</li>
+						</ul>
+					</div>
+				</div>
+				<div class="btn3"><a href="schedule.html">&nbsp;학사일정&nbsp;</a></div>
+				<div class="btn4"><a href="videos.html">&nbsp;영상강좌&nbsp;</a></div>
+				<div class="btn5"><a href="notice.html">&nbsp;공지사항&nbsp;</a></div>
+				<div class="btn6_loggedin"><a href="#">&nbsp;마이페이지&nbsp;</a>
+					<div class="btn6-hover">
+						<ul>
+							<li><a href="./my_pages/mypage.html">&nbsp;내강의</a></li>
+							<li><a href="./my_pages/mentoring.html">&nbsp;멘토링보고서</a></li>
+							<li><a href="./my_pages/settings.html">&nbsp;정보수정</a></li>
+							<li><a href="./my_pages/letterbox.html">&nbsp;받은메시지함</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="btn7_loggedin"><a href="./index.html">&nbsp;로그아웃&nbsp;</a></div>
+				<div class="right-nav"><a href="http://www.jeongseon.go.kr/intro.html"><img
+							src="img/jeongsunlogo.png"></a>
+				</div>
+			</nav>
 	</div>
-    </section>
-  
-    </main>
-    
-    <footer>
-      <h2>
-        <ul>
-          <li><a href="index.html">홈으로</a></li><li><a href="#a">약관</a></li>
-          <li><a href="#a">개인정보처리방침</a></li><li><a href="#a">이메일무단수집거부</a></li><li><a href="#a">사이트맵</a></li>
-        </h2>
-        </ul><hr></hr>
-        <div class="copyrights">
-       <h3>
-              <p>주소 : 사북공공도서관 (우:26150)강원도 정선군 사북읍 파랑새길 33</p>
-              <p>대표전화 : 033 592-5757~8 팩스 : 033-592-5759</p>
-              <p>COPYRIGHT (C) JINGGEOMDARI SCHOOL. ALL RIGHTS RESERVED.</p>
-            </ul>
-          </div>
-       </h3>
-    </footer>
-  </div>
-  </div>
-  </body>
+	</header>
+
+	<main>
+
+		<section class="intro-banner">
+			<div class="quote-space">
+				<blockquote cite="introduction.html">
+					다함께 배우고 익히는<br />자기주도 위주의 학습 프로그램</blockquote>
+			</div> <br />
+		</section>
+		<section class="middle-banner">
+			<div class="banner-space">
+				<div class="direct-01">
+					<p><a href="./introduction_pages/introduction.html">
+							<span class="title">징검다리스쿨소개</span>
+							<br /><br />정선군 학생들의 성장을 지원하는 <br />
+							징검다리스쿨을 소개합니다<br /></a>
+					</p>
+				</div>
+				<div class="direct-02">
+					<p><a href="login.html"><span class="title">교육과정</span>
+							<br /><br />학년별 커리큘럼과
+							<br />강의내용을 확인하세요<br /></a>
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="videos" id="featured-videos">
+			<div class="video-grid front-page" id="front-page-videos">
+				<h1>인기 강좌</h1>
+				<ul class="video-list featured">
+					<li class="video featured">
+						<a data-fancybox
+							href="https://www.youtube.com/embed/oUVL69T6vEY?autoplay=1&controls=0&showinfo=0&color=white&rel=0"
+							class="featured-video">
+							<figure style="background-image: url('./img/thumb0.jpg'); background-repeat:no-repeat;">
+								<img src="./img/thumb0.jpg" />
+								<figcaption>00 선생님의 재미있는 과학 강의 (03:00)</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li class="video featured">
+						<a data-fancybox href="#a" class="featured-video">
+							<figure style="background-image: url(./img/thumb1.jpg); background-repeat:no-repeat;">
+								<img src="./img/thumb1.jpg" />
+								<figcaption>00 선생님의 재미있는 예술 강의 (03:00)</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li class="video featured">
+						<a data-fancybox
+							href="https://www.youtube.com/embed/oUVL69T6vEY?autoplay=1&controls=0&showinfo=0&color=white&rel=0"
+							class="featured-video">
+							<figure style="background-image: url(./img/thumb2.jpg);background-repeat:no-repeat;">
+								<img src="./img/thumb2.jpg" />
+								<figcaption>00 선생님의 재미있는 문학 강의 (03:00)</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li class="video featured">
+						<a data-fancybox
+							href="https://www.youtube.com/embed/oUVL69T6vEY?autoplay=1&controls=0&showinfo=0&color=white&rel=0"
+							class="featured-video">
+							<figure style="background-image: url(./img/thumb3.jpg);background-repeat:no-repeat;">
+								<img src="./img/thumb3.jpg" />
+								<figcaption>00 선생님의 재미있는 화학 강의 (03:00)</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li class="video featured">
+						<a data-fancybox
+							href="https://www.youtube.com/embed/oUVL69T6vEY?autoplay=1&controls=0&showinfo=0&color=white&rel=0"
+							class="featured-video">
+							<figure style="background-image: url(./img/thumb4.jpg); background-repeat:no-repeat;">
+								<img src="./img/thumb4.jpg" />
+								<figcaption>000 선생님의 재미있는 코딩 강의 (03:00)</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li class="video featured">
+						<a data-fancybox
+							href="https://www.youtube.com/embed/oUVL69T6vEY?autoplay=1&controls=0&showinfo=0&color=white&rel=0"
+							class="featured-video">
+							<figure style="background-image: url(./img/thumb5.jpg);background-repeat:no-repeat;">
+								<img src="./img/thumb5.jpg" />
+								<figcaption>000 선생님의 재미있는 코딩 강의 (03:00)</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li class="video featured">
+						<a data-fancybox
+							href="https://www.youtube.com/embed/oUVL69T6vEY?autoplay=1&controls=0&showinfo=0&color=white&rel=0"
+							class="featured-video">
+							<figure style="background-image: url(./img/thumb5.jpg);background-repeat:no-repeat;">
+								<img src="./img/thumb5.jpg" />
+								<figcaption>000 선생님의 재미있는 코딩 강의 (03:00)</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li class="video featured">
+						<a data-fancybox
+							href="https://www.youtube.com/embed/oUVL69T6vEY?autoplay=1&controls=0&showinfo=0&color=white&rel=0"
+							class="featured-video">
+							<figure style="background-image: url(./img/thumb5.jpg);background-repeat:no-repeat;">
+								<img src="./img/thumb5.jpg" />
+								<figcaption>000 선생님의 재미있는 코딩 강의 (03:00)</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li class="video featured">
+						<a data-fancybox
+							href="https://www.youtube.com/embed/oUVL69T6vEY?autoplay=1&controls=0&showinfo=0&color=white&rel=0"
+							class="featured-video">
+							<figure style="background-image: url(./img/thumb5.jpg);background-repeat:no-repeat;">
+								<img src="./img/thumb5.jpg" />
+								<figcaption>000 선생님의 재미있는 코딩 강의 (03:00)</figcaption>
+							</figure>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+
+		<section>
+			<div class="videos" id="featured-videos">
+				<div class="video-grid front-page" id="front-page-videos">
+					<h1>월별 학사일정</h1>
+					<div class="calendar-text">아래의 ★을 클릭하시면 상세 일정을 보실 수 있습니다.</div>
+					<div class="calendar">
+						<div class="month">
+							<ul>
+								<li class="prev">&#10094;</li>
+								<li class="next">&#10095;</li>
+								<li>11월<br><span style="font-size:18px">2021</span></li>
+							</ul>
+						</div>
+						<ul class="weekdays">
+							<li>Mo</li>
+							<li>Tu</li>
+							<li>We</li>
+							<li>Th</li>
+							<li>Fr</li>
+							<li>Sa</li>
+							<li>Su</li>
+						</ul>
+						<ul class="days">
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+							<li>7</li>
+							<li>8</li>
+							<li>9</li>
+							<li><span class="active">10</span></li>
+							<li>11</li>
+							<li>12</li>
+							<li>13</li>
+							<li>14</li>
+							<li>15</li>
+							<li>16</li>
+							<li>17</li>
+							<li>18</li>
+							<li>19</li>
+							<li>20</li>
+							<li>21</li>
+							<li>22</li>
+							<li>23</li>
+							<li>24</li>
+							<li>25</li>
+							<li>26</li>
+							<li>27</li>
+							<li>28</li>
+							<li>29</li>
+							<li>30</li>
+							<li>31</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer>
+		<h2>
+			<ul>
+				<li><a href="index.html">홈으로</a></li>
+				<li><a href="#a">약관</a></li>
+				<li><a href="#a">개인정보처리방침</a></li>
+				<li><a href="#a">이메일무단수집거부</a></li>
+				<li><a href="#a">사이트맵</a></li>
+		</h2>
+		</ul>
+		<hr>
+		</hr>
+		<div class="copyrights">
+			<h3>
+				<p>주소 : 사북공공도서관 (우:26150)강원도 정선군 사북읍 파랑새길 33</p>
+				<p>대표전화 : 033 592-5757~8 팩스 : 033-592-5759</p>
+				<p>COPYRIGHT (C) JINGGEOMDARI SCHOOL. ALL RIGHTS RESERVED.</p>
+				</ul>
+		</div>
+		</h3>
+	</footer>
+	</div>
+</body>
+
 </html>

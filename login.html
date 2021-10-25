@@ -1,106 +1,141 @@
 <!DOCTYPE html>
-<html lang="kor">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>징검다리스쿨</title>
-    <link href="./srcs/style.css" rel="stylesheet" />
-    <link href="./srcs/pages.css" rel="stylesheet" />
-    <link href="./srcs/footer.css" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="js/btns.js"></script>
-    <!-- <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script> -->
-    </head>
+<html lang="ko">
 
-    <body>
-      <header>
-        <div class="hidden-logo"><a href="index.html"><img src="./img/sss.png"></a></div>
-          <div id="menuToggle">
-            <input type="checkbox" />
-            <span class="page-toggle"></span>
-            <span class="page-toggle"></span>
-            <span class="page-toggle"></span>
-            <ul id="menu">
-              <a href="login.html"><li>로그인</li></a>
-              <a href="register.html"><li>회원가입</li></a>
-              <a href="./introduction_pages/introduction.html"><li>교육과정</li></a>
-              <a href="./curriculum_pages/primary_potential.html"><li>학사일정</li></a>
-              <a href="./videos.html"><li>영상강좌</li></a>
-              <a href="./notice.html"><li>공지사항</li></a>
-            </ul>
-        </div>
-        <nav class="page-nav">
-          <div class="logo"><a href="index.html"><img src="./img/sss.png"></a></div>
-          <div class = "btn1"><a href="#">&nbsp;징검다리스쿨소개</a>
-            <div class="btn1-hover">
-              <ul><li><a href="./introduction_pages/introduction.html">&nbsp;교육철학</a></li> <li>&nbsp;걸어온 길</li> <li>&nbsp;교장 인사말</li> <li>&nbsp;교육위원회</li></ul>
-            </div>
-          </div>
-          <div class = "btn2"><a href="#">&nbsp;교육과정</a>
-            <div class="btn2-hover">
-              <ul><li><a href="./introduction_pages/introduction.html">&nbsp;초등인재</a></li> <li>&nbsp;중등인재</li> <li>&nbsp;초등교양</li> <li>&nbsp;중등교양</li> <li class="btn2-smol">학부모 및 성인</li></ul>
-            </div></div>
-          <div class = "btn3"><a href="./schedule.html">&nbsp;학사일정&nbsp;</a></div>
-          <div class = "btn4"><a href="./videos.html">&nbsp;영상강좌&nbsp;</a></div>
-          <div class = "btn5"><a href="./notice.html">&nbsp;공지사항&nbsp;</a></div>
-          <div class = "btn6"><a href="./register.html">&nbsp;회원가입&nbsp;</a></div>
-          <div class = "btn7"><a href="./login.html">&nbsp;로그인&nbsp;</a></div>
-         
-          <div class="right-nav"><a href="http://www.jeongseon.go.kr/intro.html"><img src="./img/jeongsunlogo.png"></a></div>
-          </nav>
-    </div> 
-        
-    </header>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>징검다리스쿨</title>
+	<link href="./srcs/style.css" rel="stylesheet" />
+	<link href="./srcs/pages.css" rel="stylesheet" />
+	<link href="./srcs/footer.css" rel="stylesheet" />
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/btns.js"></script>
+	<!-- <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+</head>
 
-      <main>
-      <div class="page-main">
-        <section class="login">
-          <div class="front-text">
-          <a href="index.html"><img src="./img/home.png" /></a>&nbsp; > &nbsp;&nbsp;로그인</div>
-          <div class="login-text">
-            <p>로그인</p><hr><p>&nbsp;</p>
-            <img src="img/account.svg" />
-           <div class="login-box">
-            <div class="idForm">
-              <input type="text" class="id" placeholder="아이디">
-            </div>
-            <div class="passForm">
-              <input type="password" class="pw" placeholder="비밀번호">
-            </div>
-            <div class="checkbox"><input type="checkbox">
-              <div class="fas fa-check"></div><span>아이디 저장</span>
-            </div>
-        	</div>
-            <p></p>
-            <button type="button" class="login-btn" action="" method="" onclick="loginStudent()">
-              로그인
-            </button>
-            <div class="info-text">계정을 잃어버리신 분은 <a href="lost.html">🔒︎ 아이디 찾기 / 비밀번호 바꾸기</a>를 이용해 주십시오.</div><span>&nbsp;</span>
-            
-        </div>
-      </div>
-        </div>
+<body>
+	<header>
+		<div class="hidden-logo"><a href="index.html"><img src="./img/sss.png"></a></div>
+		<div id="menuToggle">
+			<input type="checkbox" />
+			<span class="page-toggle"></span>
+			<span class="page-toggle"></span>
+			<span class="page-toggle"></span>
+			<ul id="menu">
+				<a href="login.html">
+					<li>로그인</li>
+				</a>
+				<a href="register.html">
+					<li>회원가입</li>
+				</a>
+				<a href="./introduction_pages/introduction.html">
+					<li>교육과정</li>
+				</a>
+				<a href="./curriculum_pages/primary_potential.html">
+					<li>학사일정</li>
+				</a>
+				<a href="./videos.html">
+					<li>영상강좌</li>
+				</a>
+				<a href="./notice.html">
+					<li>공지사항</li>
+				</a>
+			</ul>
+		</div>
+		<nav class="page-nav">
+			<div class="logo"><a href="index.html"><img src="./img/sss.png"></a></div>
+			<div class="btn1"><a href="#">&nbsp;징검다리스쿨소개</a>
+				<div class="btn1-hover">
+					<ul>
+						<li><a href="./introduction_pages/introduction.html">&nbsp;교육철학</a></li>
+						<li>&nbsp;걸어온 길</li>
+						<li>&nbsp;교장 인사말</li>
+						<li>&nbsp;교육위원회</li>
+					</ul>
+				</div>
+			</div>
+			<div class="btn2"><a href="#">&nbsp;교육과정</a>
+				<div class="btn2-hover">
+					<ul>
+						<li><a href="./introduction_pages/introduction.html">&nbsp;초등인재</a></li>
+						<li>&nbsp;중등인재</li>
+						<li>&nbsp;초등교양</li>
+						<li>&nbsp;중등교양</li>
+						<li class="btn2-smol">학부모 및 성인</li>
+					</ul>
+				</div>
+			</div>
+			<div class="btn3"><a href="./schedule.html">&nbsp;학사일정&nbsp;</a></div>
+			<div class="btn4"><a href="./videos.html">&nbsp;영상강좌&nbsp;</a></div>
+			<div class="btn5"><a href="./notice.html">&nbsp;공지사항&nbsp;</a></div>
+			<div class="btn6"><a href="./register.html">&nbsp;회원가입&nbsp;</a></div>
+			<div class="btn7"><a href="./login.html">&nbsp;로그인&nbsp;</a></div>
 
-        </section>
+			<div class="right-nav"><a href="http://www.jeongseon.go.kr/intro.html"><img
+						src="./img/jeongsunlogo.png"></a></div>
+		</nav>
+		</div>
 
-      </div>
-    </main>
-      <footer>
-        <h2>
-          <ul>
-            <li><a href="index.html">홈으로</a></li><li><a href="#a">약관</a></li>
-            <li><a href="#a">개인정보처리방침</a></li><li><a href="#a">이메일무단수집거부</a></li><li><a href="#a">사이트맵</a></li>
-          </h2>
-          </ul><hr></hr>
-          <div class="copyrights">
-         <h3>
-                <p>주소 : 사북공공도서관 (우:26150)강원도 정선군 사북읍 파랑새길 33</p>
-                <p>대표전화 : 033 592-5757~8 팩스 : 033-592-5759</p>
-                <p>COPYRIGHT (C) JINGGEOMDARI SCHOOL. ALL RIGHTS RESERVED.</p>
-              </ul>
-            </div>
-         </h3>
-        </footer>
-    </div>
-    </body>
+	</header>
+
+	<main>
+		<div class="page-main">
+			<section class="login">
+				<div class="front-text">
+					<a href="index.html"><img src="./img/home.png" /></a>&nbsp; > &nbsp;&nbsp;로그인</div>
+				<div class="login-text">
+					<p>로그인</p>
+					<hr>
+					<p>&nbsp;</p>
+					<img src="img/account.svg" />
+					<div class="login-box">
+						<div class="idForm">
+							<input type="text" class="id" placeholder="아이디">
+						</div>
+						<div class="passForm">
+							<input type="password" class="pw" placeholder="비밀번호">
+						</div>
+						<div class="checkbox"><input type="checkbox">
+							<div class="fas fa-check"></div><span>아이디 저장</span>
+						</div>
+					</div>
+					<p></p>
+					<button type="button" class="login-btn" action="" method="" onclick="loginStudent()">
+						로그인
+					</button>
+					<div class="info-text">계정을 잃어버리신 분은 <a href="lost.html">🔒︎ 아이디 찾기 / 비밀번호 바꾸기</a>를 이용해 주십시오.</div>
+					<span>&nbsp;</span>
+
+				</div>
+		</div>
+		</div>
+
+		</section>
+
+		</div>
+	</main>
+	<footer>
+		<h2>
+			<ul>
+				<li><a href="index.html">홈으로</a></li>
+				<li><a href="#a">약관</a></li>
+				<li><a href="#a">개인정보처리방침</a></li>
+				<li><a href="#a">이메일무단수집거부</a></li>
+				<li><a href="#a">사이트맵</a></li>
+		</h2>
+		</ul>
+		<hr>
+		</hr>
+		<div class="copyrights">
+			<h3>
+				<p>주소 : 사북공공도서관 (우:26150)강원도 정선군 사북읍 파랑새길 33</p>
+				<p>대표전화 : 033 592-5757~8 팩스 : 033-592-5759</p>
+				<p>COPYRIGHT (C) JINGGEOMDARI SCHOOL. ALL RIGHTS RESERVED.</p>
+				</ul>
+		</div>
+		</h3>
+	</footer>
+	</div>
+</body>
+
 </html>
