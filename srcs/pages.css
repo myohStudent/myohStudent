@@ -114,7 +114,7 @@ main {margin-top:0px;}
     width: 10px;
     border-bottom: 6px solid #30d1a1;
     border-right: 6px solid #30d1a1;
-  }
+}
 #cb1, #cb2, #cb3 { 
    margin-top:20px;
 	width: 20px;
@@ -122,7 +122,6 @@ main {margin-top:0px;}
 	cursor: pointer;
 }
 .cb-text { line-height:1.5em; font-weight:800; font-size:15px; }
-
 .info-banner{
 	margin:20px;
 	height: auto;
@@ -186,9 +185,11 @@ main {margin-top:0px;}
 }
 .membership.type p{ text-align:center;}
 .verification-space { 
+    font-size:15px;
     height :30px;
     margin-top:30px;
     margin-bottom:30px;
+    text-align:center;
 }
 .mobile-verify {
     position: absolute; left: 50%; transform: translateX(-50%);
@@ -225,7 +226,7 @@ form label {
     display:inline-block; 
     width:200px; 
     text-align:left; 
-    float:left;
+    /* float:left; */
 }
 .entry-form li {
     padding-top:5px; 
@@ -242,8 +243,11 @@ form label {
     /* padding-top:2px; padding-bottom:2px; padding-left:2px; padding-right:2px; */
     padding: 5px 5px 5px 5px;
 }
-.input-year, .input-month, .input-date {
-    width:15%;
+.input-new-mobile, .input-new-parent-mobile {font-size:16px; padding:5px 5px 5px 5px;}
+.input-year, .input-month, .input-date,
+.input-year-r, .input-month-r, .input-date-r {
+    /* width:15%; */
+    width:100px;
     font-size: 16px;
     padding:5px 5px 5px 5px;
 }
@@ -258,9 +262,16 @@ form label {
     width:200px; 
 }
 .select-box {
-    display:block;
+    display:inline-block;
 }
 .regi-btn {
+    text-align:center;
+}
+.sss-quit { 
+    border-style:none;
+    font-size:19px;
+    color: #d45d48;
+    cursor: pointer;
     text-align:center;
 }
 
@@ -273,7 +284,7 @@ form label {
 ** login page
 */
 .login, .introduction, .registration {
-    padding: 0 0 px; margin:0 0px;
+    padding: 0 0px; margin:0 0px;
 }
 .registration {min-height:2100px;}
 .registration-register4terms {min-height:2500px;}
@@ -518,10 +529,8 @@ form label {
     }
     .membership.type span {font-size:15px;}
     .membership.terms span {font-size:15px;}
+}
 
-}
-@media screen and (min-width: 1340px) {
-}
 @media (min-width: 768px) and (max-width:1339) {
     .page-right-nav, .page-nav {display:none;}
     .page-container .logo {
@@ -534,18 +543,15 @@ form label {
     .progress-box span{
         font-size:10px;
     }
-    
 }
 @media screen and (max-width:885px){
     .hidden-label {display:none;}
-    form label {
-        width:700px;
-    }
-    .input-name, .input-pw, .input-pwconf, .input-email,
-.input-mobile, .input-addr2, .input-addr1, .input-sex  {
-    width:100%;
+    form label {width:700px;}
+    .input-name, .input-name-r, .input-pw, .input-pwconf, .input-email,
+    .input-mobile, .input-addr2, .input-addr1, .input-sex  {width:100%; }
+    .input-year-r, .input-month-r, .input-date-r{width:60px;}
 }
-}
+
 @media screen and (max-width: 767px) {
     .registration{height:2300px;}
     .page-container .page-nav {display:none;}
@@ -558,9 +564,9 @@ form label {
     }
     .front-text {padding: 0px 0px 0px 0px;}
     .login-text {padding: 0px 0px 0px 0px;}
-    .select-box {
-        margin-top:35px;
-    }
+    /* .select-box {
+         margin-top:35px; 
+    } */
    
     .id {width:80%;}
     .pw, .setting-pw {width:80%;}
@@ -623,7 +629,7 @@ form label {
         box-sizing: border-box;
     }
     .verify-1, .verify-2 {font-size:12px; width:100%;}
-    .verification-space {height:30px;}
+    .verification-space {height:30px; font-size:14px;}
     .login-text p {
         font-size:12px; 
         /* text-align:center;*/
