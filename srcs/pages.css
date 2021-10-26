@@ -234,7 +234,7 @@ form label {
 .red-text {
     color: #d45d48;
 }
-.input-name, .input-id, .input-pw, .input-pwconf, .input-email,
+.input-name, .input-name-r, .input-pw, .input-pwconf, .input-email,
 .input-mobile, .input-addr2, .input-addr1, .input-sex  {
     width:70%;
     /* width:550px; */
@@ -247,11 +247,15 @@ form label {
     font-size: 16px;
     padding:5px 5px 5px 5px;
 }
-
 .input-zip { 
     padding: 5px 5px 5px 5px;
     font-size:16px;
     width:100px; 
+}
+.input-id {
+    padding: 5px 5px 5px 5px;
+    font-size:16px;
+    width:200px; 
 }
 .select-box {
     display:block;
@@ -537,7 +541,7 @@ form label {
     form label {
         width:700px;
     }
-    .input-name, .input-id, .input-pw, .input-pwconf, .input-email,
+    .input-name, .input-pw, .input-pwconf, .input-email,
 .input-mobile, .input-addr2, .input-addr1, .input-sex  {
     width:100%;
 }
@@ -632,6 +636,7 @@ form label {
 @media screen and (max-width:456px){
     .registration{min-height:2500px;}
     .register-btn{width:40%;}
+    .input-id {width:100%;}
     /* .page-main{min-height:2800px;} */
 }
 @media screen and (max-width:392px){
