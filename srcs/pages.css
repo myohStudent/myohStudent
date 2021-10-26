@@ -297,7 +297,6 @@ form label {
     text-align:left;
     line-height:1em;
     color:rgb(141,141,141);
-    
 }
 .loginForm {
     position:absolute;
@@ -317,6 +316,7 @@ form label {
 .login-box {
       margin: 0 auto;
       padding: 10 10 10 10px;
+      color: rgb(141,141,141);
       /* border: 1px rgba(37, 37, 37, 0.2) solid; */
       border-radius: 5px;
       display:block;
@@ -344,15 +344,15 @@ form label {
     padding-left:10px;
 }
   
-.pw {
+.pw, .setting-pw {
     padding-left:10px;
     width: 50%;
     color: rgb(141,141,141);
     font-size:16px;
     height:25px;
     border: 1px solid lightgray;
-    border-radius:30;
 }
+.setting-pw {width:30%;}
   
 .login-btn {
     font-family: 'Nanum Gothic';
@@ -370,7 +370,21 @@ form label {
     transition: 0.4s;
     /* display:inline; */
 }
-
+.setting-btn {
+    font-family: 'Nanum Gothic';
+    font-size:0.6em;
+    margin: 10px 10 10 10px;
+    margin-top:10px;
+    width:80px;
+    height:29px;
+    border:0;
+    background-color:#3a558e;
+    border-radius:20px;
+    color:white;
+    font-weight: bold;
+    cursor:pointer;
+    transition: 0.4s;
+}
 .checkbox {
 	display: center;    align-items: center;
     position: relative;
@@ -544,7 +558,7 @@ form label {
     }
    
     .id {width:80%;}
-    .pw {width:80%;}
+    .pw, .setting-pw {width:80%;}
     .checkbox {width:70%;margin-right:0px;}
     label {font-size:14px;}
     .membership{margin-top:10px;}
@@ -581,7 +595,7 @@ form label {
     .login-btn {font-size:0.9em;}
     .register-btn{width:30%;}
     .id {width:100%;}
-    .pw {width:100%;}
+    .pw, .setting-pw {width:100%;}
     .terms-container {
         display:inline-block;
         width:100%;

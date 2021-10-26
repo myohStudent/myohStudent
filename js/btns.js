@@ -1,8 +1,3 @@
-$(document).ready(function(){
-  $(".클래스 이름").attr("class","변경 할 클래스명");
-});
-
-
 /* login button */
 function loginStudent(){
   /* 
@@ -10,6 +5,12 @@ function loginStudent(){
  window.location = "indexLoggedIn.html"; 
 }
 
+/* button for goingToSettings */
+function goToSettings(){
+  /* 
+  */
+ window.location = "profile_settings.html"; 
+}
 /* all terms checking buttons */
 $( document ).ready( function() {
   $( '.check-all' ).click( function() {
