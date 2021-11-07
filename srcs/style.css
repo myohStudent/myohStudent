@@ -195,6 +195,7 @@ li:hover {cursor:pointer;}
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
+  opacity:90%;
 }
 
 #menuToggle a {
@@ -256,7 +257,7 @@ li:hover {cursor:pointer;}
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 90px;
-  background: #ededed;
+  background: #ffffff;
   list-style-type: none;
   -webkit-font-smoothing: antialiased; /*사파리*/
   transform-origin: 0% 0%;
@@ -268,13 +269,13 @@ li:hover {cursor:pointer;}
 #menu li {
     font-family:"Nanum Gothic";
     padding: 10px 0;
-    font-size: 15px;
+    font-size: 14px;
 }
 
-.ham-a {
-    font-size: 12px;
-    font-weight: 400;
-    color: #d16b4c;
+#menu .ham-a {
+    font-size: 16px;
+    color: #5fa5ff;
+    background-color: #fffd6a;
     line-height: 0.6em;
 }
 /*  * slide from the left */
