@@ -199,7 +199,7 @@ li:hover {cursor:pointer;}
 
 #menuToggle a {
   text-decoration: none;
-  color: #232323;
+  color: #585a5d;
   transition: color 0.3s ease;
 }
 
@@ -255,21 +255,28 @@ li:hover {cursor:pointer;}
   width: 100%;
   margin: -100px 0 0 -50px;
   padding: 50px;
-  padding-top: 125px;
+  padding-top: 90px;
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased; /*사파리*/
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
+  font-weight:800;
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #menu li {
     font-family:"Nanum Gothic";
     padding: 10px 0;
-    font-size: 20px;
+    font-size: 15px;
 }
 
+.ham-a {
+    font-size: 12px;
+    font-weight: 400;
+    color: #d16b4c;
+    line-height: 0.6em;
+}
 /*  * slide from the left */
 #menuToggle input:checked ~ ul {  transform: none; }
 

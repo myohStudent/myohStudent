@@ -7,6 +7,9 @@
 ** menutoggle
 */  
   /* hamburger */
+#menu {
+    padding-left:0px;
+}
 #menuToggle .page-toggle {
     display: block;
     width: 33px;
