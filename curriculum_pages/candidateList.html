@@ -88,44 +88,27 @@
 		<div class="page-main">
 			<section class="introduction">
 				<div class="front-text">
-					<a href="../index.html"><img src="../img/home.png" /></a>&nbsp; > &nbsp;&nbsp;교육과정&nbsp; > &nbsp;중등인재</div>
+					<a href="../index.html"><img src="../img/home.png" /></a>&nbsp; > &nbsp;&nbsp;교육과정&nbsp; > &nbsp;초등인재 &nbsp; > &nbsp; 접수확인</div>
 				<div class="login-text">
 					<p></p>
-					<p>중등인재</p>
+					<p>접수확인</p>
 					<hr>
 					<p>
 						<form method="" name="" action="" target="" value>
-							학년 : &nbsp; 
-							<select name="primarySteam" class="grade-select">
-							<option value="none">선 택</option>
-							<option value="1">1학년</option>
-							<option value="2">2학년</option>0
-							<option value="3">3학년</option>
-							</select> &nbsp;
-							<button type="button" class="select-btn" id="selectPrimaryGrade" onclick="selectPrimaryGrade()">
-								확 인
-							</button><p></p>
+                            <br/><h4>신청자 리스트</h4>
+                            <br>
 							<table>
 								<thead>
 								  <tr>
-									<th scope="col">No</th><th scope="col">강좌명</th><th scope="col">교육기간</th><th scope="col">접수기간</th>
+									<th scope="col">번호</th><th scope="col">이름</th><th scope="col">연락처</th><th scope="col">신청일</th><th scope="col">접수상태</th>
 								  </tr>
 								</thead>
 								<tbody>
 								  <tr>
-									<td data-label="No">5</td><td data-label="강좌명">중등인문학2</td><td data-label="교육기간">2022.03.01 ~ 2022.07.14</td><td data-label="접수기간">02.22 09:00<br/> ~ 02.22 18:00</td>
+									<td data-label="번호">2</td><td data-label="이름">김*혁</td><td data-label="연락처">010-****-**22</td><td data-label="신청일">2022.02.10 11:39</td><td data-label="접수상태">[확인]</td>
 								  </tr>
 								  <tr>
-									<td scope="row" data-label="No">4</td><td data-label="강좌명">중등인문학1</td><td data-label="교육기간">2022.03.01 ~ 2022.07.14</td><td data-label="접수기간">02.22 09:00<br/> ~ 02.22 18:00</td>
-								  </tr>
-								  <tr>
-									<td scope="row" data-label="No">3</td><td data-label="강좌명"><a href="./courseMath.html">사고력수학</a></td><td data-label="교육기간">2022.03.01 ~ 2022.07.14</td><td data-label="접수기간">02.22 09:00<br/> ~ 02.22 18:00</td>
-								  </tr>
-								  <tr>
-									<td scope="row" data-label="No">2</td><td data-label="강좌명">디지털예술</td><td data-label="교육기간">2022.03.01 ~ 2022.07.14</td><td data-label="접수기간">02.22 09:00<br/> ~ 02.22 18:00</td>
-								  </tr>
-								  <tr>
-									<td scope="row" data-label="No">1</td><td data-label="강좌명">디지털디자인</td><td data-label="교육기간">2022.03.01 ~ 2022.07.14</td><td data-label="접수기간">02.22 09:00<br/> ~ 02.22 18:00</td>
+									<td scope="row" data-label="번호">1</td><td data-label="이름">서*림</td><td data-label="연락처">010-****-**22</td><td data-label="신청일">2022.02.10 08:30</td><td data-label="접수상태">[완료]</td>
 								  </tr>
 								</tbody>
 							  </table>
@@ -133,15 +116,11 @@
 								</thead>
 							</table>
 						</form>
-						<p></p>
-						<button type="button" class="courses-btn" id="steam1Registration" onclick="var returnValue = confirm('수강신청을 하시겠습니까?');location.href='./submitted.html';">
-							수강신청
-						</button> &nbsp; 
-						<button type="button" class="courses-btn-conf" id="steam1Confirmation" onclick="location.href='./candidateList.html';">
-							접수확인
-						</button> 
-					</p>
-					
+                        <br />
+                        <br />
+						<button type="button" class="courses-btn-conf" onclick="goBack()">
+                            이전 목록 보기
+                        </button>
 				</div>
 	</main>
 	<footer>
