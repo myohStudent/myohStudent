@@ -1,3 +1,8 @@
+/* previous page btn */
+function goBack(){
+  window.history.back();
+}
+
 /* login button */
 function loginStudent(){
   /* 

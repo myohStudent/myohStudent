@@ -53,10 +53,10 @@
 			<div class="btn1"><a href="#">&nbsp;징검다리스쿨소개</a>
             <div class=" btn1-hover">
 				<ul>
-					<li><a href="introduction.html">&nbsp;교육철학</a></li>
-					<li><a href="career.html">&nbsp;걸어온 길</a></li>
-					<li><a href="greetings.html">&nbsp;교장 인사말</a></li>
-					<li><a href="commitee.html">&nbsp;교육위원회</a></li>
+					<li><a href="../introduction_pages/introduction.html">&nbsp;교육철학</a></li>
+					<li><a href="../introduction_pages/career.html">&nbsp;걸어온 길</a></li>
+					<li><a href="../introduction_pages/greetings.html">&nbsp;교장 인사말</a></li>
+					<li><a href="../introduction_pages/commitee.html">&nbsp;교육위원회</a></li>
 				</ul>
 			</div>
 			</div>
@@ -94,11 +94,12 @@
 					<p>초등인재</p>
 					<hr>
 					<p>
-						<form>학년 : &nbsp; 
+						<form method="" name="" action="" target="" value>
+							학년 : &nbsp; 
 							<select name="primarySteam" class="grade-select">
 							<option value="none">선 택</option>
 							<option value="1">4학년</option>
-							<option value="2">5학년</option>
+							<option value="2">5학년</option>0
 							<option value="3">6학년</option>
 							</select> &nbsp;
 							<button type="button" class="select-btn" id="selectPrimaryGrade" onclick="selectPrimaryGrade()">
@@ -107,24 +108,24 @@
 							<table>
 								<thead>
 								  <tr>
-									<th>번호</th><th>강좌명</th><th>교육기간</th><th>접수기간</th>
+									<th scope="col">No</th><th scope="col">강좌명</th><th scope="col">교육기간</th><th scope="col">접수기간</th>
 								  </tr>
 								</thead>
 								<tbody>
 								  <tr>
-									<td>5</td><td>초등인문학2</td><td>2022.03.01 ~ 2022.07.14</td><td>2022.02.22 09:00 ~ 2022.02.22 18:00</td>
+									<td data-label="No">5</td><td data-label="강좌명">초등인문학2</td><td data-label="교육기간">2022.03.01 ~ 2022.07.14</td><td data-label="접수기간">02.22 09:00<br/> ~ 02.22 18:00</td>
 								  </tr>
 								  <tr>
-									<td>4</td><td>초등인문학1</td><td>2022.03.01 ~ 2022.07.14</td><td>2022.02.22 09:00 ~ 2022.02.22 18:00</td>
+									<td scope="row" data-label="No">4</td><td data-label="강좌명">초등인문학1</td><td data-label="교육기간">2022.03.01 ~ 2022.07.14</td><td data-label="접수기간">02.22 09:00<br/> ~ 02.22 18:00</td>
 								  </tr>
 								  <tr>
-									<td>3</td><td>사고력수학</td><td>2022.03.01 ~ 2022.07.14</td><td>2022.02.22 09:00 ~ 2022.02.22 18:00</td>
+									<td scope="row" data-label="No">3</td><td data-label="강좌명"><a href="./courseMath.html">사고력수학</a></td><td data-label="교육기간">2022.03.01 ~ 2022.07.14</td><td data-label="접수기간">02.22 09:00<br/> ~ 02.22 18:00</td>
 								  </tr>
 								  <tr>
-									<td>2</td><td>디지털예술</td><td>2022.03.01 ~ 2022.07.14</td><td>2022.02.22 09:00 ~ 2022.02.22 18:00</td>
+									<td scope="row" data-label="No">2</td><td data-label="강좌명">디지털예술</td><td data-label="교육기간">2022.03.01 ~ 2022.07.14</td><td data-label="접수기간">02.22 09:00<br/> ~ 02.22 18:00</td>
 								  </tr>
 								  <tr>
-									<td>1</td><td>디지털디자인</td><td>2022.03.01 ~ 2022.07.14</td><td>2022.02.22 09:00 ~ 2022.02.22 18:00</td>
+									<td scope="row" data-label="No">1</td><td data-label="강좌명">디지털디자인</td><td data-label="교육기간">2022.03.01 ~ 2022.07.14</td><td data-label="접수기간">02.22 09:00<br/> ~ 02.22 18:00</td>
 								  </tr>
 								</tbody>
 							  </table>

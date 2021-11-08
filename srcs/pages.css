@@ -88,11 +88,16 @@ main {margin-top:0px;}
 }
 table {
     width: 100%;
-    border-top: 1px solid #c2bdbd;
+    border-top: 1px solid #d1d1d1;
     border-left: 3px solid #164097;
     border-collapse:collapse;
     color:#867c7c;
     /* text-align:left; */
+}
+td a {
+    text-decoration: underline;
+    color: #3a558e;
+    background:#fbffd9;
 }
 thead { background-color:#c4e9ff;}
 th, td { 
@@ -102,6 +107,47 @@ th, td {
     font-size:15px;
 }
 
+/*vertical table*/
+.table-vertical {border:0;}
+.table-vertical thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.table-vertical tr {
+    border-bottom: 3px solid #3a558e;
+    border-top: 1px solid #d1d1d1;
+    display: block;
+    margin-bottom: .625em;
+    border-collapse: collapse;
+}
+.table-vertical td {
+    padding-right: 10px;
+    border-bottom: 1px solid #d1d1d1;
+    display: block;
+    font-size: .8em;
+    border-left: 1px solid #d1d1d1;
+    /* border-top: 1px solid #a1a1a1; */
+    border-collapse: collapse;
+}
+.table-vertical td::before {
+    content: attr(data-label);
+    float:left;
+    text-align:left;
+    font-weight: bold;
+    width:80px;
+    padding-left:10px;
+    background-color:#c4e9ff;
+}
+.table-vertical td:last-child {
+    border-bottom: 0;
+}
+.td-description { padding-left:10px; }
 /*
 ** register page
 */
@@ -611,7 +657,7 @@ form label {
     .input-name, .input-name-r, .input-pw, .input-pwconf, .input-email,
     .input-mobile, .input-addr2, .input-addr1, .input-sex  {width:100%; }
     .input-year-r, .input-month-r, .input-date-r{width:60px;}
-    th, td { font-size:13px;}
+    th, td { font-size:0.7em;}
 }
 
 @media screen and (max-width: 767px) {
@@ -656,7 +702,6 @@ form label {
         padding-bottom:15px;
         box-sizing: border-box;
     }
-    th, td { font-size:10px;}
 }
 @media screen and (max-width: 958px){
     .input-year, .input-month, .input-date, .input-zip {
@@ -701,6 +746,49 @@ form label {
         padding-top:5px; 
         padding-bottom:10px;
     }
+    table {border:0;}
+    /*table responsible*/
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
+      table tr {
+        border-bottom: 3px solid #3a558e;
+        border-top: 1px solid #d1d1d1;
+        display: block;
+        margin-bottom: .625em;
+        border-collapse: collapse;
+
+      }
+      table td {
+        padding-right: 10px;
+        border-bottom: 1px solid #d1d1d1;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+        border-left: 1px solid #d1d1d1;
+        /* border-top: 1px solid #a1a1a1; */
+        border-collapse: collapse;
+      }
+      table td::before {
+        padding-right: 10px;
+        content: attr(data-label);
+        font-weight: bold;
+        width:80px;
+        float:left;
+        text-align:left;
+        padding-left:10px;
+        background-color:#ffffff;
+      }
+      table td:last-child {
+        border-bottom: 0;
+      }
 } 
 @media screen and (max-width:456px){
     .registration{min-height:2500px;}
