@@ -64,7 +64,7 @@ main {margin-top:0px;}
     padding:5px 5px 5px 5px;
 }
 
-.courses-btn {
+.courses-btn, .courses-btn-culture {
     font-family:Nanum Gothic;
     font-size:15px;
     font-weight:800;
@@ -73,9 +73,15 @@ main {margin-top:0px;}
     border-radius:20px;
     color:#ffffff;
     background-color: #3a558e;
+    margin:5px 5px 5px 5px;
     padding:10px 20px 10px 20px;
 }
-.courses-btn-conf{
+.courses-btn-culture {
+    font-size:13px;
+    margin:5px 5px 5px 5px;
+    padding:8px 10px 8px 10px;
+}
+.courses-btn-conf, .courses-btn-culture-conf {
     font-family:Nanum Gothic;
     font-size:15px;
     cursor:pointer;
@@ -83,8 +89,14 @@ main {margin-top:0px;}
     border-radius:20px;
     color:#ffffff;
     font-weight:800;
+    margin:5px 5px 5px 5px;
     background-color: #a1a1a1;
     padding:10px 20px 10px 20px;
+}
+.courses-btn-culture-conf {
+    font-size:13px;
+    margin:5px 5px 5px 5px;
+    padding:8px 10px 8px 10px;
 }
 table {
     width: 100%;
@@ -831,6 +843,11 @@ form label {
         padding-left:10px;
         background-color:#ffffff;
       }
+      .table-culture td {font-size:12px;}
+      .table-culture td::before{
+        width:100px;
+        font-size:12px;
+      }
       table td:last-child {
         border-bottom: 0;
       }
@@ -846,6 +863,7 @@ form label {
     .course-timetable td::before {
         width:60px;
     }
+  
 } 
 @media screen and (max-width:456px){
     .registration{min-height:2500px;}

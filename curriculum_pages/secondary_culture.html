@@ -31,7 +31,7 @@
 				<li>
 					<a href="../introduction_pages/greetings.html" class="ham-a">교장 인사말</a>&nbsp;
 					<a href="../introduction_pages/commitee.html" class="ham-a">교육위원회</a>
-				</li>				
+				</li>
 				<li>교육과정</li>
 				<li>
 					<a href="primary_steam.html" class="ham-a">초등인재</a>&nbsp;&nbsp;
@@ -40,25 +40,31 @@
 				<li>
 					<a href="primary_culture.html" class="ham-a">초등교양</a>&nbsp;
 					<a href="secondary_culture.html" class="ham-a">중등교양</a>
-				</li>		
+				</li>
 				<li><a href="parents.html" class="ham-a">학부모 및 성인</a></li>
-				
-				<a href="primary_steam.html"><li>학사일정</li></a>
-				<a href="../videos.html"><li>영상강좌</li></a>
-				<a href="../notice.html"><li>공지사항</li></a>
+
+				<a href="primary_steam.html">
+					<li>학사일정</li>
+				</a>
+				<a href="../videos.html">
+					<li>영상강좌</li>
+				</a>
+				<a href="../notice.html">
+					<li>공지사항</li>
+				</a>
 			</ul>
 		</div>
 		<nav class="page-nav">
 			<div class="logo"><a href="../index.html"><img src="../img/sss.png"></a></div>
 			<div class="btn1"><a href="#">&nbsp;징검다리스쿨소개</a>
-            <div class=" btn1-hover">
-				<ul>
-					<li><a href="../introduction_pages/introduction.html">&nbsp;교육철학</a></li>
-					<li><a href="../introduction_pages/career.html">&nbsp;걸어온 길</a></li>
-					<li><a href="../introduction_pages/greetings.html">&nbsp;교장 인사말</a></li>
-					<li><a href="../introduction_pages/commitee.html">&nbsp;교육위원회</a></li>
-				</ul>
-			</div>
+				<div class=" btn1-hover">
+					<ul>
+						<li><a href="../introduction_pages/introduction.html">&nbsp;교육철학</a></li>
+						<li><a href="../introduction_pages/career.html">&nbsp;걸어온 길</a></li>
+						<li><a href="../introduction_pages/greetings.html">&nbsp;교장 인사말</a></li>
+						<li><a href="../introduction_pages/commitee.html">&nbsp;교육위원회</a></li>
+					</ul>
+				</div>
 			</div>
 			<div class="btn2"><a href="#">&nbsp;교육과정</a>
 				<div class="btn2-hover">
@@ -88,12 +94,97 @@
 		<div class="page-main">
 			<section class="introduction">
 				<div class="front-text">
-					<a href="../index.html"><img src="../img/home.png" /></a>&nbsp; > &nbsp;&nbsp;교육과정</div>
+					<a href="../index.html"><img src="../img/home.png" /></a>&nbsp; > &nbsp;&nbsp;교육과정&nbsp; >
+					&nbsp;중등교양</div>
 				<div class="login-text">
+					<p></p>
 					<p>중등교양</p>
 					<hr>
-					<p>&nbsp;</p>
-
+					<p>
+						<form method="" name="" action="" target="" value>
+							학년 : &nbsp;
+							<select name="primarySteam" class="grade-select">
+								<option value="none">선 택</option>
+								<option value="1">1학년</option>
+								<option value="2">2학년</option>0
+								<option value="3">3학년</option>
+							</select> &nbsp;
+							<button type="button" class="select-btn" id="selectPrimaryGrade"
+								onclick="selectPrimaryGrade()">
+								확 인
+							</button>
+							<p></p>
+							<table class="table-culture">
+								<thead>
+									<tr>
+										<th scope="col">번호</th>
+										<th scope="col">강좌명</th>
+										<th scope="col">교육기간</th>
+										<th scope="col">접수기간</th>
+										<th scope="col">정원/신청인원</th>
+										<th scope="col">수강신청/접수확인</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td data-label="번호">3</td>
+										<td data-label="강좌명">중등인문학2</td>
+										<td data-label="교육기간">2022.03.01 ~ 2022.07.14</td>
+										<td data-label="접수기간">02.22 09:00<br /> ~ 02.22 18:00</td>
+										<td data-label="정원/신청인원">2/10</td>
+										<td data-label="수강신청/접수확인">
+											<button type="button" class="courses-btn-culture" id="steam4Registration"
+												onclick="var returnValue = confirm('수강신청을 하시겠습니까?');location.href='./submitted.html';">
+												수강신청
+											</button>
+											<button type="button" class="courses-btn-culture-conf"
+												id="steam4Confirmation" onclick="location.href='./candidateList.html';">
+												접수확인
+											</button>
+										</td>
+									</tr>
+									<tr>
+										<td scope="row" data-label="번호">2</td>
+										<td data-label="강좌명"><a href="./courseMath.html">사고력수학</a></td>
+										<td data-label="교육기간">2022.03.01 ~ 2022.07.14</td>
+										<td data-label="접수기간">02.22 09:00<br /> ~ 02.22 18:00</td>
+										<td data-label="정원/신청인원">2/10</td>
+										<td data-label="수강신청/접수확인">
+											<button type="button" class="courses-btn-culture" id="steam4Registration"
+												onclick="var returnValue = confirm('수강신청을 하시겠습니까?');location.href='./submitted.html';">
+												수강신청
+											</button>
+											<button type="button" class="courses-btn-culture-conf"
+												id="steam4Confirmation" onclick="location.href='./candidateList.html';">
+												접수확인
+											</button>
+										</td>
+									</tr>
+									<tr>
+										<td scope="row" data-label="번호">1</td>
+										<td data-label="강좌명">중등인문학1</td>
+										<td data-label="교육기간">2022.03.01 ~ 2022.07.14</td>
+										<td data-label="접수기간">02.22 09:00<br /> ~ 02.22 18:00</td>
+										<td data-label="정원/신청인원">2/10</td>
+										<td data-label="수강신청/접수확인">
+											<button type="button" class="courses-btn-culture" id="steam4Registration"
+												onclick="var returnValue = confirm('수강신청을 하시겠습니까?');location.href='./submitted.html';">
+												수강신청
+											</button>
+											<button type="button" class="courses-btn-culture-conf"
+												id="steam4Confirmation" onclick="location.href='./candidateList.html';">
+												접수확인
+											</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							</tr>
+							</thead>
+							</table>
+						</form>
+						<p></p>
+					</p>
 				</div>
 	</main>
 	<footer>
