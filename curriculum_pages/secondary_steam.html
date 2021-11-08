@@ -88,12 +88,60 @@
 		<div class="page-main">
 			<section class="introduction">
 				<div class="front-text">
-					<a href="../index.html"><img src="../img/home.png" /></a>&nbsp; > &nbsp;&nbsp;교육과정</div>
+					<a href="../index.html"><img src="../img/home.png" /></a>&nbsp; > &nbsp;&nbsp;교육과정&nbsp; > &nbsp;초등인재</div>
 				<div class="login-text">
-					<p>중등인재</p>
+					<p></p>
+					<p>초등인재</p>
 					<hr>
-					<p>&nbsp;</p>
-
+					<p>
+						<form method="" name="" action="" target="" value>
+							학년 : &nbsp; 
+							<select name="primarySteam" class="grade-select">
+							<option value="none">선 택</option>
+							<option value="1">1학년</option>
+							<option value="2">2학년</option>0
+							<option value="3">3학년</option>
+							</select> &nbsp;
+							<button type="button" class="select-btn" id="selectPrimaryGrade" onclick="selectPrimaryGrade()">
+								확 인
+							</button><p></p>
+							<table>
+								<thead>
+								  <tr>
+									<th scope="col">No</th><th scope="col">강좌명</th><th scope="col">교육기간</th><th scope="col">접수기간</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td data-label="No">5</td><td data-label="강좌명">중등인문학2</td><td data-label="교육기간">2022.03.01 ~ 2022.07.14</td><td data-label="접수기간">02.22 09:00<br/> ~ 02.22 18:00</td>
+								  </tr>
+								  <tr>
+									<td scope="row" data-label="No">4</td><td data-label="강좌명">중등인문학1</td><td data-label="교육기간">2022.03.01 ~ 2022.07.14</td><td data-label="접수기간">02.22 09:00<br/> ~ 02.22 18:00</td>
+								  </tr>
+								  <tr>
+									<td scope="row" data-label="No">3</td><td data-label="강좌명"><a href="./courseMath.html">사고력수학</a></td><td data-label="교육기간">2022.03.01 ~ 2022.07.14</td><td data-label="접수기간">02.22 09:00<br/> ~ 02.22 18:00</td>
+								  </tr>
+								  <tr>
+									<td scope="row" data-label="No">2</td><td data-label="강좌명">디지털예술</td><td data-label="교육기간">2022.03.01 ~ 2022.07.14</td><td data-label="접수기간">02.22 09:00<br/> ~ 02.22 18:00</td>
+								  </tr>
+								  <tr>
+									<td scope="row" data-label="No">1</td><td data-label="강좌명">디지털디자인</td><td data-label="교육기간">2022.03.01 ~ 2022.07.14</td><td data-label="접수기간">02.22 09:00<br/> ~ 02.22 18:00</td>
+								  </tr>
+								</tbody>
+							  </table>
+									</tr>
+								</thead>
+							</table>
+						</form>
+						<p></p>
+						<button type="button" class="courses-btn" id="steam4Registration"  onclick="location.href='./submitted.html'">
+							수강신청
+						</button> &nbsp; 
+						<button type="button" class="courses-btn-conf" id="steam4Confirmation" onclick="steam4Conf()">
+							확   인
+						</button> 
+					</p>
+					
 				</div>
 	</main>
 	<footer>

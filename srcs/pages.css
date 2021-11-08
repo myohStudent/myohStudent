@@ -108,8 +108,8 @@ th, td {
 }
 
 /*vertical table*/
-.table-vertical {border:0;}
-.table-vertical thead {
+.table-vertical, .course-timetable {border:0;}
+.table-vertical thead, .course-timetable thead {
     border: none;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -119,6 +119,35 @@ th, td {
     position: absolute;
     width: 1px;
 }
+.course-timetable tr {
+    display: block;
+    margin-bottom: .625em;
+    border-collapse: collapse;
+}
+.course-timetable td {
+    width:50%;
+    margin:auto;
+    padding-right: 10px;
+    border-bottom: 1px solid #d1d1d1;
+    border-top: 1px solid #d1d1d1;
+    display: block;
+    font-size: .8em;
+    border-left: 1px solid #d1d1d1;
+    /* border-top: 1px solid #a1a1a1; */
+    border-collapse: collapse;
+}
+.course-timetable td:before {
+    content: attr(data-label);
+    float:left;
+    text-align:center;
+    font-weight: bold;
+    width:80px;
+    /* padding-left:10px; */
+    background-color:#c4e9ff;
+}
+.course-timetable td:last-child {  
+    border-bottom: 1px solid #d1d1d1;
+ }
 .table-vertical tr {
     border-bottom: 3px solid #3a558e;
     border-top: 1px solid #d1d1d1;
@@ -148,6 +177,21 @@ th, td {
     border-bottom: 0;
 }
 .td-description { padding-left:10px; }
+.course-description {
+    padding:20px 20px 20px 20px;
+    border-radius:30px;
+    box-shadow:0px 4px 5px rgba(0, 0, 0, 0.4);
+    margin-top:20px;
+    margin-bottom:50px;
+    margin-left:5px;
+    margin-right:5px;
+    display:block;
+    background-color:rgb(255, 247, 175);
+    font-size:15px;
+    text-align:left;
+    color:#707070;
+}
+
 /*
 ** register page
 */
@@ -657,7 +701,7 @@ form label {
     .input-name, .input-name-r, .input-pw, .input-pwconf, .input-email,
     .input-mobile, .input-addr2, .input-addr1, .input-sex  {width:100%; }
     .input-year-r, .input-month-r, .input-date-r{width:60px;}
-    th, td { font-size:0.7em;}
+    th, td { font-size:0.7em;}0
 }
 
 @media screen and (max-width: 767px) {
@@ -748,6 +792,7 @@ form label {
     }
     table {border:0;}
     /*table responsible*/
+   
     table thead {
         border: none;
         clip: rect(0 0 0 0);
@@ -789,6 +834,18 @@ form label {
       table td:last-child {
         border-bottom: 0;
       }
+      .course-description { font-size:12px;}
+      .course-timetable tr {
+        border-top:0;
+        border-bottom:0;
+    }
+    .course-timetable td {
+        width:100%;
+        text-align:center;
+    }
+    .course-timetable td::before {
+        width:60px;
+    }
 } 
 @media screen and (max-width:456px){
     .registration{min-height:2500px;}
