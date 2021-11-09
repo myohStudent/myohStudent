@@ -32,7 +32,7 @@
 				<li>
 					<a href="./introduction_pages/greetings.html" class="ham-a">교장 인사말</a>&nbsp;
 					<a href="./introduction_pages/commitee.html" class="ham-a">교육위원회</a>
-				</li>				
+				</li>
 				<li>교육과정</li>
 				<li>
 					<a href="./curriculum_pages/primary_steam.html" class="ham-a">초등인재</a>&nbsp;&nbsp;
@@ -41,12 +41,18 @@
 				<li>
 					<a href="./curriculum_pages/primary_culture.htmll" class="ham-a">초등교양</a>&nbsp;
 					<a href="./curriculum_pages/secondary_culture.html" class="ham-a">중등교양</a>
-				</li>		
+				</li>
 				<li><a href="./curriculum_pages/parents.html" class="ham-a">학부모 및 성인</a></li>
-				
-				<a href="./curriculum_pages/primary_steam.html"><li>학사일정</li></a>
-				<a href="./videos.html"><li>영상강좌</li></a>
-				<a href="./notice.html"><li>공지사항</li></a>
+
+				<a href="./curriculum_pages/primary_steam.html">
+					<li>학사일정</li>
+				</a>
+				<a href="./videos.html">
+					<li>영상강좌</li>
+				</a>
+				<a href="./notice.html">
+					<li>공지사항</li>
+				</a>
 			</ul>
 		</div>
 		<nav class="page-nav">
@@ -89,28 +95,34 @@
 		<div class="page-main">
 			<section class="login">
 				<div class="front-text">
-					<a href="index.html"><img src="./img/home.png" /></a>&nbsp; > &nbsp;&nbsp;로그인</div>
+					<a href="index.html"><img src="./img/home.png" /></a>&nbsp; > &nbsp;&nbsp;로그인&nbsp; > 아이디 찾기</div>
 				<div class="login-text">
-					<p>로그인</p>
+					<p>아이디 찾기</p>
 					<hr>
 					<p>&nbsp;</p>
-					<img src="img/account.svg" />
 					<div class="login-box">
-						<div class="idForm">
-							<input type="text" class="id" placeholder="아이디">
-						</div>
-						<div class="passForm">
-							<input type="password" class="pw" placeholder="비밀번호">
-						</div>
-						<div class="checkbox"><input type="checkbox">
-							<div class="fas fa-check"></div><span>아이디 저장</span>
-						</div>
+						<form>
+							<table class="lost">
+								<tr>
+									<td>이름</td>
+									<td><input type="text" class="lost-input" id="name" placeholder="이름을 입력해주세요"></td>
+								</tr>
+								<tr>
+									<td>전화번호</td>
+								<td><input type="text" class="lost-input" id="name" placeholder="- 없이 전화번호 입력"></td>
+								</tr>
+							</table>
+							<button type="button" class="select-btn" id="smsConfirmation" onclick="smsConfirm()">
+								SMS본인인증
+							</button>
 					</div>
 					<p></p>
-					<button type="button" class="login-btn" action="" method="" onclick="loginStudent()">
-						로그인
+					<button type="button" class="login-btn" action="" method="" onclick="location.href='yourID.html'">
+						확   인
 					</button>
-					<div class="info-text">로그인 계정을 잃어버리신 분은 <a href="lostID.html">🔒︎ 아이디 찾기</a> / <a href="changePassword.html">비밀번호 바꾸기</a>를 이용해 주십시오.</div>
+					</form>
+					<div class="info-text">로그인 계정을 잃어버리신 분은 <a href="lostID.html">🔒︎ 아이디 찾기</a> / <a
+							href="changePassword.html">비밀번호 바꾸기</a>를 이용해 주십시오.</div>
 					<span>&nbsp;</span>
 
 				</div>

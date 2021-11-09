@@ -622,6 +622,27 @@ form label {
 .none-deco { text-decoration: none; color: rgb(133,133,133);}
 
 /*
+** lost
+*/
+.lost {
+    border:none;
+    margin: 0 auto;
+    width:70%;
+    font-size:16px;
+    padding-left:20px;
+}
+.lost td, .lost tr {border:none;}
+.lost td {text-align:left;}
+.lost-input {
+    width:100%;
+    margin:5px 5px 5px 5px;
+    font-size:15px;
+    padding-left:10px;
+    color: rgb(141,141,141);
+    height:25px;
+    border: 1px solid lightgray;
+}
+/*
 ** media
 */
 
@@ -801,6 +822,13 @@ form label {
     .entry-form li {
         padding-top:5px; 
         padding-bottom:10px;
+    }
+    .lost {
+        border:none;
+        margin: 0 auto;
+        width:100%;
+        font-size:15px;
+        padding-left:20px;
     }
     table {border:0;}
     /*table responsible*/
