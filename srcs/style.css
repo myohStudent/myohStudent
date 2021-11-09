@@ -136,7 +136,7 @@ nav li {display:inline-block; margin-top:0px;padding-left:1vw;}
 .btn4 a, .btn5 a, .btn6 a, .btn6_loggedin a, .btn7 a, .btn7_loggedin a {border-right: solid 1px #ffffff;}
 .dropdown { overflow: hidden; display:inline-block; width:100%;height:auto;}
 
-.btn1-hover, .btn2-hover, .btn6-hover
+.btn1-hover, .btn2-hover, .btn3-hover, .btn6-hover
 {
     font-size:17px;
     color:#585a5d;
@@ -157,17 +157,19 @@ nav li {display:inline-block; margin-top:0px;padding-left:1vw;}
 
 .btn1-hover {width:100%;}
 .btn2-hover {width:100px; margin-left: -8px;}
+.btn3-hover {width:100px;}
 .btn6-hover {width:110%; font-size:13px; margin-left: -8px;}
 .btn2-smol {font-size:13px;}
-.btn1-hover ul, .btn2-hover ul, .btn6-hover ul { margin-left:-10px;}
-.btn1-hover a, .btn2-hover a, .btn6-hover a { color: #585a5d; border-left:none; border-right:none;}
-.page-nav .btn1-hover, .page-nav .btn2-hover, .page-nav .btn6-hover { background-color: #3a558e; color:#ffffff;}
-.page-nav .btn1-hover a, .page-nav .btn2-hover a, .page-nav .btn6-hover a {color:#ffffff;}
+.btn1-hover ul, .btn2-hover ul, .btn3-hover ul, .btn6-hover ul { margin-left:-10px;}
+.btn1-hover a, .btn2-hover a, .btn3-hover a, .btn6-hover a { color: #585a5d; border-left:none; border-right:none;}
+.page-nav .btn1-hover, .page-nav .btn2-hover, .page-nav .btn3-hover, .page-nav .btn6-hover { background-color: #3a558e; color:#ffffff;}
+.page-nav .btn1-hover a, .page-nav .btn2-hover a, .page-nav .btn3-hover, .page-nav .btn6-hover a {color:#ffffff;}
 
 li:hover {cursor:pointer;}
 
 .btn1:hover .btn1-hover {display:block;}
 .btn2:hover .btn2-hover {display:block;}
+.btn3:hover .btn3-hover {display:block;}
 .btn6:hover .btn6-hover {display:block;}
 .btn6_loggedin:hover .btn6-hover {display:block;}
 /* when logged in */
