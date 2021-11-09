@@ -632,8 +632,8 @@ form label {
     padding-left:20px;
 }
 .lost td, .lost tr {border:none;}
-.lost td {text-align:left;}
-.lost-input {
+.lost td {font-size:15px;text-align:left;}
+.lost-input, .lost-password {
     width:100%;
     margin:5px 5px 5px 5px;
     font-size:15px;
@@ -641,6 +641,9 @@ form label {
     color: rgb(141,141,141);
     height:25px;
     border: 1px solid lightgray;
+}
+.lost-password {
+    font-size:13px;
 }
 /*
 ** media
