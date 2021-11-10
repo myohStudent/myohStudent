@@ -666,7 +666,7 @@ form label {
         line-height: 25px;
         text-align: center;
     }
-    .page-nav a {color:#164097;}
+    /* .page-nav a {color:#164097;} */
     .btn1, .btn2, .btn3, .btn4, .btn5, .btn6, .btn6_loggedin, .btn7, .btn7_loggedin { border-left:none;border-right:none;}
     .progress-box {
         width:100%;
