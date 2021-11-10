@@ -157,11 +157,15 @@ nav li {display:inline-block; margin-top:0px;padding-left:1vw;}
 
 .btn1-hover {width:100%;}
 .btn2-hover {width:100px; margin-left: -8px;}
-.btn3-hover {width:100px;}
+.btn3-hover {width:100px; font-size:13px;}
 .btn6-hover {width:110%; font-size:13px; margin-left: -8px;}
 .btn2-smol {font-size:13px;}
 .btn1-hover ul, .btn2-hover ul, .btn3-hover ul, .btn6-hover ul { margin-left:-10px;}
-.btn1-hover a, .btn2-hover a, .btn3-hover a, .btn6-hover a { color: #585a5d; border-left:none; border-right:none;}
+.btn1-hover a, .btn2-hover a, .btn3-hover a, .btn6-hover a {
+     color: #585a5d;
+     border-left:none; 
+     border-right:none;
+}
 .page-nav .btn1-hover, .page-nav .btn2-hover, .page-nav .btn3-hover, .page-nav .btn6-hover { background-color: #3a558e; color:#ffffff;}
 .page-nav .btn1-hover a, .page-nav .btn2-hover a, .page-nav .btn3-hover, .page-nav .btn6-hover a {color:#ffffff;}
 

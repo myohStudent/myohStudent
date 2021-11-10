@@ -27,10 +27,10 @@
 
  /*header*/
 
-.page-nav .btn1 > a,.page-nav .btn2 > a, .page-nav .btn3 > a,.page-nav .btn4 > a,
+.page-nav .btn1 > a,.page-nav .btn2 > a, .page-nav .btn3 > a, .page-nav .btn4 > a,
 .page-nav .btn5 > a,.page-nav .btn6 > a, .page-nav .btn6_loggedin > a, .page-nav .btn7 > a, .page-nav .btn7_loggedin > a  { color:#164097;}
 .page-right-nav {margin-top: -80px;}
-  
+.btn3-hover a {color:#ffffff;}
 /* main */
 main {margin-top:0px;}
 .page-main { 
