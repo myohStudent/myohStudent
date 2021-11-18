@@ -9,7 +9,9 @@
 	<link href="./srcs/grid.css" rel="stylesheet">
 	<link href="./srcs/footer.css" rel="stylesheet">
 	<link href="./srcs/dropdown.css" rel="stylesheet">
-	<link href="./srcs/calendar.css" rel="stylesheet">
+	<!-- <link href="./srcs/monthlyCal.css" rel="stylesheet" /> -->
+	<script src="./js/calendarTest.js"></script>
+	<!-- <link href="./srcs/calendar.css" rel="stylesheet"> -->
 	<script src="js/index.js"></script>
 	<script src="js/jquery-3.2.1.min.js"></script>
 </head>
@@ -229,12 +231,29 @@
 		</div>
 	</section>
 	<section>
-		<div class="videos" id="featured-videos2">
-			<div class="video-grid front-page" id="front-page-videos2">
+		<div class="monthly-table-shortcut" id="monthlyTableShortcut">
 				<h1>월별 학사일정</h1>
 				<div class="calendar-text">아래의 일자를 클릭하시면 상세 일정을 보실 수 있습니다.</div>
 				<br />
-				<div class="calendar">
+				<a href="./schedule/monthlySchedule.html">
+				<table class="scriptCalendar">
+					<thead>
+						<tr>
+							<td onClick="prevCalendar();" style="cursor:pointer;">&#60;&#60;</td>
+							<td colspan="5">
+								<span id="calYear">YYYY</span>년
+								<span id="calMonth">MM</span>월
+							</td>
+							<td onClick="nextCalendar();" style="cursor:pointer;">&#62;&#62;</td>
+						</tr>
+						<tr>
+							<td>일</td><td>월</td><td>화</td><td>수</td><td>목</td><td>금</td><td>토</td>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</a>
+				<!-- <div class="calendar">
 					<div class="month">
 						<ul>
 							<li class="prev">❮</li>
@@ -284,8 +303,7 @@
 						<li>30</li>
 						<li>31</li>
 					</ul>
-				</div>
-			</div>
+				</div> -->
 		</div>
 	</section>
 </main>
