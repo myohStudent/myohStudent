@@ -422,8 +422,9 @@ blockquote:before,blockquote:after {
 }
 
 /*calendar*/
-
+.first-row { background-color:#c4e9ff;}
 .monthly-table-shortcut {
+    background-color:rgb(255, 251, 248);
     max-width: 1280px;
     margin: 0 auto;
     padding: 2em 5em 5em 5em;
@@ -441,16 +442,18 @@ blockquote:before,blockquote:after {
 .scriptCalendar { 
     text-align:center; 
     width:100%;
+    border-style:1px solid #d1d1d1;
   }
-  .scriptCalendar > thead > tr > td { width:5vw;height:5vh; }
+  .scriptCalendar > thead > tr > td { width:5vw;height:5vh;}
   .scriptCalendar > thead > tr:first-child > td { font-weight:bold; }
-  .scriptCalendar > thead > tr:last-child > td { background-color:rgb(185, 255, 206); }
+  .scriptCalendar > thead > tr:last-child > td { background-color:rgb(255, 251, 193); }
   .scriptCalendar > tbody > tr > td { 
     text-align:left;
     padding:5px;
     vertical-align:top;
     width:5vw;
     height:7vh;
+    
   }
 
 

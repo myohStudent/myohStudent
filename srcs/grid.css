@@ -7,74 +7,8 @@
          url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.woff2) format('woff2'),
          url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.woff) format('woff'),
          url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.ttf) format('truetype');
-
-        }
-
-
-/*
- page-grid
-*/
-.video-grid-page {
-  display: flex;
-    flex-wrap:wrap;
-    padding:5px;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.img-grid{
-  border-radius:10px;
-  width:100%;
-}
-.heading{
-  text-align:center;
-  font-weight:Bold;
-  font-family: 'Poppins', sans-serif;
-  }
-.text{
-  text-align:center;
-  font-weight:bold;
-  font-size:12px;
-  padding:15px;
-  font-family: 'Poppins', sans-serif;
- }
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  width:calc(25% - 22px);
-  margin:10px;
-  border-radius:10px;
-	position: relative;
 }
 
-.delete-icon {
-	position: absolute;
-	top: 16px;
-	right: 16px;
-	
-	background-color: rgba(0, 0, 0, 0.7);
-	padding: 10px;
-	border-radius: 50%;
-	color: rgba(255, 255, 255, 0.8);
-	cursor: pointer;
-}
-
-@media (max-width: 990px) {
-  .card {
-    width: calc(33.33% - 22px)
-  }
-}
-
-@media (max-width: 768px) {
-  .card {
-    width: calc(50% - 22px);
-  }
-}
-
-@media (max-width: 400px) {
-  .card {
-    width: 100%;
-  }
-}
 /* indexGrid */
 
 .videos {
@@ -87,7 +21,7 @@
   max-width: 1280px;
   line-height:2.5em;
   margin: 0 auto;
-  padding: 2em 2em 0em 2em;
+  /* padding: 2em 2em 0em 2em; */
   color: rgb(100,100,100);
 }
 .video-grid.front-page {
@@ -180,7 +114,6 @@ a{
   html { box-sizing: border-box; height: 100%; overflow-y: scroll; font-size: 62.5%; }
   *, *:before, *:after { box-sizing: inherit; }
   body {
-      background: #fff;
       color: #444;
   }
     

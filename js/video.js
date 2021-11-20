@@ -3,7 +3,7 @@ var cardGrid = document.getElementById('video-grid');
 var videoArr = [
   {
     "id": "1",
-    "title": "하이든&메르의 디지털음악 ",
+    "title": "Croissants | Flour and Stone",
     "thumbnail": "https://i.vimeocdn.com/video/600595198_390x220.webp"
   },
   {
@@ -96,6 +96,7 @@ function generateVideoCard(videoData) {
 
   return card;
 }
+
 
 for(var i=0; i<videoArr.length; i++) {
   generateVideoCard(videoArr[i]);
