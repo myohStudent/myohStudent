@@ -205,8 +205,8 @@ th, td {
       left:50%;
       margin-top: 0px;
   }
-  .front-text {padding: 0px 0px 0px 0px;}
-  .login-text {padding: 0px 0px 0px 0px;}
+  .front-text {padding: 20px 0px 0px 0px;}
+  /* .login-text {padding: 0px 0px 0px 0px;} */
   /* .select-box {
        margin-top:35px; 
   } */  
