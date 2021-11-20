@@ -452,6 +452,7 @@ form label {
 .login, .introduction, .registration {
     padding: 0 0px; margin:0 0px;
     margin-bottom:20px;
+   
 }
 .registration {min-height:2100px;}
 .registration-register4terms {min-height:2500px;}
@@ -466,10 +467,10 @@ form label {
     font-size:16px;
 }
 .login-text {
-    max-width: 100%;
+    max-width: 900px;
     line-height:1.5em;
     margin: 0 auto;
-    padding: 1em 2em 0em 2em;
+    padding: 1em 1em 0em 1em;
     font-size:18px;
     text-align: center;
 }

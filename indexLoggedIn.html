@@ -17,6 +17,7 @@
 	<link href="./srcs/calendar.css" rel="stylesheet" />
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/btns.js"></script>
+	<script src="js/calendarTest.js"></script>
 	<!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
 </head>
 
@@ -39,13 +40,13 @@
 				<span></span>
 				<ul id="menu">
 					<ul class="click">
-						<li><a href="login.html"><img src="./img/loginIcon.svg" width="11px"/> 로그인</a></li>
+						<li><a href="login.html"><img src="./img/loginIcon.svg" width="11px" /> 로그아웃</a></li>
 					</ul>
 					<ul class="click">
-						<li><a href="register.html"><img src="./img/pencil.svg" width="11px"/> 회원가입</a></li>
+						<li><a href="register.html"><img src="./img/pencil.svg" width="11px" /> 마이페이지</a></li>
 					</ul>
 					<ul class="click">
-						<li><img src="./img/SSS.svg" width="19px"/> 징검다리스쿨소개
+						<li><img src="./img/SSS.svg" width="19px" /> 징검다리스쿨소개
 							<ul class="sub">
 								<li>
 									<a href="./introduction_pages/introduction.html" class="ham-a">교육철학</a>
@@ -96,7 +97,7 @@
 						</li>
 					</ul>
 					<ul class="click">
-						<li><a href="./videos.html"><img src="./img/video.svg" width="15px"/> 영상강좌</a>
+						<li><a href="./videos.html"><img src="./img/video.svg" width="15px" /> 영상강좌</a>
 						</li>
 					</ul>
 					<ul class="click">
@@ -279,62 +280,85 @@
 
 
 		<section>
-			<div class="videos" id="featured-videos">
-				<div class="video-grid front-page" id="front-page-videos">
-					<h1>월별 학사일정</h1>
-					<div class="calendar-text">아래의 ★을 클릭하시면 상세 일정을 보실 수 있습니다.</div>
-					<div class="calendar">
-						<div class="month">
-							<ul>
-								<li class="prev">&#10094;</li>
-								<li class="next">&#10095;</li>
-								<li>11월<br><span style="font-size:18px">2021</span></li>
-							</ul>
-						</div>
-						<ul class="weekdays">
-							<li>Mo</li>
-							<li>Tu</li>
-							<li>We</li>
-							<li>Th</li>
-							<li>Fr</li>
-							<li>Sa</li>
-							<li>Su</li>
-						</ul>
-						<ul class="days">
-							<li>1</li>
-							<li>2</li>
-							<li>3</li>
-							<li>4</li>
-							<li>5</li>
-							<li>6</li>
-							<li>7</li>
-							<li>8</li>
-							<li>9</li>
-							<li><span class="active">10</span></li>
-							<li>11</li>
-							<li>12</li>
-							<li>13</li>
-							<li>14</li>
-							<li>15</li>
-							<li>16</li>
-							<li>17</li>
-							<li>18</li>
-							<li>19</li>
-							<li>20</li>
-							<li>21</li>
-							<li>22</li>
-							<li>23</li>
-							<li>24</li>
-							<li>25</li>
-							<li>26</li>
-							<li>27</li>
-							<li>28</li>
-							<li>29</li>
-							<li>30</li>
-							<li>31</li>
+			<div class="monthly-table-shortcut" id="monthlyTableShortcut">
+				<h1>월별 학사일정</h1>
+				<div class="calendar-text">아래의 일자를 클릭하시면 상세 일정을 보실 수 있습니다.</div>
+				<br />
+				<a href="./schedule/monthlySchedule.html">
+					<table class="scriptCalendar">
+						<thead>
+							<tr>
+								<td onClick="prevCalendar();" style="cursor:pointer;">&#60;&#60;</td>
+								<td colspan="5">
+									<span id="calYear">YYYY</span>년
+									<span id="calMonth">MM</span>월
+								</td>
+								<td onClick="nextCalendar();" style="cursor:pointer;">&#62;&#62;</td>
+							</tr>
+							<tr>
+								<td>일</td>
+								<td>월</td>
+								<td>화</td>
+								<td>수</td>
+								<td>목</td>
+								<td>금</td>
+								<td>토</td>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</a>
+				<!-- <div class="calendar">
+					<div class="month">
+						<ul>
+							<li class="prev">❮</li>
+							<li class="next">❯</li>
+							<li>2021년 11월<br></li>
 						</ul>
 					</div>
-				</div>
+					<ul class="weekdays">
+						<li>Mo</li>
+						<li>Tu</li>
+						<li>We</li>
+						<li>Th</li>
+						<li>Fr</li>
+						<li>Sa</li>
+						<li>Su</li>
+					</ul>
+					<ul class="days">
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
+						<li>7</li>
+						<li>8</li>
+						<li>9</li>
+						<li><span class="active">10</span></li>
+						<li>11</li>
+						<li>12</li>
+						<li>13</li>
+						<li>14</li>
+						<li>15</li>
+						<li>16</li>
+						<li>17</li>
+						<li>18</li>
+						<li>19</li>
+						<li>20</li>
+						<li>21</li>
+						<li>22</li>
+						<li>23</li>
+						<li>24</li>
+						<li>25</li>
+						<li>26</li>
+						<li>27</li>
+						<li>28</li>
+						<li>29</li>
+						<li>30</li>
+						<li>31</li>
+					</ul>
+				</div> -->
 			</div>
 		</section>
 
