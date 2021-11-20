@@ -425,9 +425,13 @@ blockquote:before,blockquote:after {
 .first-row { background-color:#c4e9ff;}
 .monthly-table-shortcut {
     background-color:rgb(255, 251, 248);
-    max-width: 1280px;
+
     margin: 0 auto;
     padding: 2em 5em 5em 5em;
+}
+.table-cont {
+    max-width:1280px;
+    margin: 0 auto;
 }
 .monthly-table-shortcut h1 {
     line-height:2.5em;
@@ -436,6 +440,7 @@ blockquote:before,blockquote:after {
     color: rgb(100,100,100);
   }
 .calendar-text { 
+    
     color: rgb(100,100,100);
     text-align:right;
 }
