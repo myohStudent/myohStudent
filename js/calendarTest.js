@@ -5,7 +5,7 @@
 
     var today = new Date(); // @param 전역 변수, 오늘 날짜 / 내 컴퓨터 로컬을 기준으로 today에 Date 객체를 넣어줌
     var date = new Date();  // @param 전역 변수, today의 Date를 세어주는 역할
-    var eventString = ["시험날","휴강", "세미나"];
+    var eventString = ["특강","행사", "기타"];
     
     /**
      * @brief   이전달 버튼 클릭

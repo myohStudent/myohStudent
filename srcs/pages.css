@@ -37,7 +37,7 @@ main {margin-top:0px;}
     background-color:rgb(245, 244, 244);
     border-top: solid 1px #d5d6da;
     margin-top:0px;
-    padding: 50px;
+    padding: 10px;
 	line-height:1.5em;
 }
 /*
@@ -404,7 +404,8 @@ form label {
     /* width:550px; */
     font-size:16px;
     /* padding-top:2px; padding-bottom:2px; padding-left:2px; padding-right:2px; */
-    padding: 5px 5px 5px 5px;
+    padding-top: 5px;
+    padding-bottom:5px;
 }
 .input-new-mobile, .input-new-parent-mobile {font-size:16px; padding:5px 5px 5px 5px;}
 .input-year, .input-month, .input-date,
@@ -420,7 +421,9 @@ form label {
     width:100px; 
 }
 .input-id {
-    padding: 5px 5px 5px 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
     font-size:16px;
     width:200px; 
 }
@@ -448,6 +451,7 @@ form label {
 */
 .login, .introduction, .registration {
     padding: 0 0px; margin:0 0px;
+    margin-bottom:20px;
 }
 .registration {min-height:2100px;}
 .registration-register4terms {min-height:2500px;}

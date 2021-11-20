@@ -247,7 +247,7 @@ li:hover {cursor:pointer;}
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: #888888;
 }
 #menuToggle input:checked ~ span:nth-last-child(3){
   opacity: 0;
@@ -260,11 +260,15 @@ li:hover {cursor:pointer;}
 /* menu toggle content */
 #menu {
   position: absolute;
-  width: 100%;
+  width: 300px;
+  padding-left:0px;
+  padding-right:0px;
+  padding-bottom:50px;
   margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 90px;
-  background: #ffffff;
+  /* padding: 50px; */
+  padding-top: 95px;
+  color:#4e4e4e;
+  background: rgb(240, 240, 240);
   list-style-type: none;
   -webkit-font-smoothing: antialiased; /*사파리*/
   transform-origin: 0% 0%;
@@ -275,15 +279,27 @@ li:hover {cursor:pointer;}
 
 #menu li {
     font-family:"Nanum Gothic";
-    padding: 10px 0;
-    font-size: 14px;
-}
-
-#menu .ham-a {
+    color:#505050;
+    padding: 0px 0;
+    line-height: 2.5em;
     font-size: 16px;
-    color: #5fa5ff;
-    background-color: #fffd6a;
-    line-height: 0.6em;
+    /* border-bottom:1px solid rgb(199, 199, 199); */
+}
+#menu ul.click li {
+    /* border-top:1px solid rgba(199, 199, 199, 0.7); */
+    border-bottom:1px solid rgba(199, 199, 199, .7);
+    border-collapse:collapse;
+}
+#menu ul.sub {
+    background-color:#5fa5ff;
+    margin-left:0px;
+    padding:0px 0px 0px 0px;
+}
+#menu ul.sub li { border-bottom:1px solid rgba(228, 228, 228,0.5);}
+#menu .ham-a {
+    font-size: 15px;
+    color: #232323;
+    line-height: 0.7em;
 }
 /*  * slide from the left */
 #menuToggle input:checked ~ ul {  transform: none; }
