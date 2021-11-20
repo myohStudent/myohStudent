@@ -6,11 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>징검다리스쿨</title>
 	<link href="./srcs/style.css" rel="stylesheet" />
+	<link href="./srcs/grid.css" rel="stylesheet" />
 	<link href="./srcs/pages.css" rel="stylesheet" />
 	<link href="./srcs/footer.css" rel="stylesheet" />
 	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="https://kit.fontawesome.com/35c398e458.js" crossorigin="anonymous"></script>
 	<!-- <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script> -->
 	<script src="js/btns.js"></script>
+	<script src="js/video.js"></script>
 </head>
 
 <body>
@@ -23,13 +26,13 @@
 			<span class="page-toggle"></span>
 			<ul id="menu">
 				<ul class="click">
-					<li><a href="login.html"><img src="./img/loginIcon.svg" width="11px"/> 로그인</a></li>
+					<li><a href="login.html"><img src="./img/loginIcon.svg" width="11px" /> 로그인</a></li>
 				</ul>
 				<ul class="click">
-					<li><a href="register.html"><img src="./img/pencil.svg" width="11px"/> 회원가입</a></li>
+					<li><a href="register.html"><img src="./img/pencil.svg" width="11px" /> 회원가입</a></li>
 				</ul>
 				<ul class="click">
-					<li><img src="./img/SSS.svg" width="19px"/> 징검다리스쿨소개
+					<li><img src="./img/SSS.svg" width="19px" /> 징검다리스쿨소개
 						<ul class="sub">
 							<li>
 								<a href="./introduction_pages/introduction.html" class="ham-a">교육철학</a>
@@ -80,7 +83,7 @@
 					</li>
 				</ul>
 				<ul class="click">
-					<li><a href="./videos.html"><img src="./img/video.svg" width="15px"/> 영상강좌</a>
+					<li><a href="./videos.html"><img src="./img/video.svg" width="15px" /> 영상강좌</a>
 					</li>
 				</ul>
 				<ul class="click">
@@ -130,28 +133,28 @@
 		</div>
 
 	</header>
-
 	<main>
 		<div class="page-main">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id quam eget dolor bibendum blandit non vitae
-			lectus. Duis sed pulvinar ipsum, sit amet lacinia justo. Aenean nec arcu lobortis, euismod lacus ut, mollis
-			nisl. Maecenas erat mauris, hendrerit quis mattis et, blandit a leo. Phasellus elementum diam nec sem
-			maximus cursus. Mauris eget euismod turpis. Curabitur aliquam tortor eu tristique blandit. Nulla venenatis,
-			ipsum vel vestibulum vehicula, mauris nisl gravida dui, quis ultrices lectus massa in neque. Pellentesque
-			habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam commodo in justo
-			vitae maximus. Ut ac nulla quis tortor dignissim tempus id vel eros. Mauris est est, ultrices sollicitudin
-			leo a, viverra maximus nisi. Etiam sed quam sem.
+			<section class="login">
+				<div class="front-text">
+					<a href="index.html"><img src="./img/home.png" /></a>&nbsp; > &nbsp;&nbsp;영상강좌
+				</div>
 
-			Sed eu lorem eleifend, condimentum augue sed, consectetur arcu. Morbi accumsan sem id eleifend hendrerit.
-			Nam eget lectus in turpis laoreet mattis id nec nulla. Proin vulputate eleifend eros non volutpat. Donec
-			rutrum nec neque ac rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-			cubilia curae; Praesent scelerisque molestie ornare. Duis porttitor consectetur sem, condimentum egestas
-			erat ornare at. Suspendisse ex est, condimentum ut vehicula eget, consectetur sit amet mi. Quisque blandit
-			efficitur sapien, at pulvinar ante eleifend ut. Phasellus laoreet purus tellus, et feugiat mi sollicitudin
-			ut. Mauris venenatis ante quis luctus ullamcorper. Praesent viverra orci non laoreet efficitur. Donec
-			dapibus rutrum orci a fermentum.
+				<div class="login-text">
+					<p>영상강좌</p>
+					<hr>
+				</div>
+				<br />
+				<div id="video-grid" class="video-grid-page">
 
+
+				</div>
+
+				<br />
+
+			</section>
 		</div>
+
 	</main>
 	<footer>
 		<h2>
