@@ -588,9 +588,9 @@ blockquote:before,blockquote:after {
     footer h2{font-size: 12px;}
     .copyrights {font-size:9px;}
 
-    blockquote { font-size:16px;}
-.middle-banner .banner-space .direct-01 a {background-size: auto 50px; font-size:14px;}
-.middle-banner .banner-space .direct-02 a {background-size: auto 60px; font-size:14px;}
+    blockquote { font-size:18px;}
+.middle-banner .banner-space .direct-01 a {background-size: auto 50px; font-size:16px;}
+.middle-banner .banner-space .direct-02 a {background-size: auto 60px; font-size:16px;}
 .middle-banner .banner-space .direct-01 > p, 
 .middle-banner .banner-space .direct-02 > p  {
     display: block;
@@ -614,7 +614,7 @@ blockquote:before,blockquote:after {
     height:100%;
     vertical-align: top;
     text-align:left;
-    font-size:15px;
+    font-size:17px;
 }
 .monthly-table-shortcut {
     padding: 1em 1em 1em 1em;
