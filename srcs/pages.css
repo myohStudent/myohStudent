@@ -474,7 +474,7 @@ form label {
     font-size:18px;
     text-align: center;
 }
-.login-text img { width:100px;}
+.login-profile { width:100px;} 
 .login-text p {text-align:left; color: rgb(141, 141, 141);}
 .login-text hr{ border:1px solid lightgray;}
 .login-text h4 {

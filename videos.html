@@ -6,14 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>징검다리스쿨</title>
 	<link href="./srcs/style.css" rel="stylesheet" />
+	<link href="./srcs/grid.css" rel="stylesheet" />
 	<link href="./srcs/pages.css" rel="stylesheet" />
 	<link href="./srcs/footer.css" rel="stylesheet" />
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="https://kit.fontawesome.com/35c398e458.js" crossorigin="anonymous"></script>
 	<!-- <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script> -->
 	<script src="js/btns.js"></script>
-	<script src="js/video.js"></script>
-	<link href="./srcs/pageGrid.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -143,17 +142,14 @@
 				<div class="login-text">
 					<p>영상강좌</p>
 					<hr>
+					<br />
+					<div id="class-grid" class="grid-container">
+					<!-- video.js -->
+					</div>
+					<br />
 				</div>
-				<br />
-
-				<br />
-
 			</section>
 		</div>
-		<div class="heading" id="main-heading"><h2>Video Grid</h2></div>
-        <div id="video-grid" class="container">
-        </div>
-
 	</main>
 	<footer>
 		<h2>
@@ -176,7 +172,6 @@
 		</div>
 		</h3>
 	</footer>
-	</div>
 </body>
-
+<script src="js/video.js"></script>
 </html>
