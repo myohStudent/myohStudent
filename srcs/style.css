@@ -43,7 +43,7 @@ h2, h3, h4{color:#7a7a7a;}
 html,body { 
     margin: 0px;
     padding: 0px;
-    background-color: rgb(228, 228, 231);
+    background-color: rgb(223, 219, 219);
     width:100%;
     overflow-x:clip;
     overflow-y:auto;
@@ -51,18 +51,22 @@ html,body {
 .container { width: 100%; }
 header{text-align:center; justify-content: center; align-items:center; margin-top:0px; padding-top:0px; }
 main {
-    font-size:15px; color:rgb(128, 128, 128);
+    font-size:15px; color:rgb(158, 158, 158);
     text-decoration-line: none;
     margin-top:50vh;
     padding: 0 0px;
     font-size: 1.5rem; line-height: 1.2;
     font-family: 'Nanum Gothic', 'Lato', Calibri, Arial, sans-serif;;
 }
+.index-main {background-color: #f3f3f3;}
 
 ul { list-style: none; width:100%; 
      padding-left:0px;
 }
-
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration-line: none;
+}
 
 nav, .page-nav{ 
     text-decoration:none;
@@ -372,6 +376,7 @@ blockquote:before,blockquote:after {
     padding-bottom: 270px;
     height: 40px;
     background-color: rgb(255, 255, 242);
+    /* padding: 2em 5em 3em 5em; */
 }
 
 .middle-banner .banner-space {
@@ -394,6 +399,7 @@ blockquote:before,blockquote:after {
     font-size:17px;
     background-repeat:no-repeat;
     background-position:90% 80%;
+    text-decoration-line: none;
 }
 .middle-banner .banner-space .direct-02 a {
     background-color:rgb(255, 247, 175);
@@ -404,6 +410,7 @@ blockquote:before,blockquote:after {
     color:rgb(100, 100, 100);
     background-position:90% 80%;
     font-size:17px;
+    text-decoration-line: none;
 }
 .middle-banner .banner-space > div a {
     overflow:hidden;
@@ -421,13 +428,16 @@ blockquote:before,blockquote:after {
 
 .title {
     font-weight:700;
-    font-size:21px;
+       font-size:21px;
 }
+
 /* popular lectures*/
 .popular-lectures{
-    max-width:1200px;
+    max-width:1280px;
     text-align:left;
     margin:0 auto; 
+    padding: 2em 5em 3em 5em;
+    
 }
 
 /*calendar*/
@@ -436,41 +446,41 @@ blockquote:before,blockquote:after {
     background-color:rgb(255, 251, 248);
 
     margin: 0 auto;
-    padding: 2em 5em 5em 5em;
+    padding: 2em 5em 3em 5em;
 }
 .table-cont {
     max-width:1280px;
     margin: 0 auto;
 }
-.monthly-table-shortcut h1 {
+.monthly-table-shortcut h1, .popular-lectures h1 {
     line-height:2.5em;
     margin: 0 auto;
     /* padding: 2em 2em 0em 2em; */
     color: rgb(100,100,100);
   }
 .calendar-text { 
-    
     color: rgb(100,100,100);
     text-align:right;
+    font-size:15px;
 }
 .scriptCalendar { 
     text-align:center; 
     width:100%;
-    border-style:1px solid #d1d1d1;
+    font-size:15px;
+    text-decoration-line: none;
+    color:#7e7e80;
   }
-  .scriptCalendar > thead > tr > td { width:5vw;height:5vh;}
-  .scriptCalendar > thead > tr:first-child > td { font-weight:bold; }
-  .scriptCalendar > thead > tr:last-child > td { background-color:rgb(255, 251, 193); }
+  .scriptCalendar > thead > tr > td { width:5vw;height:5vh;text-decoration-line: none;}
+  .scriptCalendar > thead > tr:first-child > td { font-weight:bold;text-decoration-line: none; }
+  .scriptCalendar > thead > tr:last-child > td { background-color:rgb(255, 251, 193); text-decoration-line: none;}
   .scriptCalendar > tbody > tr > td { 
     text-align:left;
     padding:5px;
     vertical-align:top;
     width:5vw;
     height:7vh;
-    
+    text-decoration-line: none;  
   }
-
-
 /*
 ** media query
 */
@@ -579,8 +589,8 @@ blockquote:before,blockquote:after {
     .copyrights {font-size:9px;}
 
     blockquote { font-size:16px;}
-.middle-banner .banner-space .direct-01 a {background-size: auto 50px;}
-.middle-banner .banner-space .direct-02 a {background-size: auto 60px;}
+.middle-banner .banner-space .direct-01 a {background-size: auto 50px; font-size:14px;}
+.middle-banner .banner-space .direct-02 a {background-size: auto 60px; font-size:14px;}
 .middle-banner .banner-space .direct-01 > p, 
 .middle-banner .banner-space .direct-02 > p  {
     display: block;
@@ -607,9 +617,10 @@ blockquote:before,blockquote:after {
     font-size:15px;
 }
 .monthly-table-shortcut {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2em 2em 2em 2em;
+    padding: 1em 1em 1em 1em;
+}
+.popular-lectures {
+    padding: 1em 1em 1em 1em;
 }
 .calendar-text { 
    font-size:12px;

@@ -7,7 +7,7 @@
          url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.woff2) format('woff2'),
          url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.woff) format('woff'),
          url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.ttf) format('truetype');
-}
+        }
 
 /*pageGrid*/
 
@@ -16,19 +16,29 @@
   grid-template-columns: auto auto auto;
  /* flex-wrap:wrap;  padding:5px;  flex-direction: row;  justify-content: center;  align-items: center; */
 }
-.text{ text-align:center; font-size:15px; font-weight:bold; padding-bottom:10px;  }
+.text { 
+  text-align:center; 
+  font-size:15px;
+  font-weight:bold;
+  padding-bottom:10px;
+}
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(47, 47, 47, 0.2);
   position: relative;
   margin:20px;
 }
-.card img {width:100%;}
+.card img {
+  width:100%;
+}
+
 @media (max-width: 990px) {
   .grid-container{ 
     grid-template-columns: auto auto;
   }
 }
+
 @media (max-width: 520px) {
   .grid-container{ 
     grid-template-columns: auto;
+  }
 }

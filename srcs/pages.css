@@ -451,8 +451,7 @@ form label {
 */
 .login, .introduction, .registration {
     padding: 0 0px; margin:0 0px;
-    margin-bottom:20px;
-   
+    margin-bottom:50px;
 }
 .registration {min-height:2100px;}
 .registration-register4terms {min-height:2500px;}
@@ -902,13 +901,13 @@ form label {
   
 } 
 @media screen and (max-width:456px){
-    .registration{min-height:2500px;}
+    /* .registration{min-height:2500px;} */
     .register-btn{width:40%;}
     .input-id {width:100%;}
     /* .page-main{min-height:2800px;} */
 }
 @media screen and (max-width:392px){
-    .registration{min-height:3000px;}
-    .registration-register4terms {min-height:2800px;}
+    /* .registration{min-height:3000px;}
+    .registration-register4terms {min-height:2800px;} */
     /* .page-main{min-height:3400px;} */
 }
