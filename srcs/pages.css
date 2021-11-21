@@ -48,13 +48,14 @@ main {margin-top:0px;}
 /*
 ** curriculum pages
 */
-.grade-select {
+.grade-select, .year-select, .semester-select {
     width:100px;
     font-size: 16px;
     padding:2px 2px 2px 2px;
     font-size:17px;
 }
-.select-btn {
+.hidden-br {display:none;}
+.select-btn, .mentoring-select-btn {
     font-family:Nanum Gothic;
     font-size:13px;
     cursor:pointer;
@@ -933,6 +934,15 @@ form label {
     .register-btn{width:40%;}
     .input-id {width:100%;}
     /* .page-main{min-height:2800px;} */
+    /* .year-select, .semester-select {
+        width:100px;
+    }
+     */
+     .hidden-br { display:block;}
+    .mentoring-select-btn {
+        width:180px;
+        margin:20px 20px 20px 20px;
+    }
 }
 @media screen and (max-width:392px){
     /* .registration{min-height:3000px;}

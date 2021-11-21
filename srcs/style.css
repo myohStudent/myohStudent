@@ -360,12 +360,12 @@ blockquote:before,blockquote:after {
  blockquote:before {
     content: '“';
     top:48%;
-    left:-15%;
+    left:-20%;
  }
  blockquote:after {
     content: '”';
 	top: 72%;
-    right: -15%;
+    right: -20%;
 }
 
 /* middle */
@@ -588,7 +588,15 @@ blockquote:before,blockquote:after {
     footer h2{font-size: 12px;}
     .copyrights {font-size:9px;}
 
-    blockquote { font-size:18px;}
+    blockquote:before {
+       
+        left:-15%;
+     }
+     blockquote:after {
+       top:80%;
+        right: -15%;
+    }
+    blockquote {font-size:18px;}
 .middle-banner .banner-space .direct-01 a {background-size: auto 50px; font-size:16px;}
 .middle-banner .banner-space .direct-02 a {background-size: auto 60px; font-size:16px;}
 .middle-banner .banner-space .direct-01 > p, 
