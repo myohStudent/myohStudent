@@ -49,20 +49,24 @@ var classArr = [
 ]
 
 function generateClassCard(classData) {
-  /* <div class="card">
-                  <img src="https://i.vimeocdn.com/video/726986673_390x220.webp" alt="Heart of soba" class="img-grid" style="font-size: 24px"/>
-                   <i class="fas fa-trash"></i>
-                  <div class="text">The Heart Of Soba</div>
-              </div> */
+    var card = document.createElement('div');
+    card.className = "card";
+    card.id = classData.id;
+    console.log(card)
+    // card.onmouseover = function(){
+    //   this.style.cursor='default';
+    //   this.style.borderBottom = "3px solid orange";
 
-  var card = document.createElement('div');
-  card.className = "card";
-  card.id = classData.id;
-  console.log(card)
-  card.onclick = function() {
+    // }
+    // card.onmouseout = function(){
+    //   this.style.cursor='pointer';
+    //   this.style.borderBottom = "3px solid #3a558e;";
+    // }
+    card.onclick = function() {
 
-    alert('Card Clicked for => ' + classData.title);
-  }
+      window.location = "./openCourses/videoLecture00.html"; 
+    /*window.location= ""'classData.title' + '.html'"";*/
+    }
 
   var thumbnail = document.createElement('img');
   thumbnail.src = classData.thumbnail;
@@ -81,7 +85,8 @@ function generateClassCard(classData) {
   return card;
 }
 
-
 for(var i=0; i<classArr.length; i++) {
   generateClassCard(classArr[i]);
 }
+
+$('.card').css('cursor', 'pointer');

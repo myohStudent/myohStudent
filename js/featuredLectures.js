@@ -61,7 +61,8 @@ function generateClassCard(classData) {
   console.log(card)
   card.onclick = function() {
 
-    alert('Card Clicked for => ' + classData.title);
+   window.location= "./openCourses/videoLecture00.html"; 
+  /*window.location= ""'classData.title' + '.html'"";*/
   }
 
   var thumbnail = document.createElement('img');
