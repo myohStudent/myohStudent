@@ -468,7 +468,23 @@ form label {
     cursor: pointer;
     text-align:center;
 }
+/* my pages */
 
+.table-letterbox {
+    border-style:none;
+}
+.table-letterbox td, .table-letterbox tr, .table-letterbox thead, .table-letterbox thead th {
+    border-left-style:none;
+    border-right-style:none;
+}
+
+.table-letterbox thead th {
+    background-color: #fffcd6;
+}
+.table-letterbox td a {
+    font-weight: bold;
+    background-color: #d6f0ff;
+}
 /*
 ** registration success / failed
 */
@@ -832,7 +848,7 @@ form label {
         display:inline-block;
         width:100%;
     }
-    
+    .letter-num{display:none;}
     .checkbox {width:80%;right:40%;}
     .terms-box {width:100%;}
     .register-btn {font-size:12px;}
