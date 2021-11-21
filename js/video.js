@@ -49,24 +49,24 @@ var classArr = [
 ]
 
 function generateClassCard(classData) {
-    var card = document.createElement('div');
-    card.className = "card";
-    card.id = classData.id;
-    console.log(card)
-    // card.onmouseover = function(){
-    //   this.style.cursor='default';
-    //   this.style.borderBottom = "3px solid orange";
+  var card = document.createElement('div');
+  card.className = "card";
+  card.id = classData.id;
+  console.log(card)
+  // card.onmouseover = function(){
+  //   this.style.cursor='default';
+  //   this.style.borderBottom = "3px solid orange";
 
-    // }
-    // card.onmouseout = function(){
-    //   this.style.cursor='pointer';
-    //   this.style.borderBottom = "3px solid #3a558e;";
-    // }
-    card.onclick = function() {
+  // }
+  // card.onmouseout = function(){
+  //   this.style.cursor='pointer';
+  //   this.style.borderBottom = "3px solid #3a558e;";
+  // }
+  card.onclick = function () {
 
-      window.location = "./openCourses/videoLecture00.html"; 
+    window.location = "./openCourses/videoLecture00.html";
     /*window.location= ""'classData.title' + '.html'"";*/
-    }
+  }
 
   var thumbnail = document.createElement('img');
   thumbnail.src = classData.thumbnail;
@@ -78,14 +78,14 @@ function generateClassCard(classData) {
   title.innerHTML = classData.title;
 
   card.appendChild(thumbnail);
- 
+
   card.appendChild(title);
 
   cardGrid.appendChild(card);
   return card;
 }
 
-for(var i=0; i<classArr.length; i++) {
+for (var i = 0; i < classArr.length; i++) {
   generateClassCard(classArr[i]);
 }
 

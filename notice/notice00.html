@@ -8,6 +8,7 @@
     <link href="../srcs/style.css" rel="stylesheet" />
     <link href="../srcs/pages.css" rel="stylesheet" />
     <link href="../srcs/footer.css" rel="stylesheet" />
+    <link href="../srcs/grid.css" rel="stylesheet" />
     <script src="../js/jquery-3.2.1.min.js"></script>
     <script src="../js/btns.js"></script>
     <!-- <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script> -->
@@ -93,10 +94,10 @@
             <div class="btn1"><a href="#">&nbsp;징검다리스쿨소개</a>
                 <div class=" btn1-hover">
                     <ul>
-                        <li><a href="../introduction_pages/introduction.html">&nbsp;교육철학</a></li>
-                        <li><a href="../introduction_pages/career.html">&nbsp;걸어온 길</a></li>
-                        <li><a href="../introduction_pages/greetings.html">&nbsp;교장 인사말</a></li>
-                        <li><a href="../introduction_pages/commitee.html">&nbsp;교육위원회</a></li>
+                        <li><a href="introduction.html">&nbsp;교육철학</a></li>
+                        <li><a href="career.html">&nbsp;걸어온 길</a></li>
+                        <li><a href="greetings.html">&nbsp;교장 인사말</a></li>
+                        <li><a href="commitee.html">&nbsp;교육위원회</a></li>
                     </ul>
                 </div>
             </div>
@@ -135,25 +136,47 @@
         <div class="page-main">
             <section class="introduction">
                 <div class="front-text">
-                    <a href="../index.html"><img src="../img/home.png" /></a>&nbsp; > &nbsp;&nbsp;교육과정&nbsp; >
-                    &nbsp;초등인재</div>
+                    <a href="../index.html"><img src="../img/home.png" /></a>&nbsp; > &nbsp;&nbsp;공지사항</div>
                 <div class="login-text">
                     <p></p>
-                    <p>초등인재</p>
+                    <p>공지사항</p>
                     <hr>
                     <p>
-                        <br>
-                        <h3>이미 신청한 강좌입니다.</h3>
-                    </p>
-                    <br>
-                    <div>
-                        <button type="button" class="courses-btn-conf" onclick="goBack()">
-                            돌아가기
-                        </button>
-                        <p></p>
-                    </div>
+                        <form method="" name="" action="" target="" value>
+                            <table class="table-vertical notice">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">제목</th>
+                                        <th scope="col">작성일</th>
+                                        <th scope="col">조회수</th>
+                                        <th scope="col">내용</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label="제목">징검다리스쿨 초등인재 모집</td>
+                                        <td data-label="작성일">2022.03.17</td>
+                                        <td data-label="조회수">1</td>
+                                        <td data-label="내용">
+                                            <div class="notice-card">
+                                                <img src="../notice/imgs/elementary4.jpg" />
+                                            </div>
+                                            <p class="sub-text">
+                                                징검다리스쿨에서는 오는 2022년도 신입생을 모집합니다. 대상은 초등학교 4학년이며 어쩌구 저쩌구 어쩌구 저쩌구 어쩌구 저쩌구
+                                                징검다리스쿨에서는 오는 2022년도 신입생을 모집합니다. 대상은 초등학교 4학년이며 어쩌구 저쩌구 어쩌구 저쩌구 어쩌구 저쩌구
+                                            </p><br />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
 
+                            <button type="button" class="courses-btn-conf" onclick="goBack()">
+                                이전 목록 보기
+                            </button>
                 </div>
+                </form>
+                <p></p>
+        </div>
     </main>
     <footer>
         <h2>
