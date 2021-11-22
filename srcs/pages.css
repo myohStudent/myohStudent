@@ -143,6 +143,9 @@ th, td {
 }
 .table-vertical.message td:last-child {min-height:100px;}
 .letter-text {padding-top:30px;padding-bottom:30px;}
+
+/**/
+
 .course-timetable tr {
     display: block;
     margin-bottom: .625em;
@@ -496,6 +499,20 @@ form label {
     color:#707070;
     background-color:rgba(0,0,0,0);
     text-decoration: underline;
+}
+.round-btn {
+    height: 30px;
+    background-color: rgb(231, 174, 136);
+    border-radius:50%;
+    border: none;
+    color: white;
+    line-height:0.5em;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 /*
 ** registration success / failed
