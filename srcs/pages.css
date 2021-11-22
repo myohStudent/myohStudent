@@ -111,7 +111,7 @@ table {
 td a {
     text-decoration: underline;
     color: #3a558e;
-    background:#fbffd9;
+    /* background:#fbffd9; */
 }
 thead { background-color:#c4e9ff;}
 th, td { 
@@ -133,6 +133,16 @@ th, td {
     position: absolute;
     width: 1px;
 }
+.table-vertical.message td {
+    text-align: left;
+}
+.table-vertical.message td:before {
+    background-color: antiquewhite;
+    width:60px;
+    margin-right:10px;
+}
+.table-vertical.message td:last-child {min-height:100px;}
+.letter-text {padding-top:30px;padding-bottom:30px;}
 .course-timetable tr {
     display: block;
     margin-bottom: .625em;
@@ -483,7 +493,9 @@ form label {
 }
 .table-letterbox td a {
     font-weight: bold;
-    background-color: #d6f0ff;
+    color:#707070;
+    background-color:rgba(0,0,0,0);
+    text-decoration: underline;
 }
 /*
 ** registration success / failed
@@ -901,7 +913,6 @@ form label {
         display: block;
         margin-bottom: .625em;
         border-collapse: collapse;
-
       }
       table td {
         padding-right: 10px;
@@ -930,6 +941,18 @@ form label {
       }
       table td:last-child {
         border-bottom: 0;
+      }
+      .table-letterbox td {
+        text-align:left;
+        
+      }
+      .table-letterbox td::before {
+          width:50px;
+          background-color:#fffcd6;
+      }
+      .table-letterbox tr {
+          border: 1px solid #bfbfbf;
+          box-shadow:1px 1px 1px 1px rgba(194, 192, 188, 0.5); 
       }
       .course-description { font-size:12px;}
       .course-timetable tr {

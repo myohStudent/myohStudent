@@ -65,7 +65,7 @@ ul { list-style: none; width:100%;
 }
 a:-webkit-any-link {
     cursor: pointer;
-    text-decoration-line: none;
+    /* text-decoration-line: none; */
 }
 
 nav, .page-nav{ 
@@ -463,6 +463,7 @@ blockquote:before,blockquote:after {
     text-align:right;
     font-size:15px;
 }
+.table-cont a {text-decoration-line: none;}
 .scriptCalendar { 
     text-align:center; 
     width:100%;
@@ -481,6 +482,7 @@ blockquote:before,blockquote:after {
     height:7vh;
     text-decoration-line: none;  
   }
+  .cal-text {text-decoration-line: none;  }
 /*
 ** media query
 */
