@@ -133,6 +133,11 @@ th, td {
     position: absolute;
     width: 1px;
 }
+.table-vertical.project td:before {
+    font-size:14px;
+    background-color:antiquewhite;
+    width: 110px;
+}
 .table-vertical.message td {
     text-align: left;
 }
@@ -482,7 +487,15 @@ form label {
     text-align:center;
 }
 /* my pages */
+.mypage-text{
+    text-align:left;
+    padding-top:10px;
+    padding-bottom:10px;
+}
 
+.table-mypage-result td:before {
+    width:80px;
+}
 .table-letterbox {
     border-style:none;
 }
@@ -896,10 +909,6 @@ form label {
     }
     .verify-1, .verify-2 {font-size:12px; width:100%;}
     .verification-space {height:30px; font-size:14px;}
-    .login-text p {
-        font-size:12px; 
-        /* text-align:center;*/
-    } 
     .entry-form li {
         padding-top:5px; 
         padding-bottom:10px;
@@ -959,18 +968,28 @@ form label {
       table td:last-child {
         border-bottom: 0;
       }
-      .table-letterbox td {
+      .table-mypage-result th {
+        font-size:11px;
+    }
+    .table-mypage-result td:before{
+        font-size:11px;
+        width:80px;
+    }
+      .table-letterbox td, .table-vertical.project td {
         text-align:left;
-        
       }
-      .table-letterbox td::before {
+      .table-letterbox td:before {
           width:50px;
+          text-align:left;
           background-color:#fffcd6;
       }
       .table-letterbox tr {
           border: 1px solid #bfbfbf;
           box-shadow:1px 1px 1px 1px rgba(194, 192, 188, 0.5); 
       }
+      .table-vertical.project td:before {
+        width: 95px;
+    }
       .course-description { font-size:12px;}
       .course-timetable tr {
         border-top:0;

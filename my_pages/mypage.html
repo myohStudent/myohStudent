@@ -8,6 +8,7 @@
 	<link href="../srcs/style.css" rel="stylesheet" />
 	<link href="../srcs/pages.css" rel="stylesheet" />
 	<link href="../srcs/footer.css" rel="stylesheet" />
+	<link href="../srcs/grid.css" rel="stylesheet" />
 	<script src="../js/jquery-3.2.1.min.js"></script>
 	<script src="../js/btns.js"></script>
 	<!-- <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script> -->
@@ -27,7 +28,7 @@
 				</ul>
 				<ul class="click">
 					<li><img src="../img/pencil.svg" width="11px" /> 마이페이지
-					<ul class="sub">
+						<ul class="sub">
 							<li>
 								<a href="../my_pages/mypage.html" class="ham-a">내 강의</a>
 							</li>
@@ -172,75 +173,83 @@
 					<hr>
 					<p>
 						<form method="" name="" action="" target="" value>
-							학년 : &nbsp;
-							<select name="primarySteam" class="grade-select">
+							<div class="mypage-text">수강 학기년도 선택</div>
+							연도 : &nbsp;
+							<select name="" class="year-select">
 								<option value="none">선 택</option>
-								<option value="1">4학년</option>
-								<option value="2">5학년</option>0
-								<option value="3">6학년</option>
+								<option value="1">2022</option>0
+								<option value="2">2021</option>
+								<option value="3">2020</option>
+							</select> &nbsp;<br class="hidden-br" />
+							학기 : &nbsp;
+							<select name="" class="semester-select">
+								<option value="none">선 택</option>
+								<option value="1">1학기</option>0
+								<option value="2">2학기</option>
 							</select> &nbsp;
-							<button type="button" class="select-btn" id="selectPrimaryGrade"
-								onclick="selectPrimaryGrade()">
+							<button type="button" class="mentoring-select-btn mypage" id="selectMentoringReport"
+								onclick="selectYearSemester()">
 								확 인
 							</button>
-							<p></p>
-							<table calss="schedule-table">
+							<br><br>
+							<div class="mypage-text">공동프로젝트</div>
+							<table class="table-mypage-result">
+								<!--if no results were found,-->
+								<!--
+									참여 중인 프로젝트가 없습니다.
+								-->
+								<!-- if not, -->
 								<thead>
 									<tr>
 										<th scope="col">번호</th>
-										<th scope="col">강좌명</th>
-										<th scope="col">교육기간</th>
-										<th scope="col">접수기간</th>
+										<th scope="col">공동프로젝트명</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td data-label="번호">5</td>
-										<td data-label="강좌명">초등인문학2</td>
-										<td data-label="교육기간">2022.03.01 ~ 2022.07.14</td>
-										<td data-label="접수기간">02.22 09:00<br /> ~ 02.22 18:00</td>
+										<td data-label="번호">3</td>
+										<td data-label="공동프로젝트명"><a href="project0.html">공동프로젝트명 3</a></td>
 									</tr>
 									<tr>
-										<td scope="row" data-label="번호">4</td>
-										<td data-label="강좌명">초등인문학1</td>
-										<td data-label="교육기간">2022.03.01 ~ 2022.07.14</td>
-										<td data-label="접수기간">02.22 09:00<br /> ~ 02.22 18:00</td>
+										<td data-label="번호">2</td>
+										<td data-label="공동프로젝트명"><a href="project0.html">공동프로젝트명 2</a></td>
 									</tr>
 									<tr>
-										<td scope="row" data-label="번호">3</td>
-										<td data-label="강좌명"><a href="./courseMath.html">사고력수학</a></td>
-										<td data-label="교육기간">2022.03.01 ~ 2022.07.14</td>
-										<td data-label="접수기간">02.22 09:00<br /> ~ 02.22 18:00</td>
-									</tr>
-									<tr>
-										<td scope="row" data-label="번호">2</td>
-										<td data-label="강좌명">디지털예술</td>
-										<td data-label="교육기간">2022.03.01 ~ 2022.07.14</td>
-										<td data-label="접수기간">02.22 09:00<br /> ~ 02.22 18:00</td>
-									</tr>
-									<tr>
-										<td scope="row" data-label="번호">1</td>
-										<td data-label="강좌명">디지털디자인</td>
-										<td data-label="교육기간">2022.03.01 ~ 2022.07.14</td>
-										<td data-label="접수기간">02.22 09:00<br /> ~ 02.22 18:00</td>
+										<td data-label="번호">1</td>
+										<td data-label="공동프로젝트명"><a href="project0.html">공동프로젝트명 1</a></td>
 									</tr>
 								</tbody>
 							</table>
-							</tr>
-							</thead>
-							</table>
+							<div class="verification-space"></div>
+							<div class="mypage-text">수강 반 선택</div>
+							<!--if no results were found,-->
+							<!--
+								수강한 내역이 없습니다.
+							-->
+							<!-- if not, -->
+							<select name="" class="year-select">
+								<option value="none">초등 인재반 5학년</option>
+								<option value="1">초등 교양반 5학년</option>0
+							</select>
+							<div class="mypage-text">00000반 0학년 수강과목</div>
+							<div id="class-grid" class="grid-container">
+								<a href="class00.html">
+									<div class="card" id="0">
+										<img src="../img/music.jpg" class-grid="img-grid">
+										<div class="text">하이든&메르의 디지털예술</div>
+									</div>
+								</a>
+								<a href="class00.html">
+									<div class="card" id="1">
+										<img src="../img/design.jpg" class-grid="img-grid">
+										<div class="text">시앙의 디지털디자인</div>
+									</div>
+								</a>
+							</div>
+							<br class="hidden-br" />
+
 						</form>
 						<p></p>
-						<button type="button" class="courses-btn" id="steam4Registration"
-							onclick="var returnValue = confirm('수강신청을 하시겠습니까?');location.href='./submitted.html';">
-							수강신청
-						</button>
-						<button type="button" class="courses-btn-conf" id="steam4Confirmation"
-							onclick="location.href='./candidateList.html';">
-							접수확인
-						</button>
-					</p>
-
 				</div>
 	</main>
 	<footer>

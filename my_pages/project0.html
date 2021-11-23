@@ -8,6 +8,7 @@
 	<link href="../srcs/style.css" rel="stylesheet" />
 	<link href="../srcs/pages.css" rel="stylesheet" />
 	<link href="../srcs/footer.css" rel="stylesheet" />
+	<link href="../srcs/grid.css" rel="stylesheet" />
 	<script src="../js/jquery-3.2.1.min.js"></script>
 	<script src="../js/btns.js"></script>
 	<!-- <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script> -->
@@ -23,7 +24,7 @@
 			<span class="page-toggle"></span>
 			<ul id="menu">
 				<ul class="click">
-					<li><a href="../index.html"><img src="../img/loginIcon.svg" width="11px" /> 로그아웃</a></li>
+					<li><a href="../login.html"><img src="../img/loginIcon.svg" width="11px" /> 로그인</a></li>
 				</ul>
 				<ul class="click">
 					<li><img src="../img/pencil.svg" width="11px" /> 마이페이지
@@ -118,11 +119,11 @@
 			<div class="btn2"><a href="#">&nbsp;교육과정</a>
 				<div class="btn2-hover">
 					<ul>
-						<li><a href="../curriculum_pages/primary_steam.html">&nbsp;초등인재</a></li>
-						<li><a href="../curriculum_pages/secondary_steam.html">&nbsp;중등인재</a></li>
-						<li><a href="../curriculum_pages/primary_culture.html">&nbsp;초등교양</a></li>
-						<li><a href="../curriculum_pages/secondary_culture.html">&nbsp;중등교양</a></li>
-						<li class="btn2-smol"><a href="../curriculum_pages/parents.html">학부모 및 성인</a></li>
+						<li><a href="./curriculum_pages/primary_steam.html">&nbsp;초등인재</a></li>
+						<li><a href="./curriculum_pages/secondary_steam.html">&nbsp;중등인재</a></li>
+						<li><a href="./curriculum_pages/primary_culture.html">&nbsp;초등교양</a></li>
+						<li><a href="./curriculum_pages/secondary_culture.html">&nbsp;중등교양</a></li>
+						<li class="btn2-smol"><a href="./curriculum_pages/parents.html">학부모 및 성인</a></li>
 					</ul>
 				</div>
 			</div>
@@ -164,35 +165,66 @@
 		<div class="page-main">
 			<section class="introduction">
 				<div class="front-text">
-					<a href="../index.html"><img src="../img/home.png" /></a>&nbsp; > &nbsp;&nbsp;마이페이지 &nbsp; >
-					&nbsp;&nbsp;멘토링 보고서</div>
+					<a href="../index.html"><img src="../img/home.png" /></a>&nbsp; > &nbsp;&nbsp;마이페이지&nbsp; >
+					&nbsp;내 강의&nbsp;&nbsp; > &nbsp; 공동프로젝트 </div>
 				<div class="login-text">
-					<p>멘토링 보고서</p>
+					<p></p>
+					<p>내 강의</p>
 					<hr>
-					<p>&nbsp;</p>
-					<form method="" name="" action="" target="" value>
-						연도 : &nbsp;
-						<select name="mentoringReportYear" class="year-select">
-							<option value="none">선 택</option>
-							<option value="1">2022</option>0
-							<option value="2">2021</option>
-							<option value="3">2020</option>
-						</select> &nbsp;<br class="hidden-br"/>
-						학기 : &nbsp;
-						<select name="mentoringReportSemester" class="semester-select">
-							<option value="none">선 택</option>
-							<option value="1">1학기</option>0
-							<option value="2">2학기</option>
-						</select> &nbsp;
-						<button type="button" class="mentoring-select-btn" id="selectMentoringReport"
-							onclick="selectMentoringSemester()">
-							확 인
-						</button>
-						<br><br>
-						<a href="../schedule/monthlySchedule.pdf">멘토링 보고서 : 2022년도_1학기_멘토링_보고서.pdf</a>
-						<br><br>
-						<iframe src="../schedule/monthlySchedule.pdf" style="width:100%;height:700px;"></iframe>
+					<p>
+						<table class="table-vertical project">
+							<thead>
+								<tr>
+								    <th scope="col">학기</th>
+                                    <th scope="col">공동프로젝트명</th>
+                                    <th scope="col">내용</th>
+                                    <th scope="col">관련 이미지</th>
+                                    <th scope="col">등록일시</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td data-label="학기">2022년도 1학기</td>
+                                    <td data-label="공동프로젝트명">프로젝트명 2</td>
+                                    <td data-label="내용"><br>사고력 수학은 수학적으로 사고력 수학은 수학적으로 사고력 수학은 수학적으로 사고력 수학은 수학적으로사고력 수학은 수학적으로 사고력 수학은 수학적으로사고력 수학은 수학적으로 사고력 수학은 수학적으로사고력 수학은 수학적으로 사고력 </td>
+                                    <td data-label="관련 이미지">
+                                        <br>
+                                        <img src="../img/music.jpg"/ width="90%">
+                                    </td>
+                                    <td data-label="등록일시">2022-03-05 17:30:10</td>
+								</tr>
+							</tbody>
+							</table>
+							<br>
+                            <div class="mypage-text">시간표</div>
+                    		<table class="course-timetable">
+								<thead>
+									<tr>
+										<th scope="col">월</th>
+										<th scope="col">화</th>
+										<th scope="col">수</th>
+										<th scope="col">목</th>
+										<th scope="col">금</th>
+										<th scope="col">토</th>
+									</tr>
+								</thead>
+							<tbody>
+								<tr>
+									<td data-label="월">-</td>
+									<td data-label="화">-</td>
+									<td data-label="수">-</td>
+									<td data-label="목">17:30 - 19:00</td>
+									<td data-label="금">-</td>
+									<td data-label="토">-</td>
+								</tr>
+							</tbody>
+							</table>
+							<p></p>
+							<button type="button" class="courses-btn-conf" onclick="goBack()">
+								이전 목록 보기
+							</button>
 						</form>
+						<p></p>
 				</div>
 	</main>
 	<footer>
