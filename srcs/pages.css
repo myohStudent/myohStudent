@@ -100,7 +100,7 @@ main {margin-top:0px;}
     margin:5px 5px 5px 5px;
     padding:8px 10px 8px 10px;
 }
-table {
+.tables {
     width: 100%;
     border-top: 1px solid #d1d1d1;
     border-left: 3px solid #164097;
@@ -108,13 +108,13 @@ table {
     color:#867c7c;
     /* text-align:left; */
 }
-td a {
+.tables td a {
     text-decoration: underline;
     color: #3a558e;
     /* background:#fbffd9; */
 }
-thead { background-color:#c4e9ff;}
-th, td { 
+.tables thead { background-color:#c4e9ff;}
+.tables th, td { 
     border-right: 1px solid #c2bdbd;
     border-bottom: 1px solid #c2bdbd;
     padding:1px;
@@ -122,8 +122,8 @@ th, td {
 }
 
 /*vertical table*/
-.table-vertical, .course-timetable {border:0;}
-.table-vertical thead, .course-timetable thead {
+.tables.table-vertical, .tables.course-timetable {border:0;}
+.tables.table-vertical thead, .tables.course-timetable thead {
     border: none;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -133,30 +133,30 @@ th, td {
     position: absolute;
     width: 1px;
 }
-.table-vertical.project td:before {
+.tables.table-vertical.project td:before {
     font-size:14px;
     background-color:antiquewhite;
     width: 110px;
 }
-.table-vertical.message td {
+.tables.table-vertical.message td {
     text-align: left;
 }
-.table-vertical.message td:before {
+.tables.table-vertical.message td:before {
     background-color: antiquewhite;
     width:60px;
     margin-right:10px;
 }
-.table-vertical.message td:last-child {min-height:100px;}
+.tables.table-vertical.message td:last-child {min-height:100px;}
 .letter-text {padding-top:30px;padding-bottom:30px;}
 
 /**/
 
-.course-timetable tr {
+.tables.course-timetable tr {
     display: block;
     margin-bottom: .625em;
     border-collapse: collapse;
 }
-.course-timetable td {
+.tables.course-timetable td {
     width:50%;
     margin:auto;
     padding-right: 10px;
@@ -168,7 +168,7 @@ th, td {
     /* border-top: 1px solid #a1a1a1; */
     border-collapse: collapse;
 }
-.course-timetable td:before {
+.tables.course-timetable td:before {
     content: attr(data-label);
     float:left;
     text-align:center;
@@ -177,17 +177,17 @@ th, td {
     /* padding-left:10px; */
     background-color:#c4e9ff;
 }
-.course-timetable td:last-child {  
+.tables.course-timetable td:last-child {  
     border-bottom: 1px solid #d1d1d1;
  }
-.table-vertical tr {
+ .tables.table-vertical tr {
     border-bottom: 3px solid #3a558e;
     border-top: 1px solid #d1d1d1;
     display: block;
     margin-bottom: .625em;
     border-collapse: collapse;
 }
-.table-vertical td {
+.tables.table-vertical td {
     padding-right: 10px;
     border-bottom: 1px solid #d1d1d1;
     display: block;
@@ -196,7 +196,7 @@ th, td {
     /* border-top: 1px solid #a1a1a1; */
     border-collapse: collapse;
 }
-.table-vertical td::before {
+.tables.table-vertical td::before {
     content: attr(data-label);
     float:left;
     text-align:left;
@@ -205,10 +205,10 @@ th, td {
     padding-left:10px;
     background-color:#c4e9ff;
 }
-.table-vertical td:last-child {
+.tables.table-vertical td:last-child {
     border-bottom: 0;
 }
-.td-description { padding-left:10px; }
+.tables.td-description { padding-left:10px; }
 .course-description {
     padding:20px 20px 20px 20px;
     border-radius:30px;
@@ -493,12 +493,18 @@ form label {
     padding-bottom:10px;
 }
 
-.table-mypage-result td:before {
+.tables.table-mypage-result td:before {
     width:80px;
 }
+.table-box{ table-layout: fixed;}
+.table-box.left{width:45%;float:left; margin-right:5%;}
+.table-box.right{width:50%;float:right;}
 .table-letterbox {
     border-style:none;
+    min-width:380px;
+    width:100%;
 }
+.table-letterbox.classnotice {width:20%;}
 .table-letterbox td, .table-letterbox tr, .table-letterbox thead, .table-letterbox thead th {
     border-left-style:none;
     border-right-style:none;
@@ -892,7 +898,7 @@ form label {
         display:inline-block;
         width:100%;
     }
-    .letter-num{display:none;}
+    /* .letter-num{display:none;} */
     .checkbox {width:80%;right:40%;}
     .terms-box {width:100%;}
     .register-btn {font-size:12px;}
@@ -922,10 +928,10 @@ form label {
         font-size:15px;
         padding-left:20px;
     }
-    table {border:0; table-layout:fixed;}
+    .tables {border:0;}
     /*table responsible*/
    
-    table thead {
+    .tables thead {
         border: none;
         clip: rect(0 0 0 0);
         height: 1px;
@@ -936,14 +942,14 @@ form label {
         position: absolute;
         width: 1px;
       }
-      table tr {
+    .tables tr {
         border-bottom: 3px solid #3a558e;
         border-top: 1px solid #d1d1d1;
         display: block;
         margin-bottom: .625em;
         border-collapse: collapse;
       }
-      table td {
+    .tables td {
         padding-right: 10px;
         border-bottom: 1px solid #d1d1d1;
         display: block;
@@ -953,7 +959,7 @@ form label {
         /* border-top: 1px solid #a1a1a1; */
         border-collapse: collapse;
       }
-      table td:before {
+    .tables td:before {
         padding-right: 10px;
         content: attr(data-label);
         font-weight: bold;
@@ -963,54 +969,57 @@ form label {
         padding-left:10px;
         background-color:#ffffff;
       }
-      .table-culture td {font-size:12px;}
-      .table-culture td:before{
+    .tables.table-culture td {font-size:12px;}
+    .tables.table-culture td:before{
         width:100px;
         font-size:12px;
       }
-      table td:last-child {
+    .tables td:last-child {
         border-bottom: 0;
       }
-      .table-letterbox.notice{overflow-y:auto;width:100%;max-height:250px;} 
-      .table-letterbox.notice thead {display:table;width:100%;position:absolute;}
-      .table-letterbox.notice td{display:table;}
-      .table-letterbox.notice td:before {
+    .table-letterbox.notice{width:100%;max-height:250px;} 
+    .table-letterbox.notice thead {display:table;width:100%;position:absolute;}
+    .table-letterbox.notice td{display:table;}
+    .table-letterbox.notice td:before {
         display: flex;
         position: relative;
       }
-      .table-mypage-result th {
+    .tables.table-mypage-result th {
         font-size:11px;
     }
-    .table-mypage-result td:before{
+    .tables.table-mypage-result td:before{
         font-size:11px;
         width:80px;
     }
-      .table-letterbox td, .table-vertical.project td {
+    .table-box {overflow-x:auto;}
+    .tables.table-vertical.project td {
         text-align:left;
       }
-      .table-letterbox td:before {
+    .tables.table-vertical.notice td{font-size:.7em;text-align:left}
+    .tables.table-vertical.notice td:before{width:40px;margin-right:10px;}
+    .table-letterbox td:before {
           width:50px;
           text-align:left;
+          margin-right:10px;
           background-color:#fffcd6;
       }
-      .table-letterbox tr {
-          border: 1px solid #bfbfbf;
-          box-shadow:1px 1px 1px 1px rgba(194, 192, 188, 0.5); 
-      }
-      
-      .table-vertical.project td:before {
-        width: 95px;
+    .table-letterbox tr {
+        position:relative;
+        /* border: 1px solid #bfbfbf; */
+    }
+    .tables.table-vertical.project td:before {
+        width: 70px; margin-right:10px;
     }
       .course-description { font-size:12px;}
-      .course-timetable tr {
+    .tables.course-timetable tr {
         border-top:0;
         border-bottom:0;
     }
-    .course-timetable td {
+    .tables.course-timetable td {
         width:100%;
         text-align:center;
     }
-    .course-timetable td::before {
+    .tables.course-timetable td::before {
         width:60px;
     }
   
