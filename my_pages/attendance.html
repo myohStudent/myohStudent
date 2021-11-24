@@ -166,137 +166,61 @@
             <section class="introduction">
                 <div class="front-text">
                     <a href="../index.html"><img src="../img/home.png" /></a>&nbsp; > &nbsp;&nbsp;마이페이지&nbsp; >
-                    &nbsp;내 강의&nbsp;&nbsp; > &nbsp; 수강 과목 </div>
+                    &nbsp;내 강의&nbsp;&nbsp; > &nbsp; 수강 과목 &nbsp;&nbsp; > 출석부</div>
                 <div class="login-text">
                     <p></p>
-                    <p>00반 0학년 수강 과목 or 학부모 및 성인 과정</p>
+                    <p>내 출석부</p>
                     <hr>
-                    <div class="table-box two">
-                        <div class="table-box left">
-                            <p>과목 공지사항<span>+ 더보기</span></p>
-                        <table class="table-letterbox classnotice">
-                            <thead>
-                                <tr>
-                                    <th scope="col">번호</th>
-                                    <th scope="col">제목</th>
-                                    <th scope="col">작성일</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td data-label="번호">5</td>
-                                    <td data-label="제목">공지사항입니다</td>
-                                    <td data-label="작성일">03/22</td>
-                                </tr>
-                                <tr>
-                                    <td data-label="번호">4</td>
-                                    <td data-label="제목">&nbsp;</td>
-                                    <td data-label="작성일">&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td data-label="번호">3</td>
-                                    <td data-label="제목">&nbsp;</td>
-                                    <td data-label="작성일">&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td data-label="번호">2</td>
-                                    <td data-label="제목">&nbsp;</td>
-                                    <td data-label="작성일">&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td data-label="번호">1</td>
-                                    <td data-label="제목">&nbsp;</td>
-                                    <td data-label="작성일">&nbsp;</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <br>
+                    <div class="table-box attendance">
+                    <table class="table-mylevels attendance">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="mylvl-labels">날짜</th>
+                                <th scope="col" class="mylvl-labels">진도</th>
+                                <th scope="col" class="mylvl-labels">출석여부</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="날짜">2022-03-07</td>
+                                <td data-label="진도">단원 6</td>
+                                <td data-label="출석여부">출석</td>
+                            </tr>
+                            <tr>
+                                <td data-label="날짜">2022-03-06</td>
+                                <td data-label="진도">단원 5</td>
+                                <td data-label="출석여부">지각</td>
+                            </tr>
+                            <tr>
+                                <td data-label="날짜">2022-03-05</td>
+                                <td data-label="진도">단원 4</td>
+                                <td data-label="출석여부">출석</td>
+                            </tr>
+                            <tr>
+                                <td data-label="날짜">2022-03-04</td>
+                                <td data-label="진도">단원 3</td>
+                                <td data-label="출석여부">출석</td>
+                            </tr>
+                            <tr>
+                                <td data-label="날짜">2022-03-03</td>
+                                <td data-label="진도">단원 2</td>
+                                <td data-label="출석여부">결석</td>
+                            </tr>
+                            <tr>
+                                <td data-label="날짜">2022-03-02</td>
+                                <td data-label="진도">단원 1</td>
+                                <td data-label="출석여부">출석</td>
+                            </tr>
+                        </tbody>
+                    </table>
                     </div>
-                <div class="table-box right">
-                    <p>과제<span>+ 더보기</span></p>
-                        <table class="table-letterbox classnotice">
-                            <thead>
-                                <tr>
-                                    <th scope="col">번호</th>
-                                    <th scope="col">제목</th>
-                                    <th scope="col">작성일</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td data-label="번호">5</td>
-                                    <td data-label="제목">공지사항입니다</td>
-                                    <td data-label="작성일">03/22</td>
-                                </tr>
-                                <tr>
-                                    <td data-label="번호">4</td>
-                                    <td data-label="제목">&nbsp;</td>
-                                    <td data-label="작성일">&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td data-label="번호">3</td>
-                                    <td data-label="제목">&nbsp;</td>
-                                    <td data-label="작성일">&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td data-label="번호">2</td>
-                                    <td data-label="제목">&nbsp;</td>
-                                    <td data-label="작성일">&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td data-label="번호">1</td>
-                                    <td data-label="제목">&nbsp;</td>
-                                    <td data-label="작성일">&nbsp;</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <br>
-                <hr>
-                   <button class="mypage-classbtn" onclick="location.href='mylevels.html'">
-                        <img src="../img/check.gif" width="30px" class="btn-img"> &nbsp;&nbsp;내 역량 확인하기
+                    <br>
+                    <button type="button" class="courses-btn-conf" onclick="goBack()">
+                        수강 과목으로 이동
                     </button>
-                    <button class="mypage-classbtn" onclick="location.href='attendance.html'">
-                        <img src="../img/note.gif" width="30px" class="btn-img"> &nbsp;&nbsp;출석부
-                    </button>
-
-                        <hr>
-                        <br>
-                        <div class="mypage-text">단원 목록</div>
-                        <div class="table-box">
-                        <table class="table-letterbox lecturelist">
-                            <thead>
-                                <tr>
-                                    <th scope="col">번호</th>
-                                    <th scope="col">단원명</th>
-                                    <th scope="col">등록일</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td data-label="번호">3</td>
-                                    <td data-label="단원명"><a href="classDetail.html">로봇 코딩 3</a></td>
-                                    <td data-label="등록일시">2022.03.17 17:30:45</td>
-                                </tr>
-                                <tr>
-                                    <td data-label="번호">2</td>
-                                    <td data-label="단원명"><a href="classDetail.html">로봇 코딩 2</a></td>
-                                    <td data-label="등록일시">2022.03.17 17:30:45</td>
-                                </tr>
-                                <tr>
-                                    <td data-label="번호">1</td>
-                                    <td data-label="단원명"><a href="classDetail.html">로봇 코딩 1</a></td>
-                                    <td data-label="등록일시">2022.03.17 17:30:45</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                        <p></p>
-                        <button type="button" class="courses-btn-conf" onclick="goBack()">
-                            이전 목록 보기
-                        </button>
-                        </form>
-                        <p></p>
+                    </form>
+                    <p></p>
                 </div>
     </main>
     <footer>

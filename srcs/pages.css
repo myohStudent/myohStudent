@@ -539,6 +539,22 @@ form label {
 .table-letterbox.notice {
     width:50%;
 }
+.table-box.attendance{text-align:center;}
+.table-mylevels {
+    width:100%;
+    border:1px solid #bcbcbc;
+    border-collapse: collapse;
+}
+.table-mylevels.attendance{
+    margin:0 auto;
+    width:50%;
+}
+.table-mylevels tr { border:1px solid #bcbcbc;}
+.table-mylevels td { border:1px solid #bcbcbc;}
+.table-mylevels td img {padding:10px;width:30px;}
+.mylvl-labels {
+    display:none;
+}
 .round-btn {
     height: 30px;
     background-color: rgb(231, 174, 136);
@@ -862,6 +878,7 @@ form label {
         margin-right:30px;
         margin-left:30px;
     }
+    .mylvl-labels {display:none;}
 }
 
 @media screen and (max-width: 767px) {
@@ -906,6 +923,8 @@ form label {
         padding-bottom:15px;
         box-sizing: border-box;
     }
+    .mylvl-labels {display:none;}  
+    .table-mylevels.attendance{width:100%;} 
 }
 @media screen and (max-width: 958px){
     .input-year, .input-month, .input-date, .input-zip {
@@ -923,6 +942,7 @@ form label {
         display:inline-block;
         width:100%;
     }
+    .mylvl-labels {display:none;}
     /* .letter-num{display:none;} */
     .checkbox {width:80%;right:40%;}
     .terms-box {width:100%;}
