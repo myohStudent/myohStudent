@@ -171,8 +171,9 @@
                     <p></p>
                     <p>00반 0학년 수강 과목 or 학부모 및 성인 과정</p>
                     <hr>
-                    <p>과목 공지사항<span>+ 더보기</span>
+                    <div class="table-box two">
                         <div class="table-box left">
+                            <p>과목 공지사항<span>+ 더보기</span></p>
                         <table class="table-letterbox classnotice">
                             <thead>
                                 <tr>
@@ -211,6 +212,7 @@
                         </table>
                     </div>
                 <div class="table-box right">
+                    <p>과제<span>+ 더보기</span></p>
                         <table class="table-letterbox classnotice">
                             <thead>
                                 <tr>
@@ -248,38 +250,47 @@
                             </tbody>
                         </table>
                     </div>
-                        <div class="mypage-text">
-                            <hr>
-                            과제
-                            내 역량 확인하기
-                            <hr>
-                        </div>
-                        출석부
+                </div>
+                <br>
+                <hr>
+                   <button class="mypage-classbtn">
+                        <img src="../img/check.gif" width="30px" class="btn-img"> &nbsp;&nbsp;내 역량 확인하기
+                    </button>
+                    <button class="mypage-classbtn">
+                        <img src="../img/note.gif" width="30px" class="btn-img"> &nbsp;&nbsp;출석부
+                    </button>
+
                         <hr>
                         <br>
-                        <div class="mypage-text">시간표</div>
-                        <table class="tables course-timetable">
+                        <div class="mypage-text">단원 목록</div>
+                        <div class="table-box">
+                        <table class="table-letterbox lecturelist">
                             <thead>
                                 <tr>
-                                    <th scope="col">월</th>
-                                    <th scope="col">화</th>
-                                    <th scope="col">수</th>
-                                    <th scope="col">목</th>
-                                    <th scope="col">금</th>
-                                    <th scope="col">토</th>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">단원명</th>
+                                    <th scope="col">등록일</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td data-label="월">-</td>
-                                    <td data-label="화">-</td>
-                                    <td data-label="수">-</td>
-                                    <td data-label="목">17:30 - 19:00</td>
-                                    <td data-label="금">-</td>
-                                    <td data-label="토">-</td>
+                                    <td data-label="번호">3</td>
+                                    <td data-label="단원명">로봇 코딩 3</td>
+                                    <td data-label="등록일시">2022.03.17 17:30:45</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="번호">2</td>
+                                    <td data-label="단원명">로봇 코딩 2</td>
+                                    <td data-label="등록일시">2022.03.17 17:30:45</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="번호">1</td>
+                                    <td data-label="단원명">로봇 코딩 1</td>
+                                    <td data-label="등록일시">2022.03.17 17:30:45</td>
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
                         <p></p>
                         <button type="button" class="courses-btn-conf" onclick="goBack()">
                             이전 목록 보기

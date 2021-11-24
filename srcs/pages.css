@@ -492,19 +492,37 @@ form label {
     padding-top:10px;
     padding-bottom:10px;
 }
+.mypage-text a{
+    display:inline-block;
+    margin-top:50px;
+    margin-bottom:50px;
+    margin-left:20px;
 
+}
 .tables.table-mypage-result td:before {
     width:80px;
 }
-.table-box{ table-layout: fixed;}
-.table-box.left{width:45%;float:left; margin-right:5%;}
-.table-box.right{width:50%;float:right;}
+.table-box{width:100%;}
+.table-box.two{min-height:300px;}
+.table-box.left{width:49%;float:left;}
+.table-box.right{width:49%;float:right;}
 .table-letterbox {
     border-style:none;
     min-width:380px;
     width:100%;
 }
-.table-letterbox.classnotice {width:20%;}
+.table-letterbox thead {font-size:15px;}
+.mypage-classbtn{
+    width:180px;
+    margin:50px;
+    background-color:transparent;
+    margin-right:100px;
+    margin-left:100px;
+    font-size:18px;
+    color:#67bae8;
+    border:none;
+}
+.btn-img{margin-bottom:-8px;}
 .table-letterbox td, .table-letterbox tr, .table-letterbox thead, .table-letterbox thead th {
     border-left-style:none;
     border-right-style:none;
@@ -837,6 +855,13 @@ form label {
     .input-mobile, .input-addr2, .input-addr1, .input-sex  {width:100%; }
     .input-year-r, .input-month-r, .input-date-r{width:60px;}
     th, td { font-size:0.7em;}
+    .table-box.left{width:100%;float:center}
+    .table-box.right{width:100%;float:center;}
+    .table-box.two{min-height:500px;}
+    .mypage-classbtn{
+        margin-right:30px;
+        margin-left:30px;
+    }
 }
 
 @media screen and (max-width: 767px) {
