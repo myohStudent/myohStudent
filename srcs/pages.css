@@ -508,7 +508,7 @@ form label {
 .table-box.right{width:49%;float:right;}
 .table-letterbox {
     border-style:none;
-    min-width:380px;
+    min-width:320px;
     width:100%;
 }
 .table-letterbox thead {font-size:15px;}
@@ -554,6 +554,13 @@ form label {
 .table-mylevels td img {padding:10px;width:30px;}
 .mylvl-labels {
     display:none;
+}
+.read-more {float:right;}
+.read-more a {
+    font-size:16px;
+    color:#67bae8;
+    text-decoration:underline;
+    font-weight:bold;
 }
 .round-btn {
     height: 30px;
