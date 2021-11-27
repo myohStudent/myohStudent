@@ -2,50 +2,50 @@ var cardGrid = document.getElementById('class-grid');
 
 var classArr = [
   {
-    "id": "0",
+    "id": "00",
     "title": "하이든&메르의 디지털음악",
     "thumbnail": "./img/music.jpg"
   },
   {
-    "id": "1",
+    "id": "01",
     "title": "시앙의 디자인 강의",
     "thumbnail": "./img/design.jpg"
   },
   {
-    "id": "2",
+    "id": "02",
     "title": "자이로의 과학 강의",
     "thumbnail": "./img/zyro.jpg"
   },
-  {
-    "id": "3",
-    "title": "하이든&메르의 디지털음악",
-    "thumbnail": "./img/music.jpg"
-  },
-  {
-    "id": "4",
-    "title": "시앙의 디자인 강의",
-    "thumbnail": "./img/design.jpg"
-  },
-  {
-    "id": "5",
-    "title": "자이로의 과학 강의",
-    "thumbnail": "./img/zyro.jpg"
-  },
-  {
-    "id": "6",
-    "title": "하이든&메르의 디지털음악",
-    "thumbnail": "./img/music.jpg"
-  },
-  {
-    "id": "7",
-    "title": "시앙의 디자인 강의",
-    "thumbnail": "./img/design.jpg"
-  },
-  {
-    "id": "8",
-    "title": "자이로의 과학 강의",
-    "thumbnail": "./img/zyro.jpg"
-  }
+  // {
+  //   "id": "3",
+  //   "title": "하이든&메르의 디지털음악",
+  //   "thumbnail": "./img/music.jpg"
+  // },
+  // {
+  //   "id": "4",
+  //   "title": "시앙의 디자인 강의",
+  //   "thumbnail": "./img/design.jpg"
+  // },
+  // {
+  //   "id": "5",
+  //   "title": "자이로의 과학 강의",
+  //   "thumbnail": "./img/zyro.jpg"
+  // },
+  // {
+  //   "id": "6",
+  //   "title": "하이든&메르의 디지털음악",
+  //   "thumbnail": "./img/music.jpg"
+  // },
+  // {
+  //   "id": "7",
+  //   "title": "시앙의 디자인 강의",
+  //   "thumbnail": "./img/design.jpg"
+  // },
+  // {
+  //   "id": "8",
+  //   "title": "자이로의 과학 강의",
+  //   "thumbnail": "./img/zyro.jpg"
+  // }
 ]
 
 function generateClassCard(classData) {
@@ -64,8 +64,8 @@ function generateClassCard(classData) {
   // }
   card.onclick = function () {
 
-    window.location = "./openCourses/videoLecture00.html";
-    /*window.location= ""'classData.title' + '.html'"";*/
+    // window.location = "./openCourses/videoLecture00.html";
+    window.location = './openCourses/' + card.id + '.html';
   }
 
   var thumbnail = document.createElement('img');
