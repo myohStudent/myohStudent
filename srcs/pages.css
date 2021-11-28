@@ -576,6 +576,9 @@ form label {
     display: inline-block;
     font-size: 16px;
 }
+.mypage-classbtn{
+    cursor: pointer;
+}
 /*
 ** registration success / failed
 */

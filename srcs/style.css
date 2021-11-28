@@ -512,7 +512,7 @@ blockquote:before,blockquote:after {
         line-height: 25px;
         text-align: center;
     }
-    .btn1 a, .btn2 a, .btn3 a, .btn4 a, .btn5 a, .btn6 a, .btn7 a { border-left:none;border-right:none;}
+    .btn1 a, .btn2 a, .btn3 a, .btn4 a, .btn5 a, .btn6_loggedin a, .btn6 a, .btn7 a, .btn7_loggedin a { border-left:none;border-right:none;}
     .btn1-hover, .btn2-hover  {font-size:15px; }
 }
 @media screen and (max-width: 1023px) {
