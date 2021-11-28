@@ -508,7 +508,11 @@ form label {
 .table-box.right{width:49%;float:right;}
 .table-letterbox {
     border-style:none;
-    min-width:320px;
+    min-width:300px;
+    width:100%;
+}
+.table-letterbox.homeworktable {
+    min-width:99%;
     width:100%;
 }
 .table-letterbox thead {font-size:15px;}
@@ -1039,6 +1043,12 @@ form label {
         display: flex;
         position: relative;
       }
+    .table-letterbox.homeworktable{width:100%;}
+    .tables.table-letterbox.homeworktable td{
+        border-right:1px solid #d1d1d1;
+        text-align: center;
+    }
+
     .tables.table-mypage-result th {
         font-size:11px;
     }
@@ -1047,11 +1057,14 @@ form label {
         width:80px;
     }
     .table-box {overflow-x:auto;}
+    .table-box.homework{overflow-x:hidden;width:100%;}
     .tables.table-vertical.project td {
         text-align:left;
       }
-    .tables.table-vertical.notice td{font-size:.7em;text-align:left}
+    .tables.table-vertical.notice td{font-size:.7em;text-align:left;}
     .tables.table-vertical.notice td:before{width:40px;margin-right:10px;}
+    .tables.table-vertical.homework td:before{margin-right:5px;padding-left:5px;font-size:12px;width:69px;}
+    .tables.table-vertical.homework td{text-align:left;}
     .table-letterbox td:before {
           width:50px;
           text-align:left;
