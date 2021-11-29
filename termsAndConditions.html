@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>징검다리스쿨</title>
+    <link href="./srcs/style.css" rel="stylesheet" />
+    <link href="./srcs/pages.css" rel="stylesheet" />
+    <link href="./srcs/footer.css" rel="stylesheet" />
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+    <script src="js/btns.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+</head>
+
+<body>
+    <header>
+        <div class="hidden-logo"><a href="index.html"><img src="./img/sss.png"></a></div>
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span class="page-toggle"></span>
+            <span class="page-toggle"></span>
+            <span class="page-toggle"></span>
+            <ul id="menu">
+                <ul class="click">
+                    <li><a href="login.html"><img src="./img/loginIcon.svg" width="11px" /> 로그인</a></li>
+                </ul>
+                <ul class="click">
+                    <li><a href="register.html"><img src="./img/pencil.svg" width="11px" /> 회원가입</a></li>
+                </ul>
+                <ul class="click">
+                    <li><img src="./img/SSS.svg" width="19px" /> 징검다리스쿨소개
+                        <ul class="sub">
+                            <li>
+                                <a href="./introduction_pages/introduction.html" class="ham-a">교육철학</a>
+                            </li>
+                            <li>
+                                <a href="./introduction_pages/career.html" class="ham-a">걸어온 길</a>
+                            </li>
+                            <li>
+                                <a href="./introduction_pages/greetings.html" class="ham-a">교장 인사말</a>
+                            </li>
+                            <li>
+                                <a href="./introduction_pages/commitee.html" class="ham-a">교육위원회</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="click">
+                    <li> <img src="./img/book.svg" width="19px" /> 교육과정
+                        <ul class="sub">
+                            <li>
+                                <a href="./curriculum_pages/primary_steam.html" class="ham-a">초등인재</a>
+                            </li>
+                            <li>
+                                <a href="./curriculum_pages/secondary_steam.html" class="ham-a">중등인재</a>
+                            </li>
+                            <li>
+                                <a href="./curriculum_pages/primary_culture.htmll" class="ham-a">초등교양</a>
+                            </li>
+                            <li>
+                                <a href="./curriculum_pages/secondary_culture.html" class="ham-a">중등교양</a>
+                            </li>
+                            <li>
+                                <a href="./curriculum_pages/parents.html" class="ham-a">학부모 및 성인</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="click">
+                    <li><img src="./img/clock.svg" width="14px" /> 학사일정
+                        <ul class="sub">
+                            <li>
+                                <a href="./schedule/yearlySchedule.html" class="ham-a">연간학사일정</a>
+                            </li>
+                            <li>
+                                <a href="./schedule/monthlySchedule.html" class="ham-a">월간학사일정</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="click">
+                    <li><a href="./videos.html"><img src="./img/video.svg" width="15px" /> 영상강좌</a>
+                    </li>
+                </ul>
+                <ul class="click">
+                    <li><a href="./notice.html"><img src="./img/info.svg" width="14px" /> 공지사항</a></li>
+                </ul>
+            </ul>
+        </div>
+        <nav class="page-nav">
+            <div class="logo"><a href="index.html"><img src="./img/sss.png"></a></div>
+            <div class="btn1"><a href="#">&nbsp;징검다리스쿨소개</a>
+                <div class="btn1-hover">
+                    <ul>
+                        <li><a href="./introduction_pages/introduction.html">&nbsp;교육철학</a></li>
+                        <li><a href="./introduction_pages/career.html">&nbsp;걸어온 길</a></li>
+                        <li><a href="./introduction_pages/greetings.html">&nbsp;교장 인사말</a></li>
+                        <li><a href="./introduction_pages/commitee.html">&nbsp;교육위원회</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn2"><a href="#">&nbsp;교육과정</a>
+                <div class="btn2-hover">
+                    <ul>
+                        <li><a href="./curriculum_pages/primary_steam.html">&nbsp;초등인재</a></li>
+                        <li><a href="./curriculum_pages/secondary_steam.html">&nbsp;중등인재</a></li>
+                        <li><a href="./curriculum_pages/primary_culture.html">&nbsp;초등교양</a></li>
+                        <li><a href="./curriculum_pages/secondary_culture.html">&nbsp;중등교양</a></li>
+                        <li class="btn2-smol"><a href="./curriculum_pages/parents.html">학부모 및 성인</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn3"><a href="#">&nbsp;학사일정&nbsp;</a>
+                <div class="btn3-hover">
+                    <ul>
+                        <li><a href="./schedule/yearlySchedule.html">&nbsp;연간학사일정</a></li>
+                        <li><a href="./schedule/monthlySchedule.html">&nbsp;월간학사일정</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn4"><a href="./videos.html">&nbsp;영상강좌&nbsp;</a></div>
+            <div class="btn5"><a href="./notice.html">&nbsp;공지사항&nbsp;</a></div>
+            <div class="btn6"><a href="./register.html">&nbsp;회원가입&nbsp;</a></div>
+            <div class="btn7"><a href="./login.html">&nbsp;로그인&nbsp;</a></div>
+
+            <div class="right-nav"><a href="http://www.jeongseon.go.kr/intro.html"><img
+                        src="./img/jeongsunlogo.png"></a></div>
+        </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="page-main">
+            <section class="login">
+                <div class="front-text">
+                    <a href="index.html"><img src="./img/home.png" /></a>&nbsp; > &nbsp;&nbsp;이용약관
+                </div>
+                <div class="login-text">
+                    <p>이용약관</p>
+                    <hr>
+                    <br />
+                    <div>
+                        <table class="refusal-email">
+                            <tr>
+                                <td>
+                                    사북공공도서관 이용약관
+                                </td>
+                            </tr>
+                        </table>
+                        <br />
+                        <div class="refusal-text">
+                            <div class="refusal-text bold">제1장 총 칙</div>
+                            제1조(목적) 
+                            <br>본 약관은 징검다리스쿨 사이트을 통해서 제공하는 각종 통합회원 서비스를 이용함에 있어 이용자와 징검다리스쿨 간의 권리・의무 및 책임사항과 기타 필요한
+                            사항을 규정함을 목적으로 한다.
+                            <br>
+                            <br>제2조(용어의 정의)<br>
+                            <br>① 본 약관에서 사용하는 용어의 정의는 다음과 같다.
+                            <br> 1. 서비스 : 온라인 및 오프라인으로 징검다리스쿨에서 제공하는 서비스
+                            <br> 2. 사이트 : 징검다리스쿨에서 운영하는 홈페이지
+                            <br> 3. 가 입 : 징검다리스쿨 사이트가 제공하는 신청서 양식에 해당 정보를 기입하고, 본 약관에 동의하여 서비스 이용계약을 완료시키는 행위
+                            <br> 4. 온라인 회원 : 징검다리스쿨 회원 가입에 동의하고 본인확인절차를 통해 가입한 온라인 회원
+                            <br> 5. 아이디(ID) : 회원 식별과 회원의 서비스 이용을 위하여 이용자가 생성한 영문자 또는 기타 문자로 조합된 부호
+                            <br> 6. 비밀번호(PASSWORD) : 회원의 정보 보호를 위해 이용자 자신이 설정한 문자와 숫자, 특수문자 등으로 조합된 부호
+                            <br> 7. 탈퇴 : 회원이 서비스 이용계약을 종료시키는 의사표시
+                            <br>② 본 약관에서 사용하는 용어의 정의는 제1항에서 정하는 것을 제외하고는 관계 법령 및 서비스별 안내에서 정하는 바에 의한다.
+                            <br>
+                            <br>제3조(약관의 효력 및 변경)
+                            <br>이 약관에서 사용하는 용어의 정의는 다음 각 호와 같습니다.
+                            <br> 1. 본 약관은 서비스 화면에 게시하거나 기타의 방법으로 이용자에게 공시되면, 이를 동의한 이용자가 서비스에 가입함으로써 효력이 발생한다.
+                            <br> 2. 합리적인 사유가 발생할 경우 징검다리스쿨은 법령에 위배되지 않는 범위 안에서 개정할 수 있다. 개정된 약관은 사이트 등을 통해 공지함으로써 효력이 발생한다.
+                            <br> 3. 회원은 정기적으로 사이트를 방문하여 약관의 변경사항을 확인하여야 하며 회원은 변경된 약관에 동의하지 않을 경우 회원탈퇴(해지)를 요청할 수 있다. 변경된 약관에
+                            대한 정보를 알지 못해 발생하는 회원의 피해는 징검다리스쿨에서 책임지지 않는다.
+                            <br> 4. 징검다리스쿨 사이트 이용이 2년 이상 없고 계속 사용에 대한 동의를 하지 않은 경우 온라인 회원 효력이 상실된다.
+                            <br> 5. 징검다리스쿨은 필요한 경우 개별 서비스에 대하여 이용규정을 정할 수 있으며, 본 약관과 서로 상충되는 경우에는 서비스별 이용 규정의 내용을 우선하여 적용한다.
+                            <br> 6. 본 약관에 명시되지 않은 사항에 대해서는 관련 법령의 규정에 의한다.
+                            <br>
+                            <div class="refusal-text bold">제2장 서비스 이용계약</div>
+                            제4조(이용계약의 성립)
+                            <br>이용계약은 이용자의 약관 내용 및 개인정보 제공에 대한 동의와 이용자의 이용신청에 대한 징검다리스쿨 관리자의 승낙으로 성립한다.
+                            <br>
+                            <br>제5조(이용신청)
+                            <br>이용신청은 사이트의 회원가입신청 양식에 개인의 신상정보 입력 및 정보 제공을 동의하는 방식으로 신청한다.
+                            <br>
+                            <br>제6조(이용신청의 승낙)
+                            <br>⓵사이트 관리자는 제5조에서 정한 사항을 정확히 기재하여 이용신청을 하였을 경우 특별한 사정이 없는 한 서비스 이용신청을 승낙하여야 한다.
+                            <br>②사이트 관리자는 다음 각 항목에 해당하는 경우에 대하여는 회원 가입을 취소할 수 있다.
+                            <br> 1. 본인의 실명으로 신청하지 않았을 때
+                            <br> 2. 다른 사람의 명의를 사용하여 신청하였을 때
+                            <br> 3. 신청서의 내용을 허위로 기재하였을 때
+                            <br> 4. 14세 미만 아동이 법정대리인(부모 등)의 동의를 얻지 아니한 경우
+                            <br> 5. 사회의 안녕 질서 또는 미풍양속을 저해할 목적으로 신청하였을 때
+                            <br> 6. 기타 징검다리스쿨이 정한 신청 요건이 미비 되었을 때
+                            <br>
+                            <br>제7조(회원탈퇴 및 이용제한)
+                            <br>⓵ 회원이 이용계약을 해지하고자 할 때에는 회원 본인이 직접 사이트를 통해 탈퇴 신청을 하고, 관리자의 본인확인절차를 거치면 탈퇴할 수 있다.
+                            <br>⓶ 회원탈퇴 시 해당 개인정보는 보유기간이 만료되므로 회원과 관련된 모든 정보는 삭제된다.
+                            <br>⓷ 보안 및 아이디 정책, 서비스의 원활한 제공 등과 같은 이유로 회원 아이디 및 비밀번호 변경을 요구할 수 있다
+                            <br>⓸ 아래의 경우 사이트 관리자는 회원 가입을 취소할 수 있다.
+                            <br> 1. 범죄적 행위에 관련되는 경우
+                            <br> 2. 국익 또는 공익을 저해할 목적으로 서비스 이용을 계획 또는 실행할 경우
+                            <br> 3. 회원이 제공한 데이터가 허위임을 판명된 경우
+                            <br> 4. 타인의 서비스 아이디 및 비밀번호를 도용한 경우
+                            <br> 5. 타인의 명예를 손상시키거나 불이익을 주는 경우
+                            <br> 6. 같은 사용자가 다른 아이디로 이중 등록을 한 경우
+                            <br> 7. 서비스에 위해를 가하는 등 서비스의 건전한 이용을 저해하는 경우
+                            <br> 8. 기타 관련 법령이나 징검다리스쿨이 정한 이용조건에 위배되는 경우
+                            <div class="refusal-text bold">제3장 서비스 제공 및 이용</div>
+                            제8조(서비스 이용 및 변경)
+                            <br>⓵ 관리자는 회원의 이용신청을 승낙한 때부터 서비스를 개시한다. 단, 일부 서비스의 경우에는 지정된 일자부터 서비스를 개시할 수 있다.
+                            <br>⓶ 업무상 또는 기술상의 장애로 인하여 서비스를 개시하지 못하는 경우에는 사이트에 공지하거나 회원에게 이를 통지한다.
+                            <br>⓷ 징검다리스쿨은 정책 및 운영의 필요에 따라 서비스의 일부 또는 전부를 수정, 중단, 변경할 수 있으며, 사전에 7일 이상 사이트 등을 통해 공지한다.
+                            <br>
+                            <br>제10조(정보의 제공)
+                            <br>회원에게 서비스 이용 중 필요가 있다고 인정되는 다양한 정보에 대해서는 전자우편 및 휴대폰 문자메시지 등의 방법으로 제공할 수 있다. 다만, 회원은 정보수신을 원치
+                            않을 경우에는 거부할 수 있다.
+                            <br>
+                            <br>제11조(회원의 의무 및 정보보안)
+                            <br>⓵ 회원은 서비스 이용을 위해 가입할 경우 현재의 사실과 일치하는 완전한 정보를 제공해야 한다.
+                            또한 가입정보가 변경된 경우 즉시 갱신 또는 징검다리스쿨에 통보하여야 한다.
+                            <br>⓶ 회원은 서비스 사용을 위한 가입절차를 통해 아이디와 비밀번호를 설정할 수 있다.
+                            <br>⓷ 회원은 사이트 접속 종료 시 로그아웃을 해야 하며 본인의 승인 없이 아이디와 비밀번호가 사용되는 문제가 발생되면 즉시 관리 책임 부서에 신고하여야 한다.
+                            <br>
+                            <br>제12조(징검다리스쿨의 의무)
+                            <br>⓵ 징검다리스쿨은 회원이 희망한 서비스 제공 개시일에 특별한 사정이 없는 한 서비스를 이용할 수 있도록 하여야 한다.
+                            <br>⓶ 징검다리스쿨은 계속적이고 안정적인 서비스의 제공을 위하여 설비에 장애가 생기거나 멸실된 때에는 부득이한 사유가 없는 한 지체 없이 이를 수리 또는 복구해야 한다.
+                            <br>⓷ 징검다리스쿨은 회원이 안전하게 서비스를 이용할 수 있도록 개인정보보호를 위한 보안시스템을 구축하며 개인정보 보호정책을 공시하고 준수하여야 한다.
+                            <br>⓸ 징검다리스쿨은 회원으로부터 제기되는 의견이나 불만을 정당하다고 객관적으로 인정될 경우에는 적절한 절차를 거쳐 즉시 처리하여야 한다, 다만 즉시 처리가 곤란한 경우는
+                            회원에게 그 사유와 처리일정을 통보하여야 한다.
+                            <br>⓹ 징검다리스쿨은 회원의 귀책사유로 인한 서비스 이용 장애에 대해서는 책임을 지지 않는다.
+                            <div class="refusal-text bold">제4장 기타</div>
+                            제13조(양도금지)
+                            <br>회원은 서비스의 이용권한, 기타 이용계약상의 지위를 타인에게 양도, 증여할 수 없다.
+                            <br>
+                            <br>제14조(손해배상)
+                            <br>징검다리스쿨은 무료로 제공되는 서비스와 관련하여 회원에게 어떠한 손해가 발생하더라도 이에 대하여 책임을 지지 않는다. 다만, 중대한 과실에 의한 경우에는 그러하지
+                            아니한다.
+                            <br>
+                            <br>제15조(면책조항)
+                            <br>⓵ 천재지변 또는 이에 준하는 불가항력으로 인하여 서비스를 제공할 수 없는 경우에는 서비스 제공에 관한 책임이 면제된다.
+                            <br>⓶ 회원의 구책사유로 인한 서비스 이용의 장애에 대하여 책임을 지지 않는다.
+                            <br>⓷ 회원이 서비스를 이용하여 기대하는 이익이나 서비스를 통해 얻은 자료로 인한 손해는 책임지지 않는다.
+                            <br>
+                            <br>- 부칙 -
+                            <br>&nbsp;본 약관은 2021년 11월 30일부터 적용한다.
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+        </div>
+
+        </section>
+
+        </div>
+    </main>
+    <footer>
+        <h2>
+            <ul>
+                <li><a href="index.html">홈으로</a></li>
+                <li><a href="./termsAndConditions.html">약관</a></li>
+                <li><a href="./privateInfo.html">개인정보처리방침</a></li>
+                <li><a href="./refusalOfEmailCollection.html">이메일무단수집거부</a></li>
+                <li><a href="./youthPolicy.html">청소년보호정책</a></li>
+        </h2>
+        </ul>
+        <hr>
+        </hr>
+        <div class="copyrights">
+            <h3>
+                <p>주소 : 사북공공도서관 (우:26150)강원도 정선군 사북읍 파랑새길 33</p>
+                <p>대표전화 : 033 592-5757~8 팩스 : 033-592-5759</p>
+                <p>COPYRIGHT (C) JINGGEOMDARI SCHOOL. ALL RIGHTS RESERVED.</p>
+                </ul>
+        </div>
+        </h3>
+    </footer>
+    </div>
+</body>
+
+</html>

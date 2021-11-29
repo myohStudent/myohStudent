@@ -63,6 +63,7 @@ footer h3{ font-family: 'Nanum Gothic';}
 }
 .refusal-text {
     text-align:left;
+    font-size:15px;
 }
 .refusal-text.bold{
     font-weight:bold;
