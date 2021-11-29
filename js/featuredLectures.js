@@ -61,7 +61,7 @@ function generateClassCard(classData) {
   console.log(card)
   card.onclick = function() {
 
-   window.location= "./openCourses/videoLecture00.html"; 
+   window.location= "./curriculum_pages/courseMath.html"; 
   /*window.location= ""'classData.title' + '.html'"";*/
   }
 
@@ -86,3 +86,5 @@ function generateClassCard(classData) {
 for(var i=0 ; i<6 ; i++) {
   generateClassCard(classArr[i]);
 }
+
+$('.card').css('cursor', 'pointer');
