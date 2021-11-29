@@ -165,65 +165,49 @@
             <section class="introduction">
                 <div class="front-text">
                     <a href="../index.html"><img src="../img/home.png" /></a>&nbsp; > &nbsp;&nbsp;마이페이지&nbsp; >
-                    &nbsp;내 강의&nbsp;&nbsp; > &nbsp; 수강 과목 &nbsp;&nbsp; > &nbsp; 공지사항</div>
+                    &nbsp;내 강의&nbsp;&nbsp; > &nbsp; 수강 과목 &nbsp;&nbsp; > &nbsp; 과제 </div>
                 <div class="login-text">
                     <br>
-                        <div class="table-box">
-                            <p>과목 공지사항</p>
-                            <table class="table-letterbox classnotice">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">번호</th>
-                                        <th scope="col">제목</th>
-                                        <th scope="col">작성자</th>
-                                        <th scope="col">작성일</th>
-                                        <th scope="col">조회수</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td data-label="번호">5</td>
-                                        <td data-label="제목"><a href="classNotice00.html">공지사항입니다</a></td>
-                                        <td data-label="작성자">00선생님</td>
-                                        <td data-label="작성일">03/22</td>
-                                        <td data-label="조회수">1</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-label="번호">4</td>
-                                        <td data-label="제목">&nbsp;</td>
-                                        <td data-label="작성자">&nbsp;</td>
-                                        <td data-label="작성일">&nbsp;</td>
-                                        <td data-label="조회수">&nbsp;</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-label="번호">3</td>
-                                        <td data-label="제목">&nbsp;</td>
-                                        <td data-label="작성자">&nbsp;</td>
-                                        <td data-label="작성일">&nbsp;</td>
-                                        <td data-label="조회수">&nbsp;</td>                                    </tr>
-                                    <tr>
-                                        <td data-label="번호">2</td>
-                                        <td data-label="제목">&nbsp;</td>
-                                        <td data-label="작성자">&nbsp;</td>
-                                        <td data-label="작성일">&nbsp;</td>
-                                        <td data-label="조회수">&nbsp;</td>                                    </tr>
-                                    <tr>
-                                        <td data-label="번호">1</td>
-                                        <td data-label="제목">&nbsp;</td>
-                                        <td data-label="작성자">&nbsp;</td>
-                                        <td data-label="작성일">&nbsp;</td>
-                                        <td data-label="조회수">&nbsp;</td>                                    </tr>
-                                </tbody>
-                            </table>
+                    <div class="table-box homework">
+                        <p>과제 제출</p>
+                        <hr>
+                        <br />
+                        <div class="write-area">
+                            <form enctype="multipart/form-data" action="" method="post">
+                                <div>
+                                    <span class="write-area tag">과제 단원</span>
+                                    <select class="chapter-select">
+                                        <option>1단원</option>
+                                        <option>2단원</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <span class="write-area tag">과제 첨부</span>
+                                    <input type="file" name="SelectFile" />
+                                </div>
+                                <div class="input-title">
+                                    <!-- <span class="write-area tag">제 목 </span>  -->
+                                    <textarea class="write-title" name="title" id="utitle" class="textarea title"
+                                        rows="1" cols="50" placeholder="제목" maxlength="100" required></textarea>
+                                </div>
+                                <div class="input_content">
+                                    <!-- <span class="write-area tag">내 용 </span> -->
+                                    <textarea class="write-content" name="content" id="ucontent"
+                                        class="textarea content" placeholder="내용을 입력해 주세요" required></textarea>
+                                </div>
+
+                                <div class="btn-area">
+                                    <button class="info-btn submit" type="submit">과제제출</button> <button
+                                        class="info-btn back" onclick="location.href='homeworkNoticeMore.html';">과제게시판 보기</button>
+                                </div>
+                            </form>
                         </div>
-                        
-                        <button class="round-btn">&lt;</button>
-						<button class="round-btn">&gt;</button> 
-                        <br/>
-                        <br/>
-                        <button type="button" class="courses-btn-conf" onclick="location.href='class00.html'">
-                            수강과목으로 이동
-                        </button>
+                    </div>
+                    <br />
+                    <br />
+                    <button type="button" class="courses-btn-conf" onclick="location.href='class00.html';">
+                        수강과목으로 이동
+                    </button>
                 </div>
                 </form>
                 <p></p>

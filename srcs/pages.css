@@ -48,7 +48,7 @@ main {margin-top:0px;}
 /*
 ** curriculum pages
 */
-.grade-select, .year-select, .semester-select {
+.grade-select, .year-select, .semester-select, .chapter-select {
     width:100px;
     font-size: 16px;
     padding:2px 2px 2px 2px;
@@ -196,7 +196,7 @@ main {margin-top:0px;}
     /* border-top: 1px solid #a1a1a1; */
     border-collapse: collapse;
 }
-.tables.table-vertical td::before {
+.tables.table-vertical td:before {
     content: attr(data-label);
     float:left;
     text-align:left;
@@ -207,6 +207,10 @@ main {margin-top:0px;}
 }
 .tables.table-vertical td:last-child {
     border-bottom: 0;
+}
+.tables.table-vertical.homework td:before{
+    background-color:#ccc1ec;
+    font-size:.8em;
 }
 .tables.td-description { padding-left:10px; }
 .course-description {
@@ -223,7 +227,9 @@ main {margin-top:0px;}
     text-align:left;
     color:#707070;
 }
-
+.sub-text.notice{
+    font-size:15px;
+}
 /* video lecture */
 .lecture-name {
     width:70%;
@@ -582,6 +588,44 @@ form label {
 }
 .mypage-classbtn{
     cursor: pointer;
+}
+.write-area {
+    text-align:left;
+    line-height:2em;
+    width:100%;
+}
+.write-area.tag {
+    margin-right:20px;
+}
+.btn-area {
+    text-align:center;
+}
+.input-title, .input-content{
+    text-align:left;
+}
+.write-title, .write-content {
+    width:100%;
+    height:30px;
+    padding:2px;
+    line-height:1.5em;
+    font-size: 18px;
+    margin-top:20px;
+}
+.write-content {
+    height:300px;
+}
+.info-btn.submit, .info-btn.back {
+    border-radius:30px;
+    font-size:18px;
+    font-weight: bold;
+    padding:15px;
+    margin:5px;
+}
+.info-btn.back {background-color:#b6b6b6;}
+textarea.title{
+    font-size:14px;
+    margin-top:10px;
+    line-height:1.5em;
 }
 /*
 ** registration success / failed
@@ -1090,7 +1134,13 @@ form label {
     .tables.course-timetable td::before {
         width:60px;
     }
-  
+    .write-title, .write-content {
+        width:100%;
+        border-style:none;
+    }
+    .info-btn.submit, .info-btn.back {
+        font-size:15px;
+    }
 } 
 @media screen and (max-width:456px){
     /* .registration{min-height:2500px;} */

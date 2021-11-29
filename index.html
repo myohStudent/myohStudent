@@ -36,13 +36,13 @@
 				<span></span>
 				<ul id="menu">
 					<ul class="click">
-						<li><a href="login.html"><img src="./img/loginIcon.svg" width="11px"/> 로그인</a></li>
+						<li><a href="login.html"><img src="./img/loginIcon.svg" width="11px" /> 로그인</a></li>
 					</ul>
 					<ul class="click">
-						<li><a href="register.html"><img src="./img/pencil.svg" width="11px"/> 회원가입</a></li>
+						<li><a href="register.html"><img src="./img/pencil.svg" width="11px" /> 회원가입</a></li>
 					</ul>
 					<ul class="click">
-						<li><img src="./img/SSS.svg" width="19px"/> 징검다리스쿨소개
+						<li><img src="./img/SSS.svg" width="19px" /> 징검다리스쿨소개
 							<ul class="sub">
 								<li>
 									<a href="./introduction_pages/introduction.html" class="ham-a">교육철학</a>
@@ -93,7 +93,7 @@
 						</li>
 					</ul>
 					<ul class="click">
-						<li><a href="./videos.html"><img src="./img/video.svg" width="15px"/> 영상강좌</a>
+						<li><a href="./videos.html"><img src="./img/video.svg" width="15px" /> 영상강좌</a>
 						</li>
 					</ul>
 					<ul class="click">
@@ -178,41 +178,43 @@
 			</div>
 		</section>
 		<section class="popular-lectures" id="featuredLectures">
-				<h1>인기 강좌</h1>
-				<div id="class-grid" class="grid-container">
+			<h1>인기 강좌</h1>
+			<div id="class-grid" class="grid-container">
+				<!--featuredLectures.js-->
+			</div>
 		</section>
 		<section>
 			<div class="monthly-table-shortcut" id="monthlyTableShortcut">
 				<div class="table-cont">
-				<h1>월별 학사일정</h1>
-				<div class="calendar-text">아래의 일자를 클릭하시면 상세 일정을 보실 수 있습니다.</div>
-				<br />
-				<a href="./schedule/monthlySchedule.html">
-					<table class="scriptCalendar">
-						<thead>
-							<tr class="first-row">
-								<td onClick="prevCalendar();" style="cursor:pointer;">&#60;&#60;</td>
-								<td colspan="5" class="cal-text">
-									<span id="calYear">YYYY</span>년
-									<span id="calMonth">MM</span>월
-								</td>
-								<td onClick="nextCalendar();" style="cursor:pointer;">&#62;&#62;</td>
-							</tr>
-							<tr>
-								<td>일</td>
-								<td>월</td>
-								<td>화</td>
-								<td>수</td>
-								<td>목</td>
-								<td>금</td>
-								<td>토</td>
-							</tr>
-						</thead>
-						<tbody></tbody>
-					</table>
-				</a>
+					<h1>월별 학사일정</h1>
+					<div class="calendar-text">아래의 일자를 클릭하시면 상세 일정을 보실 수 있습니다.</div>
+					<br />
+					<a href="./schedule/monthlySchedule.html">
+						<table class="scriptCalendar">
+							<thead>
+								<tr class="first-row">
+									<td onClick="prevCalendar();" style="cursor:pointer;">&#60;&#60;</td>
+									<td colspan="5" class="cal-text">
+										<span id="calYear">YYYY</span>년
+										<span id="calMonth">MM</span>월
+									</td>
+									<td onClick="nextCalendar();" style="cursor:pointer;">&#62;&#62;</td>
+								</tr>
+								<tr>
+									<td>일</td>
+									<td>월</td>
+									<td>화</td>
+									<td>수</td>
+									<td>목</td>
+									<td>금</td>
+									<td>토</td>
+								</tr>
+							</thead>
+							<tbody></tbody>
+						</table>
+					</a>
+				</div>
 			</div>
-		</div>
 		</section>
 	</main>
 	<footer>
@@ -236,4 +238,5 @@
 	</footer>
 </body>
 <script src="js/featuredLectures.js"></script>
+
 </html>
