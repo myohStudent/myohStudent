@@ -165,59 +165,49 @@
             <section class="introduction">
                 <div class="front-text">
                     <a href="../index.html"><img src="../img/home.png" /></a>&nbsp; > &nbsp;&nbsp;마이페이지&nbsp; >
-                    &nbsp;내 강의&nbsp;&nbsp; > &nbsp; 수강 과목 &nbsp; &nbsp; > &nbsp; 과제</div>
+                    &nbsp;내 강의&nbsp;&nbsp; > &nbsp; 수강 과목 &nbsp;&nbsp; > &nbsp; 과제 문의</div>
                 <div class="login-text">
-                    <p></p>
-                    <p>과제</p>
                     <br>
-                    <form method="" name="" action="" target="" value>
-                        <table class="tables table-vertical homework">
-                            <thead>
-                                <tr>
-                                    <th scope="col">과제 단원</th>
-                                    <th scope="col">첨부파일</th>
-                                    <th scope="col">작성자</th>
-                                    <th scope="col">제목</th>
-                                    <th scope="col">작성일시</th>
-                                    <th scope="col">내용</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td data-label="과제 단원">1단원</td>
-                                    <td data-label="첨부파일"><a href="">1단원 과제.zip</a></td>
-                                    <td data-label="작성자">00선생님</td>
-                                    <td data-label="제목">코딩 과제예요</td>
-                                    <td data-label="작성일시">2022-03-17 16:32:10</td>
-                                    <td data-label="내용">
-                                        <div class="sub-text notice">
-                                            <br>코딩 과제에서 000을 자세히 살펴보고,
-                                            <br>프로그램에서 반복문의 개념을 이해해보아요~
-                                            <br />
-                                        </div>
-                                    </td>
-                                    
-                                </tr>
-                            </tbody>
-                        </table>
-                        <br>
-                        <table class="tables table-vertical homework">
-                            <thead>
-                                <tr>
-                                    <th scope="col">선생님 답변</th>
-                                    <th scope="col">답변작성일시</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td data-label="선생님 답변">&nbsp;</td>
-                                    <td data-label="답변작성일시">&nbsp;</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <button type="button" class="courses-btn-conf" onclick="location.href='homeworkNoticeMore.html'">
-                            과제게시판 보기
-                        </button>
+                    <div class="table-box homework">
+                        <p>과제 문의</p>
+                        <hr>
+                        <br />
+                        <div class="write-area">
+                            <form enctype="multipart/form-data" action="" method="post">
+                                <div>
+                                    <span class="write-area tag">과제 단원</span>
+                                    <select class="chapter-select">
+                                        <option>1단원</option>
+                                        <option>2단원</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <span class="write-area tag">과제 첨부</span>
+                                    <input type="file" name="SelectFile" />
+                                </div>
+                                <div class="input-title">
+                                    <!-- <span class="write-area tag">제 목 </span>  -->
+                                    <textarea class="write-title" name="title" id="utitle" class="textarea title"
+                                        rows="1" cols="50" placeholder="제목" maxlength="100" required></textarea>
+                                </div>
+                                <div class="input_content">
+                                    <!-- <span class="write-area tag">내 용 </span> -->
+                                    <textarea class="write-content" name="content" id="ucontent"
+                                        class="textarea content" placeholder="내용" required></textarea>
+                                </div>
+
+                                <div class="btn-area">
+                                    <button class="info-btn submit" type="submit">등 &nbsp;&nbsp; 록</button> <button
+                                        class="info-btn back" onclick="location.href='homeworkNoticeMore.html';">과제게시판 보기</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    <button type="button" class="courses-btn-conf" onclick="location.href='class00.html';">
+                        수강과목으로 이동
+                    </button>
                 </div>
                 </form>
                 <p></p>
