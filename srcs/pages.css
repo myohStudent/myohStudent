@@ -227,7 +227,9 @@ main {margin-top:0px;}
     text-align:left;
     color:#707070;
 }
-
+.sub-text.notice{
+    font-size:15px;
+}
 /* video lecture */
 .lecture-name {
     width:70%;
@@ -1136,7 +1138,9 @@ textarea.title{
         width:100%;
         border-style:none;
     }
-  
+    .info-btn.submit, .info-btn.back {
+        font-size:15px;
+    }
 } 
 @media screen and (max-width:456px){
     /* .registration{min-height:2500px;} */
