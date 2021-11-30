@@ -1,0 +1,20 @@
+/*
+*
+*/ 
+
+/*
+* 슬라이더 (js로 바꿔야 함)
+*/
+
+.your-class {
+    height:700px;
+}
+.your-class img {height:700px;}
+
+@media screen and (max-width: 767px) {
+    .your-class {
+        height:400px;
+    }
+    .your-class img {height:400px;}
+        
+}
