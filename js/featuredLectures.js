@@ -89,6 +89,7 @@ for(var i=0 ; i<6 ; i++) {
 
 $('.card').css('cursor', 'pointer');
 
+/* 인덱스 메뉴의 사진 슬라이더 */
 $(document).ready(function () {
 	$('.your-class').slick({
 	  slidesToShow: 1,
