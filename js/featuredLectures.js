@@ -88,58 +88,12 @@ for(var i=0 ; i<6 ; i++) {
 }
 
 $('.card').css('cursor', 'pointer');
-/*
-header and pulldown menu
-*/
+
 $(document).ready(function () {
-  $('.your-class').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-  });
+	$('.your-class').slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  autoplay: true,
+	  autoplaySpeed: 2000,
+	});
 });
-
-$(".m1").hover(function () {
-  $(this).css('cursor', 'pointer');
-  if($(".wow").css("display") == "none")
-  {
-    $(".wow").css('display', 'block');
-    $(".wow").animate({opacity:'0.9'}, 500);
-  }
-});
-$(".m2").hover(function () {
-  $(this).css('cursor', 'pointer');
-  if($(".wow").css("display") == "none")
-  {
-    $(".wow").css('display', 'block');
-    $(".wow").animate({opacity:'0.9'}, 500);
-  }
-});
-$(".m3").hover(function () {
-  $(this).css('cursor', 'pointer');
-  if($(".wow").css("display") == "none")
-  {
-    $(".wow").css('display', 'block');
-    $(".wow").animate({opacity:'0.9'}, 500);
-  }
-});
-/* 타깃영역 제외한 부분 누르면 wow 없애기 */
-$('body').on('click', function(e){
-  var $tgPoint = $(e.target);
-  var $popCallBtn = $tgPoint.hasClass('nav-table');
-  var $popArea = $tgPoint.hasClass('wow');
-
-  if ( !$popCallBtn && !$popArea ) {
-    $(".wow").animate({opacity:'0'}, 500);
-    setTimeout(function(){
-    $(".wow").css('display', 'none');  
-    },500);
-  }
-});
-// $(".wow").mouseout(function(){
-  //     $(".wow").animate({opacity:'0'}, 500);
-  //     setTimeout(function(){
-  //       $(".wow").css('display', 'none');  
-  //     },500);
-  // });

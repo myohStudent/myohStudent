@@ -7,26 +7,18 @@
 	<title>징검다리스쿨</title>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<link href="./srcs/style.css" rel="stylesheet">
-	<link href="./srcs/slider.css" rel="stylesheet">
+	<link href="./srcs/slider2.css" rel="stylesheet">
 	<link href="./srcs/grid.css" rel="stylesheet">
 	<link href="./srcs/footer.css" rel="stylesheet">
-	<link href="./srcs/dropdown.css" rel="stylesheet">
-	<!-- <link href="./srcs/monthlyCal.css" rel="stylesheet" /> -->
+	<link href="./slick/slick.css" rel="stylesheet" type="text/css">
+	<link href="./slick/slick-theme.css" rel="stylesheet" type="text/css">
 	<script src="./js/calendarTest.js"></script>
-	<!-- <link href="./srcs/calendar.css" rel="stylesheet"> -->
 	<script src="js/index.js"></script>
-
+	
 </head>
 
 <body>
 	<div class="container">
-		<div class="slider">
-			<div class="slide slide1"></div>
-			<div class="slide slide2"></div>
-			<div class="slide slide3"></div>
-			<div class="slide slide4"></div>
-			<div class="slide slide1"></div>
-		</div>
 		<header>
 			<div class="hidden-logo"><a href="index.html"><img src="img/sss2.png"></a></div>
 			<div id="menuToggle">
@@ -35,12 +27,39 @@
 				<span></span>
 				<span></span>
 				<ul id="menu">
+					<div class="go-to-main"><a href="index.html">메인으로 돌아가기 <img src="./img/home.png" width="17px" /></a>
+					</div>
+					<!--{{^sessionedUser}}-->
 					<ul class="click">
 						<li><a href="login.html"><img src="./img/loginIcon.svg" width="11px" /> 로그인</a></li>
 					</ul>
 					<ul class="click">
 						<li><a href="register.html"><img src="./img/pencil.svg" width="11px" /> 회원가입</a></li>
 					</ul>
+					<!--{{/sessionedUser}}
+					{{#sessionedUser}}
+					<ul class="click">
+					<li><a href="index.html"><img src="./img/loginIcon.svg" width="11px" /> 로그아웃</a></li>
+					</ul>
+					<ul class="click">
+						<li><img src="./img/pencil.svg" width="11px" /> 마이페이지
+							<ul class="sub">
+								<li>
+									<a href="./my_pages/mypage.html" class="ham-a">내 강의</a>
+								</li>
+								<li>
+									<a href="./my_pages/mentoring.html" class="ham-a">멘토링 보고서</a>
+								</li>
+								<li>
+									<a href="./my_pages/profile_settings.html" class="ham-a">내 정보 수정</a>
+								</li>
+								<li>
+									<a href="./my_pages/letterbox.html" class="ham-a">받은 메시지함</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					{{/sessionedUser}}-->
 					<ul class="click">
 						<li><img src="./img/SSS.svg" width="19px" /> 징검다리스쿨소개
 							<ul class="sub">
@@ -101,56 +120,73 @@
 					</ul>
 				</ul>
 			</div>
+			<!-- ----------------------------------------------------------------------->
 			<nav>
-				<div class="logo"><a href="index.html"><img src="img/sss2.png"></a></div>
-				<div class="btn1"><a href="#">&nbsp;징검다리스쿨소개&nbsp;</a>
-					<div class="btn1-hover">
-						<ul>
-							<li><a href="./introduction_pages/introduction.html">&nbsp;교육철학</a></li>
-							<li><a href="./introduction_pages/career.html">&nbsp;걸어온 길</a></li>
-							<li><a href="./introduction_pages/greetings.html">&nbsp;교장 인사말</a></li>
-							<li><a href="./introduction_pages/commitee.html">&nbsp;교육위원회</a></li>
-						</ul>
-					</div>
+				<table class="nav-table">
+					<tr>
+						<td class="none-for-4k"> </td>
+						<td class="m1">징검다리스쿨소개</td>
+						<td class="m2">교육과정</td>
+						<td class="m3">학사일정</td>
+						<td class="m4"><a href="videos.html">영상강좌</a></td>
+						<td class="m5"><a href="index.html"><img src="img/sss2.png"></a></td>
+						<td class="m6"><a href="notice.html">공지사항</a></td>
+						<!--{{^sessionedUser}}-->
+						<td class="m7"><a href="register.html">회원가입</a></td>
+						<td class="m8"><a href="login.html">로그인</a></td>
+						<!--{{/sessionedUser}}-->
+						<!--{{#sessionedUser}}
+						<td class="m7-my">마이페이지</td>
+						<td class="m8"><a href="index.html">로그아웃</a></td>
+						{{/sessionedUser}}-->
+						<td class="none-for-4k"> </td>
+						<td><a href="http://www.jeongseon.go.kr/intro.html"><img src="img/jeongsunlogo.png"></a></td>
+					</tr>
+				</table>
+				<div class="wow">
+					<table>
+						<tr class="wow-head">
+							<td>징검다리스쿨소개</td>
+							<td>교육과정</td>
+							<td>학사일정</td>
+						</tr>
+						<tr>
+							<td><a href="./introduction_pages/introduction.html">교육철학</a></td>
+							<td><a href="./curriculum_pages/primary_steam.html">초등인재</a></td>
+							<td><a href="./schedule/yearlySchedule.html">연간학사일정</a></td>
+						</tr>
+						<tr>
+							<td><a href="./introduction_pages/career.html">걸어온 길</a></td>
+							<td><a href="./curriculum_pages/secondary_steam.html">중등인재</a></td>
+							<td><a href="./schedule/monthlySchedule.html">월간학사일정</a></td>
+						</tr>
+						<tr>
+							<td><a href="./introduction_pages/greetings.html">교장 인사말</a></td>
+							<td><a href="./curriculum_pages/primary_culture.html">초등교양</a></td>
+						</tr>
+						<tr>
+							<td><a href="./introduction_pages/commitee.html">교육위원회</a></td>
+							<td><a href="./curriculum_pages/secondary_culture.html">중등교양</a></td>
+						</tr>
+						<tr>
+							<td> </td>
+							<td><a href="./curriculum_pages/parents.html">학부모 및 성인</a></td>
+						</tr>
+					</table>
+					</ul>
 				</div>
-				<div class="btn2"><a href="#">&nbsp;교육과정&nbsp;</a>
-					<div class="btn2-hover">
-						<ul>
-							<li><a href="./curriculum_pages/primary_steam.html">&nbsp;초등인재</a></li>
-							<li><a href="./curriculum_pages/secondary_steam.html">&nbsp;중등인재</a></li>
-							<li><a href="./curriculum_pages/primary_culture.html">&nbsp;초등교양</a></li>
-							<li><a href="./curriculum_pages/secondary_culture.html">&nbsp;중등교양</a></li>
-							<li class="btn2-smol"><a href="./curriculum_pages/parents.html">학부모 및 성인</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="btn3"><a href="#">&nbsp;학사일정&nbsp;</a>
-					<div class="btn3-hover">
-						<ul>
-							<li><a href="./schedule/yearlySchedule.html">&nbsp;연간학사일정</a></li>
-							<li><a href="./schedule/monthlySchedule.html">&nbsp;월간학사일정</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="btn4"><a href="videos.html">&nbsp;영상강좌&nbsp;</a></div>
-				<div class="btn5"><a href="notice.html">&nbsp;공지사항&nbsp;</a></div>
-				<div class="btn6"><a href="register.html">&nbsp;회원가입&nbsp;</a></div>
-				<!-- login
-				  <div class = "btn6_loggedin"><a href="#">&nbsp;마이페이지&nbsp;</a>
-					<div class="btn6-hover">
-					  <ul><li><a href="./my_pages/mypage.html">&nbsp;내강의</a></li><li><a href="./my_pages/mentoring.html">&nbsp;멘토링보고서</a></li> <li><a href="./my_pages/setting.html">&nbsp;정보수정</a></li> <li><a href="./my_pages/letterbox.html">&nbsp;받은메시지함</a></li></ul>
-					</div>
-				  </div> -->
-				<div class="btn7"><a href="login.html">&nbsp;로그인&nbsp;</a></div>
-				<!--login
-				  <div class = "btn7_loggedin"><a href="./index.html">&nbsp;로그아웃&nbsp;</a></div>
-				  -->
-				<div class="right-nav"><a href="http://www.jeongseon.go.kr/intro.html"><img
-							src="img/jeongsunlogo.png"></a>
-				</div>
+
 			</nav>
 		</header>
+
+		<div class="your-class">
+			<img src="./img/bg0.jpg" />
+			<img src="./img/bg1.jpg" />
+			<img src="./img/bg2.jpg" />
+			<img src="./img/bg3.jpg" />
+		</div>
 	</div>
+	<!-------------------------------------------------------------------------->
 	<main class="index-main">
 		<section class="intro-banner">
 			<div class="quote-space">
@@ -177,12 +213,14 @@
 				</div>
 			</div>
 		</section>
+		<!------------------------------------------------------------------------->
 		<section class="popular-lectures" id="featuredLectures">
 			<h1>인기 강좌</h1>
 			<div id="class-grid" class="grid-container">
 				<!--featuredLectures.js-->
 			</div>
 		</section>
+		<!-------------------------------------------------------------------------->
 		<section>
 			<div class="monthly-table-shortcut" id="monthlyTableShortcut">
 				<div class="table-cont">
@@ -217,13 +255,14 @@
 			</div>
 		</section>
 	</main>
+	<!-------------------------------------------------------------------------->
 	<footer>
 		<h2>
 			<ul>
 				<li><a href="index.html">홈으로</a></li>
 				<li><a href="./termsAndConditions.html">약관</a></li>
 				<li><a href="./privateInfo.html">개인정보처리방침</a></li>
-                <li><a href="./refusalOfEmailCollection.html">이메일무단수집거부</a></li>
+				<li><a href="./refusalOfEmailCollection.html">이메일무단수집거부</a></li>
 				<li><a href="./youthPolicy.html">청소년보호정책</a></li>
 			</ul>
 		</h2>
@@ -237,6 +276,8 @@
 		</div>
 	</footer>
 </body>
+<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/featuredLectures.js"></script>
+<script src="./js/pulldownMenu.js" type="text/javascript" charset="utf-8"></script>
 
 </html>
