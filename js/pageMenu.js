@@ -6,7 +6,9 @@ $(".m1").hover(function () {
         $(".btn2-hover").css('display', 'none');
         $(".btn3-hover").css('display', 'none');
         $(".btn6-hover").css('display', 'none');
-        $(".btn1-hover").animate({width: "toggle"}, 400, "linear");
+        $(".btn1-hover").css('opacity', '0');
+        $(".btn1-hover").animate({width: "toggle"}, 1, "linear");
+        $(".btn1-hover").animate({opacity:1},1000);
         $(".btn1-hover").css('display', 'block');j
     };
 });
@@ -18,7 +20,9 @@ $(".m2").hover(function () {
         $(".btn1-hover").css('display', 'none');
         $(".btn3-hover").css('display', 'none');
         $(".btn6-hover").css('display', 'none');
-        $(".btn2-hover").animate({width: "toggle"}, 400, "linear");
+        $(".btn2-hover").css('opacity', '0');
+        $(".btn2-hover").animate({width: "toggle"}, 1, "linear");
+        $(".btn2-hover").animate({opacity:1},300);
         $(".btn2-hover").css('display', 'block');
    };
 });
@@ -30,7 +34,9 @@ $(".m3").hover(function () {
         $(".btn1-hover").css('display', 'none');
         $(".btn2-hover").css('display', 'none');
         $(".btn6-hover").css('display', 'none');
-        $(".btn3-hover").animate({width: "toggle"}, 400, "linear");
+        $(".btn3-hover").css('opacity', '0');
+        $(".btn3-hover").animate({width: "toggle"}, 1, "linear");
+        $(".btn3-hover").animate({opacity:1},300);
         $(".btn3-hover").css('display', 'block');
    };
 });
@@ -43,7 +49,9 @@ $(".m7-my").hover(function () {
         $(".btn1-hover").css('display', 'none');
         $(".btn2-hover").css('display', 'none');
         $(".btn3-hover").css('display', 'none');
-        $(".btn6-hover").animate({width: "toggle"}, 400, "linear");
+        $(".btn6-hover").css('opacity', '0');
+        $(".btn6-hover").animate({width: "toggle"}, 1, "linear");
+        $(".btn6-hover").animate({opacity:1},300);
         $(".btn6-hover").css('display', 'block');
    };
 });
@@ -55,11 +63,15 @@ $('body').on('click', function(e){
   
 	if ( /*!$popCallBtn && */!$popArea ) {
         setTimeout(function(){
+            // $(".btn1-hover").animate({opacity:0},300);
             $(".btn1-hover").css('display', 'none');
+            // $(".btn2-hover").animate({opacity:0},300);
             $(".btn2-hover").css('display', 'none');
+            // $(".btn3-hover").animate({opacity:0},300);
             $(".btn3-hover").css('display', 'none');
+            // $(".btn6-hover").animate({opacity:0},300);
             $(".btn6-hover").css('display', 'none');
-	    },400);
+	    },1);
 	}
 });
 
