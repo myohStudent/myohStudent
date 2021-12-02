@@ -7,9 +7,10 @@
 */
 
 .your-class {
+    visibility: hidden;
     height:700px;
 }
-.your-class img {height:700px;}
+.your-class img {height:700px; width:100%;}
 
 @media screen and (max-width: 767px) {
     .your-class {
