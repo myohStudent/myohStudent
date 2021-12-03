@@ -7,7 +7,7 @@
 */
 
 .your-class {
-    /* visibility: hidden; */
+    visibility: hidden;
     height:700px;
     overflow:hidden;
 }
