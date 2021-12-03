@@ -90,11 +90,17 @@ for(var i=0 ; i<6 ; i++) {
 $('.card').css('cursor', 'pointer');
 
 /* main page의 사진 슬라이더 */
-$('.your-class').css("visibility", "visible");
-$('.your-class img').css("display", "block");
+// $('.your-class').css("visibility", "visible");
+// $('.your-class img').css("display", "block");
 $(document).ready(function () {
-  
-	$('.your-class').slick({
+
+  $('.slick-init').slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  autoplay: false,
+	});
+  $('.your-class').attr("class","slick-init");
+	$('.slick-init').slick({
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  autoplay: true,
