@@ -23,9 +23,8 @@
     display:block;
 }
 @media screen and (max-width: 767px) {
-    .your-class {
+    .your-class,.slick-init {
         height:400px;
     }
-    .your-class img {height:400px;}
-        
+    .your-class img, .slick-init img {height:400px;}    
 }
