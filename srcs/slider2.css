@@ -6,25 +6,44 @@
 * 슬라이더 (js로 바꿔야 함)
 */
 
+
+.your-class img {
+    /* height:100%;
+    width:100%;
+    object-fit:contain; */
+    /*height:700px;
+    width:100%;*/
+    width:auto;height:auto;
+    /* height:700px; */
+    max-height:700px;
+    max-width:100%;
+}
 .your-class {
     visibility: hidden;
     height:700px;
-    overflow:hidden;
-}
-.your-class img {
-    height:700px;
     width:100%;
-    display:none;
+    overflow:hidden;
 }
 .slick-init {
     visibility:visible;
 }
 .slick-init img {
     display:block;
+    width:auto;height:auto;
+    /* height:700px; */
+    min-height:700px;
+    max-width:100%;
+    /* object-fit:contain; */
+
 }
 @media screen and (max-width: 767px) {
     .your-class,.slick-init {
         height:400px;
     }
-    .your-class img, .slick-init img {height:400px;}    
+    .your-class img, .slick-init img {
+        width:auto;height:auto;
+        /* height:700px; */
+        min-height:400px;
+        max-width:100%;
+    }    
 }
