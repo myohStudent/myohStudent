@@ -30,7 +30,10 @@ main {margin-top:0px;}
 /*
 ** introduction pages
 */
-
+.philosophy-container {
+    width:100%;
+}
+.philosophy-container img { width:100%;}
 /*
 ** curriculum pages
 */
