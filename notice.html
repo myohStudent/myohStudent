@@ -114,7 +114,7 @@
 					</li>
 				</ul>
 				<ul class="click">
-					<li><a href="./videos.html"><img src="./img/video.svg" width="15px" /> 영상강좌</a>
+					<li><a href="./videos.html"><img src="./img/video.svg" width="15px" /> 공개강좌</a>
 					</li>
 				</ul>
 				<ul class="click">
@@ -124,64 +124,96 @@
 		</div>
 		<!-- ----------------------------------------------------------------------->
 		<nav>
-			<table class="nav-table pages">
+			<ul class="main-menu">
+				<li>
+					징검다리스쿨소개
+				</li>
+				<li>
+					교육과정
+				</li>
+				<li>
+					학사일정
+				</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</li>
+				<li>
+					공개강좌
+				</li>
+				<li>
+					<a href="./notice.html">공지사항</a>
+				</li>
+				<!--{{^sessionedUser}}-->
+				<li>
+					회원가입
+				</li>
+				<li>
+					로그인
+				</li>
+				<!--{{/sessionedUser}}-->
+				<!--{{#sessionedUser}}
+					<li>마이페이지</li>
+					<li><a href="index.html">로그아웃</a></li>
+				{{/sessionedUser}}-->
+			</ul>
+			<!--<table class="nav-table">
 				<tr>
 					<td class="none-for-4k"> </td>
 					<td class="m1">징검다리스쿨소개</td>
 					<td class="m2">교육과정</td>
 					<td class="m3">학사일정</td>
-					<td class="m4"><a href="videos.html">영상강좌</a></td>
-					<td class="m5"><a href="index.html"><img src="img/sss.png"></a></td>
-					<td class="m6"><a href="notice.html">공지사항</a></td>
-					<!--{{^sessionedUser}}-->
-					<td class="m7"><a href="register.html">회원가입</a></td>
-					<td class="m8"><a href="login.html">로그인</a></td>
-					<!--{{/sessionedUser}}-->
-					<!--{{#sessionedUser}}
+					<td class="m4"><a href="videos.html">공개강좌</a></td>
+					<td class="m5"> </td>
+					<td class="m6"><a href="notice.html">공지사항</a></td>-->
+			<!--{{^sessionedUser}}-->
+			<!--<td class="m7"><a href="register.html">회원가입</a></td>
+					<td class="m8"><a href="login.html">로그인</a></td>-->
+			<!--{{/sessionedUser}}-->
+			<!--{{#sessionedUser}}
 					<td class="m7-my">마이페이지</td>
 					<td class="m8"><a href="index.html">로그아웃</a></td>
 					{{/sessionedUser}}-->
-					<td class="none-for-4k"> </td>
+			<!--<td class="none-for-4k"> </td>
 					<td><a href="http://www.jeongseon.go.kr/intro.html"><img src="img/jeongsunlogo.png"></a></td>
 				</tr>
-			</table>
-			<!--서브페이지들 메뉴(메인페이지 제외)-->
-			<!--{{^sessionedUser}}-->
-			<div class="btn1-hover">
-				<ul>
-					<li><a href="./introduction_pages/introduction.html">교육철학</a></li>
-					<li><a href="./introduction_pages/career.html">걸어온 길</a></li>
-					<li><a href="./introduction_pages/greetings.html">교장 인사말</a></li>
-					<li><a href="./introduction_pages/commitee.html">교육위원회</a></li>
+			</table>-->
+			<a href="index.html" class="main-logo"><img src="img/sss.png"></a>
+			<a href="http://www.jeongseon.go.kr/intro.html" class="jeongseonlogo"><img src="img/jeongsunlogo.png"></a>
+			<div class="wow">
+				<!--{{^sessionedUser}}-->
+				<ul class="wow-box">
+					<ul>
+						<li class="wow-head smol">징검다리스쿨소개</li>
+						<li><a href="./introduction_pages/enrollment.html">입학안내</a></li>
+						<li><a href="./introduction_pages/introduction.html">교육철학</a></li>
+						<li><a href="./introduction_pages/career.html">걸어온 길</a></li>
+						<li><a href="./introduction_pages/greetings.html">교장 인사말</a></li>
+						<li><a href="./introduction_pages/commitee.html">교육위원회</a></li>
+					</ul>
+					<ul class="wow-curriculum">
+						<li class="wow-head">교육과정</li>
+						<li><a href="./curriculum_pages/primary_steam.html">초등인재</a></li>
+						<li><a href="./curriculum_pages/secondary_steam.html">중등인재</a></li>
+						<li><a href="./curriculum_pages/primary_culture.html">초등교양</a></li>
+						<li><a href="./curriculum_pages/secondary_culture.html">중등교양</a></li>
+						<li><a href="./curriculum_pages/parents.html">학부모 및 성인</a></li>
+					</ul>
+					<ul>
+						<li class="wow-head">학사일정</li>
+						<li><a href="./schedule/monthlySchedule.html">월별학사일정</a></li>
+						<li><a href="./schedule/weeklySchedule.html">주간수업계획</a></li>
+					</ul>
+					<!--{{/sessionedUser}}-->
+					<!--{{#sessionedUser}}
+					<ul>
+						<li class="wow-head">마이페이지</li>
+						<li><a href="./my_pages/mypage.html">내 강의</a></li>
+						<li><a href="./my_pages/mentoring.html">멘토링보고서</a></li>
+						<li><a href="./my_pages/settings.html">정보수정</a></li>
+						<li><a href="./my_pages/letterbox.html">받은메시지함</a></li>
+					</ul>
+					{{/sessionedUser}}-->
 				</ul>
 			</div>
-			<div class="btn2-hover">
-				<ul>
-					<li><a href="./curriculum_pages/primary_steam.html">초등인재</a></li>
-					<li><a href="./curriculum_pages/secondary_steam.html">중등인재</a></li>
-					<li><a href="./curriculum_pages/primary_culture.html">초등교양</a></li>
-					<li><a href="./curriculum_pages/secondary_culture.html">중등교양</a></li>
-					<li><a href="./curriculum_pages/parents.html">학부모 및 성인</a></li>
-				</ul>
-			</div>
-			<div class="btn3-hover">
-				<ul>
-					<li><a href="./schedule/yearlySchedule.html">연간학사일정</a></li>
-					<li><a href="./schedule/monthlySchedule.html">월간학사일정</a></li>
-				</ul>
-			</div>
-			<!--{{/sessionedUser}}-->
-			<!--{{#sessionedUser}}-->
-			<div class="btn6-hover">
-				<ul>
-					<li><a href="./mypage.html">&nbsp;내강의</a></li>
-					<li><a href="./mentoring.html">&nbsp;멘토링보고서</a></li>
-					<li><a href="./settings.html">&nbsp;정보수정</a></li>
-					<li><a href="./letterbox.html">&nbsp;받은메시지함</a></li>
-				</ul>
-			</div>
-			<!--{{/sessionedUser}}-->
-			<!-------------->
 
 		</nav>
 	</header>
@@ -196,13 +228,60 @@
 					<p>공지사항</p>
 					<hr>
 					<br />
-					<div id="notice-grid" class="grid-container">
-					<!-- noticeBoard.js -->
-					</div>
-					<br />
+					<form>
+						<div id="notice-grid" class="grid-container">
+							<!-- noticeBoard.js -->
+						</div>
+
+						<div class="table-box">
+							<table class="table-letterbox noticePage">
+								<thead>
+									<tr>
+										<!-- <th scope="col">글번호</th> -->
+										<th scope="col">제목</th>
+										<th scope="col">조회수</th>
+										<th scope="col">작성일</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td data-label="제목"><a href="./notice/notice00.html">징검다리스쿨 초등인재반 모집</a></td>
+										<td data-label="조회수">20</td>
+										<td data-label="작성일">2022.03.09</td>
+									</tr>
+									<tr>
+										<td data-label="제목"><a href="./notice/notice00.html">징검다리스쿨 중등인재반 모집</a></td>
+										<td data-label="조회수">20</td>
+										<td data-label="등록일시">2022.03.09</td>
+									</tr>
+									<tr>
+										<td data-label="제목"><a href="./notice/notice00.html">징검다리스쿨 초등인재반 모집</a></td>
+										<td data-label="조회수">20</td>
+										<td data-label="등록일시">2022.03.09</td>
+									</tr>
+									<tr>
+										<td data-label="제목"><a href="./notice/notice00.html">징검다리스쿨 초등인재반 모집</a></td>
+										<td data-label="조회수">20</td>
+										<td data-label="등록일시">2022.03.09</td>
+									</tr>
+									<tr>
+										<td data-label="제목"><a href="./notice/notice00.htmll">징검다리스쿨 초등인재반 모집</a></td>
+										<td data-label="조회수">20</td>
+										<td data-label="등록일시">2022.03.09</td>
+									</tr>
+								</tbody>
+							</table>
+							<button class="noticeBtn">&lt;이전</button>
+							<button class="noticeBtn">1</button> <button class="noticeBtn">2</button> <button class="noticeBtn">3</button> <button class="noticeBtn">4</button> <button class="noticeBtn">5</button> <button class="noticeBtn">6</button>
+							<button class="noticeBtn">다음&gt;</button>
+						</div>
+					</form>
+
 				</div>
+
+
 			</section>
-	</div>
+		</div>
 	</main>
 	<footer>
 		<h2>
@@ -221,7 +300,7 @@
 				<p>주소 : 사북공공도서관 (우:26150)강원도 정선군 사북읍 파랑새길 33</p>
 				<p>대표전화 : 033 592-5757~8 팩스 : 033-592-5759</p>
 				<p>COPYRIGHT (C) JINGGEOMDARI SCHOOL. ALL RIGHTS RESERVED.</p>
-			</h3>	
+			</h3>
 		</div>
 	</footer>
 </body>
@@ -229,4 +308,5 @@
 <script src="js/index.js"></script>
 <script src="./js/pageMenu.js"></script>
 <!--메인페이지 이외의 페이지들에게 필요함-->
+
 </html>

@@ -22,7 +22,8 @@
 main {margin-top:0px;}
 .page-main { 
     background-color:rgb(245, 244, 244);
-    border-top: solid 1px #d5d6da;
+    font-family: 'Nanum Gothic';
+    /* border-top: solid 1px #d5d6da; */
     margin-top:120px;
     padding: 10px;
 	line-height:1.5em;
@@ -109,7 +110,7 @@ main {margin-top:0px;}
     padding:1px;
     font-size:15px;
 }
-
+table{border-collapse:collapse;}
 /*vertical table*/
 .tables.table-vertical, .tables.course-timetable {border:0;}
 .tables.table-vertical thead, .tables.course-timetable thead {
@@ -260,6 +261,15 @@ main {margin-top:0px;}
 .notice-card img { 
     padding-left:5px;
     width:100%;
+}
+.noticeBtn {
+    font-size:0.8em;
+    color:#707070;
+    margin-top:15px;
+    padding:0;
+    padding-left:10px;
+    border:none;
+    background:none;
 }
 /*
 ** register page
@@ -554,6 +564,11 @@ form label {
 .table-letterbox.notice {
     width:50%;
 }
+.table-letterbox.noticePage{
+    padding:10px;
+    padding-top:20px;
+    width:100%;
+}
 .table-box.attendance{text-align:center;}
 .table-mylevels {
     width:100%;
@@ -652,7 +667,7 @@ textarea.title{
     max-width: 900px;
     line-height:1.5em;
     margin: 0 auto;
-    padding: 2em 2em 0em 2em;
+    padding: 2em 0em 0em 0.5em;
     color: rgb(141,141,141);
     font-size:16px;
 }
@@ -660,7 +675,7 @@ textarea.title{
     max-width: 900px;
     line-height:1.5em;
     margin: 0 auto;
-    padding: 1em 1em 0em 1em;
+    padding: 0em 0em 0em 0em;
     font-size:18px;
     text-align: center;
 }
@@ -988,6 +1003,7 @@ textarea.title{
     }
     .mylvl-labels {display:none;}  
     .table-mylevels.attendance{width:100%;} 
+    .table-letterbox.noticePage{padding:0px;padding-top:15px;}
 }
 @media screen and (max-width: 958px){
     .input-year, .input-month, .input-date, .input-zip {
@@ -1148,6 +1164,7 @@ textarea.title{
     }
 } 
 @media screen and (max-width:456px){
+    .noticeBtn{padding-left:0;}
     /* .registration{min-height:2500px;} */
     .register-btn{width:40%;}
     .input-id {width:100%;}

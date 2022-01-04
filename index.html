@@ -137,14 +137,20 @@
 						공개강좌
 					</li>
 					<li>
-						공지사항
+						<a href="./notice.html">공지사항</a>
 					</li>
-					<li>
+					<!--{{^sessionedUser}}-->
+						<li>
 						회원가입
 					</li>
 					<li>
 						로그인
 					</li>
+					<!--{{/sessionedUser}}-->
+					<!--{{#sessionedUser}}
+						<li>마이페이지</li>
+						<li><a href="index.html">로그아웃</a></li>
+					{{/sessionedUser}}-->
 				</ul>
 				<!--<table class="nav-table">
 					<tr>
