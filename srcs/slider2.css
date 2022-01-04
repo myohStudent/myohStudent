@@ -20,7 +20,8 @@
 }
 .your-class {
     visibility: hidden;
-    height:700px;
+    top:100px;
+    height:600px;
     width:100%;
     overflow:hidden;
 }
