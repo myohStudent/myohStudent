@@ -23,8 +23,8 @@ var classArr = [
   },
   {
     "id": "4",
-    "title": "시앙의 디자인 강의",
-    "thumbnail": "./img/design.jpg"
+    "title": "아토샘과 함께하는 엔트리 수업",
+    "thumbnail": "./img/atto.jpg"
   },
   {
     "id": "5",

@@ -4,17 +4,22 @@ var classArr = [
   {
     "id": "00",
     "title": "하이든&메르의 디지털음악",
-    "thumbnail": "./img/music.jpg"
+    "thumbnail": "../img/music.jpg"
   },
   {
     "id": "01",
     "title": "시앙의 디자인 강의",
-    "thumbnail": "./img/design.jpg"
+    "thumbnail": "../img/design.jpg"
   },
   {
     "id": "02",
     "title": "자이로의 과학 강의",
-    "thumbnail": "./img/zyro.jpg"
+    "thumbnail": "../img/zyro.jpg"
+  },
+  {
+    "id": "03",
+    "title": "아토샘과 함께하는 엔트리 수업",
+    "thumbnail": "../img/atto.jpg"
   },
   // {
   //   "id": "3",
