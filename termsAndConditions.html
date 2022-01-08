@@ -22,12 +22,12 @@
 
 <body>
     <header>
-        <div class="hidden-logo"><a href="index.html"><img src="img/sss.png"></a></div>
+        <div class="hidden-logo"><a href="index.html"><img src="img/sss2.png"></a></div>
         <div id="menuToggle">
             <input type="checkbox">
-            <span class="page-toggle"></span>
-            <span class="page-toggle"></span>
-            <span class="page-toggle"></span>
+            <span></span>
+            <span></span>
+            <span></span>
             <ul id="menu">
                 <div class="go-to-main"><a href="index.html">메인으로 돌아가기 <img src="./img/home.png" width="17px" /></a>
                 </div>
@@ -39,32 +39,35 @@
                     <li><a href="register.html"><img src="./img/pencil.svg" width="11px" /> 회원가입</a></li>
                 </ul>
                 <!--{{/sessionedUser}}
-				{{#sessionedUser}}
-				<ul class="click">
-				<li><a href="index.html"><img src="./img/loginIcon.svg" width="11px" /> 로그아웃</a></li>
-				</ul>
-				<ul class="click">
-					<li><img src="./img/pencil.svg" width="11px" /> 마이페이지
-						<ul class="sub">
-							<li>
-								<a href="./my_pages/mypage.html" class="ham-a">내 강의</a>
-							</li>
-							<li>
-								<a href="./my_pages/mentoring.html" class="ham-a">멘토링 보고서</a>
-							</li>
-							<li>
-								<a href="./my_pages/profile_settings.html" class="ham-a">내 정보 수정</a>
-							</li>
-							<li>
-								<a href="./my_pages/letterbox.html" class="ham-a">받은 메시지함</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-				{{/sessionedUser}}-->
+                {{#sessionedUser}}
+                <ul class="click">
+                <li><a href="index.html"><img src="./img/loginIcon.svg" width="11px" /> 로그아웃</a></li>
+                </ul>
+                <ul class="click">
+                    <li><img src="./img/pencil.svg" width="11px" /> 마이페이지
+                        <ul class="sub">
+                            <li>
+                                <a href="./my_pages/mypage.html" class="ham-a">내 강의</a>
+                            </li>
+                            <li>
+                                <a href="./my_pages/mentoring.html" class="ham-a">멘토링 보고서</a>
+                            </li>
+                            <li>
+                                <a href="./my_pages/profile_settings.html" class="ham-a">내 정보 수정</a>
+                            </li>
+                            <li>
+                                <a href="./my_pages/letterbox.html" class="ham-a">받은 메시지함</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                {{/sessionedUser}}-->
                 <ul class="click">
                     <li><img src="./img/SSS.svg" width="19px" /> 징검다리스쿨소개
                         <ul class="sub">
+                            <li>
+                                <a href="./introduction_pages/enrollment.html" class="ham-a">입 학</a>
+                            </li>
                             <li>
                                 <a href="./introduction_pages/introduction.html" class="ham-a">교육철학</a>
                             </li>
@@ -114,7 +117,15 @@
                     </li>
                 </ul>
                 <ul class="click">
-                    <li><a href="./videos.html"><img src="./img/video.svg" width="15px" /> 영상강좌</a>
+                    <li><img src="./img/video.svg" width="15px" /> 공개강좌
+                        <ul class="sub">
+                            <li>
+                                <a href="./videos/videoLectures.html" class="ham-a">영상강의</a>
+                            </li>
+                            <li>
+                                <a href="./videos/specialLectures.html" class="ham-a">징검다리특강</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
                 <ul class="click">
@@ -124,65 +135,59 @@
         </div>
         <!-- ----------------------------------------------------------------------->
         <nav>
-            <table class="nav-table pages">
-                <tr>
-                    <td class="none-for-4k"> </td>
-                    <td class="m1">징검다리스쿨소개</td>
-                    <td class="m2">교육과정</td>
-                    <td class="m3">학사일정</td>
-                    <td class="m4"><a href="videos.html">영상강좌</a></td>
-                    <td class="m5"><a href="index.html"><img src="img/sss.png"></a></td>
-                    <td class="m6"><a href="notice.html">공지사항</a></td>
-                    <!--{{^sessionedUser}}-->
-                    <td class="m7"><a href="register.html">회원가입</a></td>
-                    <td class="m8"><a href="login.html">로그인</a></td>
-                    <!--{{/sessionedUser}}-->
-                    <!--{{#sessionedUser}}
-					<td class="m7-my">마이페이지</td>
-					<td class="m8"><a href="index.html">로그아웃</a></td>
-					{{/sessionedUser}}-->
-                    <td class="none-for-4k"> </td>
-                    <td><a href="http://www.jeongseon.go.kr/intro.html"><img src="img/jeongsunlogo.png"></a></td>
-                </tr>
-            </table>
-            <!--서브페이지들 메뉴(메인페이지 제외)-->
-            <!--{{^sessionedUser}}-->
-            <div class="btn1-hover">
-                <ul>
-                    <li><a href="./introduction_pages/introduction.html">교육철학</a></li>
-                    <li><a href="./introduction_pages/career.html">걸어온 길</a></li>
-                    <li><a href="./introduction_pages/greetings.html">교장 인사말</a></li>
-                    <li><a href="./introduction_pages/commitee.html">교육위원회</a></li>
-                </ul>
+            <div class="main-logo"><a href="index.html"><img src="img/sss.png"></a></div>
+            <div class="btn1"><a href="#">징검다리스쿨소개</a>
+                <div class="btn1-hover">
+                    <ul>
+                        <li><a href="./introduction_pages/introduction.html">&nbsp;교육철학</a></li>
+                        <li><a href="./introduction_pages/career.html">&nbsp;걸어온 길</a></li>
+                        <li><a href="./introduction_pages/greetings.html">&nbsp;교장 인사말</a></li>
+                        <li><a href="./introduction_pages/commitee.html">&nbsp;교육위원회</a></li>
+                        <li><a href="./introduction_pages/enrollment.html">입학안내</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="btn2-hover">
-                <ul>
-                    <li><a href="./curriculum_pages/primary_steam.html">초등인재</a></li>
-                    <li><a href="./curriculum_pages/secondary_steam.html">중등인재</a></li>
-                    <li><a href="./curriculum_pages/primary_culture.html">초등교양</a></li>
-                    <li><a href="./curriculum_pages/secondary_culture.html">중등교양</a></li>
-                    <li><a href="./curriculum_pages/parents.html">학부모 및 성인</a></li>
-                </ul>
+            <div class="btn2"><a href="#">교육과정</a>
+                <div class="btn2-hover">
+                    <ul>
+                        <li><a href="./curriculum_pages/primary_steam.html">&nbsp;초등인재</a></li>
+                        <li><a href="./curriculum_pages/secondary_steam.html">&nbsp;중등인재</a></li>
+                        <li><a href="./curriculum_pages/primary_culture.html">&nbsp;초등교양</a></li>
+                        <li><a href="./curriculum_pages/secondary_culture.html">&nbsp;중등교양</a></li>
+                        <li><a href="./curriculum_pages/parents.html">학부모및성인</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="btn3-hover">
-                <ul>
-                    <li><a href="./schedule/yearlySchedule.html">연간학사일정</a></li>
-                    <li><a href="./schedule/monthlySchedule.html">월간학사일정</a></li>
-                </ul>
+            <div class="btn3"><a href="#">&nbsp;학사일정&nbsp;</a>
+                <div class="btn3-hover">
+                    <ul>
+                        <li><a href="./schedule/yearlySchedule.html">&nbsp;연간학사일정</a></li>
+                        <li><a href="./schedule/monthlySchedule.html">&nbsp;월간학사일정</a></li>
+                    </ul>
+                </div>
             </div>
-            <!--{{/sessionedUser}}-->
-            <!--{{#sessionedUser}}-->
-            <div class="btn6-hover">
-                <ul>
-                    <li><a href="./mypage.html">&nbsp;내강의</a></li>
-                    <li><a href="./mentoring.html">&nbsp;멘토링보고서</a></li>
-                    <li><a href="./settings.html">&nbsp;정보수정</a></li>
-                    <li><a href="./letterbox.html">&nbsp;받은메시지함</a></li>
-                </ul>
+            <div class="btn4"><a href="#">&nbsp;공개강좌&nbsp;</a>
+                <div class="btn4-hover">
+                    <ul>
+                        <li><a href="./schedule/yearlySchedule.html">&nbsp;영상강의</a></li>
+                        <li><a href="./schedule/monthlySchedule.html">&nbsp;징검다리특강</a></li>
+                    </ul>
+                </div>
             </div>
-            <!--{{/sessionedUser}}-->
-            <!-------------->
-
+            <div class="btn5"><a href="notice.html">&nbsp;공지사항&nbsp;</a></div>
+            <div class="btn6"><a href="register.html">&nbsp;회원가입&nbsp;</a></div>
+            <!-- login
+              <div class = "btn6_loggedin"><a href="#">&nbsp;마이페이지&nbsp;</a>
+                <div class="btn6-hover">
+                  <ul><li><a href="./my_pages/mypage.html">&nbsp;내강의</a></li><li><a href="./my_pages/mentoring.html">&nbsp;멘토링보고서</a></li> <li><a href="./my_pages/setting.html">&nbsp;정보수정</a></li> <li><a href="./my_pages/letterbox.html">&nbsp;받은메시지함</a></li></ul>
+                </div>
+              </div> -->
+            <div class="btn7"><a href="login.html">&nbsp;로그인&nbsp;</a></div>
+            <!--login
+              <div class = "btn7_loggedin"><a href="./index.html">&nbsp;로그아웃&nbsp;</a></div>
+              -->
+            <div class="right-nav"><a href="http://www.jeongseon.go.kr/intro.html"><img src="img/jeongsunlogo.png"></a>
+            </div>
         </nav>
     </header>
 
@@ -207,7 +212,7 @@
                         <br />
                         <div class="refusal-text">
                             <div class="refusal-text bold">제1장 총 칙</div>
-                            제1조(목적) 
+                            제1조(목적)
                             <br>본 약관은 징검다리스쿨 사이트을 통해서 제공하는 각종 통합회원 서비스를 이용함에 있어 이용자와 징검다리스쿨 간의 권리・의무 및 책임사항과 기타 필요한
                             사항을 규정함을 목적으로 한다.
                             <br>
@@ -225,11 +230,14 @@
                             <br>제3조(약관의 효력 및 변경)
                             <br>이 약관에서 사용하는 용어의 정의는 다음 각 호와 같습니다.
                             <br> 1. 본 약관은 서비스 화면에 게시하거나 기타의 방법으로 이용자에게 공시되면, 이를 동의한 이용자가 서비스에 가입함으로써 효력이 발생한다.
-                            <br> 2. 합리적인 사유가 발생할 경우 징검다리스쿨은 법령에 위배되지 않는 범위 안에서 개정할 수 있다. 개정된 약관은 사이트 등을 통해 공지함으로써 효력이 발생한다.
-                            <br> 3. 회원은 정기적으로 사이트를 방문하여 약관의 변경사항을 확인하여야 하며 회원은 변경된 약관에 동의하지 않을 경우 회원탈퇴(해지)를 요청할 수 있다. 변경된 약관에
+                            <br> 2. 합리적인 사유가 발생할 경우 징검다리스쿨은 법령에 위배되지 않는 범위 안에서 개정할 수 있다. 개정된 약관은 사이트 등을 통해 공지함으로써 효력이
+                            발생한다.
+                            <br> 3. 회원은 정기적으로 사이트를 방문하여 약관의 변경사항을 확인하여야 하며 회원은 변경된 약관에 동의하지 않을 경우 회원탈퇴(해지)를 요청할 수 있다.
+                            변경된 약관에
                             대한 정보를 알지 못해 발생하는 회원의 피해는 징검다리스쿨에서 책임지지 않는다.
                             <br> 4. 징검다리스쿨 사이트 이용이 2년 이상 없고 계속 사용에 대한 동의를 하지 않은 경우 온라인 회원 효력이 상실된다.
-                            <br> 5. 징검다리스쿨은 필요한 경우 개별 서비스에 대하여 이용규정을 정할 수 있으며, 본 약관과 서로 상충되는 경우에는 서비스별 이용 규정의 내용을 우선하여 적용한다.
+                            <br> 5. 징검다리스쿨은 필요한 경우 개별 서비스에 대하여 이용규정을 정할 수 있으며, 본 약관과 서로 상충되는 경우에는 서비스별 이용 규정의 내용을 우선하여
+                            적용한다.
                             <br> 6. 본 약관에 명시되지 않은 사항에 대해서는 관련 법령의 규정에 의한다.
                             <br>
                             <div class="refusal-text bold">제2장 서비스 이용계약</div>
@@ -269,7 +277,8 @@
                             <br>⓷ 징검다리스쿨은 정책 및 운영의 필요에 따라 서비스의 일부 또는 전부를 수정, 중단, 변경할 수 있으며, 사전에 7일 이상 사이트 등을 통해 공지한다.
                             <br>
                             <br>제10조(정보의 제공)
-                            <br>회원에게 서비스 이용 중 필요가 있다고 인정되는 다양한 정보에 대해서는 전자우편 및 휴대폰 문자메시지 등의 방법으로 제공할 수 있다. 다만, 회원은 정보수신을 원치
+                            <br>회원에게 서비스 이용 중 필요가 있다고 인정되는 다양한 정보에 대해서는 전자우편 및 휴대폰 문자메시지 등의 방법으로 제공할 수 있다. 다만, 회원은 정보수신을
+                            원치
                             않을 경우에는 거부할 수 있다.
                             <br>
                             <br>제11조(회원의 의무 및 정보보안)
@@ -280,9 +289,11 @@
                             <br>
                             <br>제12조(징검다리스쿨의 의무)
                             <br>⓵ 징검다리스쿨은 회원이 희망한 서비스 제공 개시일에 특별한 사정이 없는 한 서비스를 이용할 수 있도록 하여야 한다.
-                            <br>⓶ 징검다리스쿨은 계속적이고 안정적인 서비스의 제공을 위하여 설비에 장애가 생기거나 멸실된 때에는 부득이한 사유가 없는 한 지체 없이 이를 수리 또는 복구해야 한다.
+                            <br>⓶ 징검다리스쿨은 계속적이고 안정적인 서비스의 제공을 위하여 설비에 장애가 생기거나 멸실된 때에는 부득이한 사유가 없는 한 지체 없이 이를 수리 또는 복구해야
+                            한다.
                             <br>⓷ 징검다리스쿨은 회원이 안전하게 서비스를 이용할 수 있도록 개인정보보호를 위한 보안시스템을 구축하며 개인정보 보호정책을 공시하고 준수하여야 한다.
-                            <br>⓸ 징검다리스쿨은 회원으로부터 제기되는 의견이나 불만을 정당하다고 객관적으로 인정될 경우에는 적절한 절차를 거쳐 즉시 처리하여야 한다, 다만 즉시 처리가 곤란한 경우는
+                            <br>⓸ 징검다리스쿨은 회원으로부터 제기되는 의견이나 불만을 정당하다고 객관적으로 인정될 경우에는 적절한 절차를 거쳐 즉시 처리하여야 한다, 다만 즉시 처리가
+                            곤란한 경우는
                             회원에게 그 사유와 처리일정을 통보하여야 한다.
                             <br>⓹ 징검다리스쿨은 회원의 귀책사유로 인한 서비스 이용 장애에 대해서는 책임을 지지 않는다.
                             <div class="refusal-text bold">제4장 기타</div>
@@ -290,7 +301,8 @@
                             <br>회원은 서비스의 이용권한, 기타 이용계약상의 지위를 타인에게 양도, 증여할 수 없다.
                             <br>
                             <br>제14조(손해배상)
-                            <br>징검다리스쿨은 무료로 제공되는 서비스와 관련하여 회원에게 어떠한 손해가 발생하더라도 이에 대하여 책임을 지지 않는다. 다만, 중대한 과실에 의한 경우에는 그러하지
+                            <br>징검다리스쿨은 무료로 제공되는 서비스와 관련하여 회원에게 어떠한 손해가 발생하더라도 이에 대하여 책임을 지지 않는다. 다만, 중대한 과실에 의한 경우에는
+                            그러하지
                             아니한다.
                             <br>
                             <br>제15조(면책조항)
@@ -312,28 +324,29 @@
         </div>
     </main>
     <footer>
-		<h2>
-			<ul>
-				<li><a href="index.html">홈으로</a></li>
-				<li><a href="./termsAndConditions.html">약관</a></li>
-				<li><a href="./privateInfo.html">개인정보처리방침</a></li>
-				<li><a href="./refusalOfEmailCollection.html">이메일무단수집거부</a></li>
-				<li><a href="./youthPolicy.html">청소년보호정책</a></li>
-			</ul>
-		</h2>
-		<hr>
-		</hr>
-		<div class="copyrights">
-			<h3>
-				<p>주소 : 사북공공도서관 (우:26150)강원도 정선군 사북읍 파랑새길 33</p>
-				<p>대표전화 : 033 592-5757~8 팩스 : 033-592-5759</p>
-				<p>COPYRIGHT (C) JINGGEOMDARI SCHOOL. ALL RIGHTS RESERVED.</p>
-			</h3>	
-		</div>
-	</footer>
+        <h2>
+            <ul>
+                <li><a href="index.html">홈으로</a></li>
+                <li><a href="./termsAndConditions.html">약관</a></li>
+                <li><a href="./privateInfo.html">개인정보처리방침</a></li>
+                <li><a href="./refusalOfEmailCollection.html">이메일무단수집거부</a></li>
+                <li><a href="./youthPolicy.html">청소년보호정책</a></li>
+            </ul>
+        </h2>
+        <hr>
+        </hr>
+        <div class="copyrights">
+            <h3>
+                <p>주소 : 사북공공도서관 (우:26150)강원도 정선군 사북읍 파랑새길 33</p>
+                <p>대표전화 : 033 592-5757~8 팩스 : 033-592-5759</p>
+                <p>COPYRIGHT (C) JINGGEOMDARI SCHOOL. ALL RIGHTS RESERVED.</p>
+            </h3>
+        </div>
+    </footer>
     </div>
 </body>
 <script src="js/index.js"></script>
 <script src="./js/pageMenu.js"></script>
 <!--메인페이지 이외의 페이지들에게 필요함-->
+
 </html>
