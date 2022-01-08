@@ -21,170 +21,176 @@
 </head>
 
 <body>
-    <header>
-        <div class="hidden-logo"><a href="../index.html"><img src="../img/sss.png"></a></div>
-        <div id="menuToggle">
-            <input type="checkbox">
-            <span class="page-toggle"></span>
-            <span class="page-toggle"></span>
-            <span class="page-toggle"></span>
-            <ul id="menu">
-                <div class="go-to-main"><a href="../index.html">메인으로 돌아가기 <img src="../img/home.png" width="17px" /></a>
-                </div>
-                <!--{{^sessionedUser}}
+	<header>
+		<div class="hidden-logo"><a href="../index.html"><img src="../img/sss.png"></a></div>
+		<div id="menuToggle">
+			<input type="checkbox">
+			<span class="page-toggle"></span>
+			<span class="page-toggle"></span>
+			<span class="page-toggle"></span>
+			<ul id="menu">
+				<div class="go-to-main"><a href="../index.html">메인으로 돌아가기 <img src="../img/home.png" width="17px" /></a>
+				</div>
+				<!--{{^sessionedUser}}-->
 				<ul class="click">
 					<li><a href="../login.html"><img src="../img/loginIcon.svg" width="11px" /> 로그인</a></li>
 				</ul>
 				<ul class="click">
 					<li><a href="../register.html"><img src="../img/pencil.svg" width="11px" /> 회원가입</a></li>
 				</ul>
-				{{/sessionedUser}}
-				{{#sessionedUser}}-->
-                <ul class="click">
-                    <li><a href="../index.html"><img src="../img/loginIcon.svg" width="11px" /> 로그아웃</a></li>
-                </ul>
-                <ul class="click">
-                    <li><img src="../img/pencil.svg" width="11px" /> 마이페이지
-                        <ul class="sub">
-                            <li>
-                                <a href="../my_pages/mypage.html" class="ham-a">내 강의</a>
-                            </li>
-                            <li>
-                                <a href="../my_pages/mentoring.html" class="ham-a">멘토링 보고서</a>
-                            </li>
-                            <li>
-                                <a href="../my_pages/profile_settings.html" class="ham-a">내 정보 수정</a>
-                            </li>
-                            <li>
-                                <a href="../my_pages/letterbox.html" class="ham-a">받은 메시지함</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <!--{{/sessionedUser}}-->
-                <ul class="click">
-                    <li><img src="../img/SSS.svg" width="19px" /> 징검다리스쿨소개
-                        <ul class="sub">
-                            <li>
-                                <a href="../introduction_pages/introduction.html" class="ham-a">교육철학</a>
-                            </li>
-                            <li>
-                                <a href="../introduction_pages/career.html" class="ham-a">걸어온 길</a>
-                            </li>
-                            <li>
-                                <a href="../introduction_pages/greetings.html" class="ham-a">교장 인사말</a>
-                            </li>
-                            <li>
-                                <a href="../introduction_pages/commitee.html" class="ham-a">교육위원회</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="click">
-                    <li> <img src="../img/book.svg" width="19px" /> 교육과정
-                        <ul class="sub">
-                            <li>
-                                <a href="../curriculum_pages/primary_steam.html" class="ham-a">초등인재</a>
-                            </li>
-                            <li>
-                                <a href="../curriculum_pages/secondary_steam.html" class="ham-a">중등인재</a>
-                            </li>
-                            <li>
-                                <a href="../curriculum_pages/primary_culture.html" class="ham-a">초등교양</a>
-                            </li>
-                            <li>
-                                <a href="../curriculum_pages/secondary_culture.html" class="ham-a">중등교양</a>
-                            </li>
-                            <li>
-                                <a href="../curriculum_pages/parents.html" class="ham-a">학부모 및 성인</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="click">
-                    <li><img src="../img/clock.svg" width="14px" /> 학사일정
-                        <ul class="sub">
-                            <li>
-                                <a href="../schedule/yearlySchedule.html" class="ham-a">연간학사일정</a>
-                            </li>
-                            <li>
-                                <a href="../schedule/monthlySchedule.html" class="ham-a">월간학사일정</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="click">
-                    <li><a href="../videos.html"><img src="../img/video.svg" width="15px" /> 영상강좌</a>
-                    </li>
-                </ul>
-                <ul class="click">
-                    <li><a href="../notice.html"><img src="../img/info.svg" width="14px" /> 공지사항</a></li>
-                </ul>
-            </ul>
-        </div>
-        <!-- ----------------------------------------------------------------------->
-        <nav>
-            <table class="nav-table pages">
-                <tr>
-                    <td class="none-for-4k"> </td>
-                    <td class="m1">징검다리스쿨소개</td>
-                    <td class="m2">교육과정</td>
-                    <td class="m3">학사일정</td>
-                    <td class="m4"><a href="../videos.html">영상강좌</a></td>
-                    <td class="m5"><a href="../index.html"><img src="../img/sss.png"></a></td>
-                    <td class="m6"><a href="../notice.html">공지사항</a></td>
-                    <!--{{^sessionedUser}}
-					<td class="m7"><a href="../register.html">회원가입</a></td>
-					<td class="m8"><a href="../login.html">로그인</a></td>
-					{{/sessionedUser}}
-					{{#sessionedUser}}-->
-                    <td class="m7-my">마이페이지</td>
-                    <td class="m8"><a href="../index.html">로그아웃</a></td>
-                    <!--{{/sessionedUser}}-->
-                    <td class="none-for-4k"> </td>
-                    <td><a href="http://www.jeongseon.go.kr/intro.html"><img src="../img/jeongsunlogo.png"></a></td>
-                </tr>
-            </table>
-            <!--서브페이지들 메뉴(메인페이지 제외)-->
-            <!--{{^sessionedUser}}-->
-            <div class="btn1-hover">
-                <ul>
-                    <li><a href="../introduction_pages/introduction.html">교육철학</a></li>
-                    <li><a href="../introduction_pages/career.html">걸어온 길</a></li>
-                    <li><a href="../introduction_pages/greetings.html">교장 인사말</a></li>
-                    <li><a href="../introduction_pages/commitee.html">교육위원회</a></li>
-                </ul>
-            </div>
-            <div class="btn2-hover">
-                <ul>
-                    <li><a href="../curriculum_pages/primary_steam.html">초등인재</a></li>
-                    <li><a href="../curriculum_pages/secondary_steam.html">중등인재</a></li>
-                    <li><a href="../curriculum_pages/primary_culture.html">초등교양</a></li>
-                    <li><a href="../curriculum_pages/secondary_culture.html">중등교양</a></li>
-                    <li><a href="../curriculum_pages/parents.html">학부모 및 성인</a></li>
-                </ul>
-            </div>
-            <div class="btn3-hover">
-                <ul>
-                    <li><a href="../schedule/yearlySchedule.html">연간학사일정</a></li>
-                    <li><a href="../schedule/monthlySchedule.html">월간학사일정</a></li>
-                </ul>
-            </div>
-            <!--{{/sessionedUser}}-->
-            <!--{{#sessionedUser}}-->
-            <div class="btn6-hover">
-                <ul>
-                    <li><a href="./mypage.html">&nbsp;내강의</a></li>
-                    <li><a href="./mentoring.html">&nbsp;멘토링보고서</a></li>
-                    <li><a href="./settings.html">&nbsp;정보수정</a></li>
-                    <li><a href="./letterbox.html">&nbsp;받은메시지함</a></li>
-                </ul>
-            </div>
-            <!--{{/sessionedUser}}-->
-            <!-------------->
-
-        </nav>
-    </header>
+				<!--{{/sessionedUser}}
+				{{#sessionedUser}}
+				<ul class="click">
+				<li><a href="../index.html"><img src="../img/loginIcon.svg" width="11px" /> 로그아웃</a></li>
+				</ul>
+				<ul class="click">
+					<li><img src="../img/pencil.svg" width="11px" /> 마이페이지
+						<ul class="sub">
+							<li>
+								<a href="../my_pages/mypage.html" class="ham-a">내 강의</a>
+							</li>
+							<li>
+								<a href="../my_pages/mentoring.html" class="ham-a">멘토링 보고서</a>
+							</li>
+							<li>
+								<a href="../my_pages/profile_settings.html" class="ham-a">내 정보 수정</a>
+							</li>
+							<li>
+								<a href="../my_pages/letterbox.html" class="ham-a">받은 메시지함</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				{{/sessionedUser}}-->
+				<ul class="click">
+					<li><img src="../img/SSS.svg" width="19px" /> 징검다리스쿨소개
+						<ul class="sub">
+							<li>
+								<a href="../introduction_pages/enrollment.html" class="ham-a">입학안내</a>
+							</li>
+							<li>
+								<a href="../introduction_pages/introduction.html" class="ham-a">교육철학</a>
+							</li>
+							<li>
+								<a href="../introduction_pages/career.html" class="ham-a">걸어온 길</a>
+							</li>
+							<li>
+								<a href="../introduction_pages/greetings.html" class="ham-a">교장 인사말</a>
+							</li>
+							<li>
+								<a href="../introduction_pages/commitee.html" class="ham-a">교육위원회</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="click">
+					<li> <img src="../img/book.svg" width="19px" /> 교육과정
+						<ul class="sub">
+							<li>
+								<a href="../curriculum_pages/primary_steam.html" class="ham-a">초등인재</a>
+							</li>
+							<li>
+								<a href="../curriculum_pages/secondary_steam.html" class="ham-a">중등인재</a>
+							</li>
+							<li>
+								<a href="../curriculum_pages/primary_culture.html" class="ham-a">초등교양</a>
+							</li>
+							<li>
+								<a href="../curriculum_pages/secondary_culture.html" class="ham-a">중등교양</a>
+							</li>
+							<li>
+								<a href="../curriculum_pages/parents.html" class="ham-a">학부모 및 성인</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="click">
+					<li><img src="../img/clock.svg" width="14px" /> 학사일정
+						<ul class="sub">
+							<li>
+								<a href="../schedule/yearlySchedule.html" class="ham-a">연간학사일정</a>
+							</li>
+							<li>
+								<a href="../schedule/monthlySchedule.html" class="ham-a">월간학사일정</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="click">
+					<li><img src="../img/video.svg" width="15px" /> 공개강좌
+						<ul class="sub">
+							<li>
+								<a href="../videos/videoLectures.html" class="ham-a">영상강의</a>
+							</li>
+							<li>
+								<a href="../videos/specialLectures.html" class="ham-a">징검다리특강</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="click">
+					<li><a href="../notice.html"><img src="../img/info.svg" width="14px" /> 공지사항</a></li>
+				</ul>
+			</ul>
+		</div>
+		<!-- ----------------------------------------------------------------------->
+		<nav>
+			<div class="main-logo"><a href="../index.html"><img src="../img/sss.png"></a></div>
+			<div class="btn1"><a href="../introduction_pages/introduction.html">징검다리스쿨소개</a>
+				<div class="btn1-hover">
+					<ul>
+						<li><a href="../introduction_pages/introduction.html">&nbsp;교육철학</a></li>
+						<li><a href="../introduction_pages/career.html">&nbsp;걸어온 길</a></li>
+						<li><a href="../introduction_pages/greetings.html">&nbsp;교장 인사말</a></li>
+						<li><a href="../introduction_pages/commitee.html">&nbsp;교육위원회</a></li>
+						<li><a href="../introduction_pages/enrollment.html">입학안내</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="btn2"><a href="../curriculum_pages/primary_steam.html">교육과정</a>
+				<div class="btn2-hover">
+					<ul>
+						<li><a href="../curriculum_pages/primary_steam.html">&nbsp;초등인재</a></li>
+						<li><a href="../curriculum_pages/secondary_steam.html">&nbsp;중등인재</a></li>
+						<li><a href="../curriculum_pages/primary_culture.html">&nbsp;초등교양</a></li>
+						<li><a href="../curriculum_pages/secondary_culture.html">&nbsp;중등교양</a></li>
+						<li><a href="../curriculum_pages/parents.html">학부모및성인</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="btn3"><a href="../schedule/monthlySchedule.html">&nbsp;학사일정&nbsp;</a>
+				<div class="btn3-hover">
+					<ul>
+						<li><a href="../schedule/yearlySchedule.html">&nbsp;연간학사일정</a></li>
+						<li><a href="../schedule/monthlySchedule.html">&nbsp;월간학사일정</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="btn4"><a href="../videos/videoLectures.html">&nbsp;공개강좌&nbsp;</a>
+				<div class="btn4-hover">
+					<ul>
+						<li><a href="../videos/videoLectures.html">&nbsp;영상강의</a></li>
+						<li><a href="../videos/specialLectures.html">&nbsp;징검다리특강</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="btn5"><a href="../notice.html">&nbsp;공지사항&nbsp;</a></div>
+			<div class="btn6"><a href="../register.html">&nbsp;회원가입&nbsp;</a></div>
+			<!-- login
+			  <div class = "btn6_loggedin"><a href="./my_pages/mypage.html">&nbsp;마이페이지&nbsp;</a>
+				<div class="btn6-hover">
+				  <ul><li><a href="./my_pages/mypage.html">&nbsp;내강의</a></li><li><a href="./my_pages/mentoring.html">&nbsp;멘토링보고서</a></li> <li><a href="./my_pages/setting.html">&nbsp;정보수정</a></li> <li><a href="./my_pages/letterbox.html">&nbsp;받은메시지함</a></li></ul>
+				</div>
+			  </div> -->
+			<div class="btn7"><a href="../login.html">&nbsp;로그인&nbsp;</a></div>
+			<!--login
+			  <div class = "btn7_loggedin"><a href="./index.html">&nbsp;로그아웃&nbsp;</a></div>
+			  -->
+			<div class="right-nav"><a href="http://www.jeongseon.go.kr/intro.html"><img
+						src="../img/jeongsunlogo.png"></a>
+			</div>
+		</nav>
+	</header>
 
 	<main>
 		<div class="page-main">
