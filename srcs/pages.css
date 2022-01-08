@@ -94,6 +94,7 @@ main {margin-top:0px;}
     width: 100%;
     border-top: 1px solid #d1d1d1;
     border-left: 3px solid #164097;
+    border-right:1px solid #d1d1d1;
     border-collapse:collapse;
     color:#867c7c;
     /* text-align:left; */
@@ -105,7 +106,7 @@ main {margin-top:0px;}
 }
 .tables thead { background-color:#c4e9ff;}
 .tables th, td { 
-    border-right: 1px solid #c2bdbd;
+    /* border-right: 1px solid #c2bdbd; */
     border-bottom: 1px solid #c2bdbd;
     padding:1px;
     font-size:15px;
@@ -154,6 +155,7 @@ table{border-collapse:collapse;}
     margin:auto;
     padding-right: 10px;
     border-bottom: 1px solid #d1d1d1;
+    border-right: 1px solid #d1d1d1;
     border-top: 1px solid #d1d1d1;
     display: block;
     font-size: .8em;
@@ -176,6 +178,7 @@ table{border-collapse:collapse;}
  .tables.table-vertical tr {
     border-bottom: 3px solid #3a558e;
     border-top: 1px solid #d1d1d1;
+    border-right: 1px solid #d1d1d1;
     display: block;
     margin-bottom: .625em;
     border-collapse: collapse;
@@ -1075,6 +1078,7 @@ textarea.title{
     .tables td {
         padding-right: 10px;
         border-bottom: 1px solid #d1d1d1;
+        border-right: 1px solid #d1d1d1;
         display: block;
         font-size: .8em;
         text-align: right;

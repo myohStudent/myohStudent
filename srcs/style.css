@@ -112,7 +112,7 @@ nav a {
     background-color: #ffffff;
     background-blend-mode: screen;
     border-radius:50%;
-    box-shadow:0px 6px 3px rgba(85, 84, 84, 0.5);
+    box-shadow:0px 6px 3px rgba(85, 84, 84, 0.3);
     opacity:1;
    
 }
