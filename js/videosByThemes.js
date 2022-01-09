@@ -16,12 +16,12 @@ var classArr = [
     "title": "자이노의 과학 강의",
     "thumbnail": "../img/zyro.jpg"
   },
-  // {
-  //   "id": "03",
-  //   "title": "아토샘과 함께하는 엔트리 수업",
-  //   "thumbnail": "../img/atto.jpg"
-  // },
-  // {
+  {
+    "id": "03",
+    "title": "아토샘과 함께하는 엔트리 수업",
+    "thumbnail": "../img/atto.jpg"
+  },
+  //{
   //   "id": "3",
   //   "title": "하이든&메르의 디지털음악",
   //   "thumbnail": "./img/music.jpg"

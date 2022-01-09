@@ -206,9 +206,19 @@
 						<input type="text" class="searchbar" placeholder="&#61442;"> 
 						<button type="button" class="select-btn">검 색</button>
 					</div>
+					<p>최신 강좌 <span class="read-more"><a href="morevideos.html">+ 더보기</a></span></p>
+					<div id="class-grid latest" class="grid-container">
+						<!-- latestVideos.js -->
+					</div>
 					<br />
+					<p>인기 강좌 <span class="read-more"><a href="morevideos.html">+ 더보기</a></span></p>
+					<div id="class-grid popular" class="grid-container">
+						<!-- PopularVideos.js -->
+					</div>
+					<br />
+					<p>주제별 강좌 <span class="read-more"><a href="morevideos.html">+ 더보기</a></span></p>
 					<div id="class-grid" class="grid-container">
-						<!-- video.js -->
+						<!-- videosByThemes.js -->
 					</div>
 					<br />
 				</div>
@@ -236,8 +246,9 @@
 		</div>
 	</footer>
 </body>
-<script src="../js/video.js"></script>
-
+<script src="../js/latestVideos.js"></script>
+<script src="../js/PopularVideos.js"></script>
+<script src="../js/videosByThemes.js"></script>
 <!--메인페이지 이외의 페이지들에게 필요함-->
 <script src="../js/index.js"></script>
 <script src="../js/pageMenu.js"></script>

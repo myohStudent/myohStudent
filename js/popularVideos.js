@@ -1,4 +1,4 @@
-var cardGrid = document.getElementById('class-grid');
+var cardGrid = document.getElementById('class-grid popular');
 
 var classArr = [
   {
