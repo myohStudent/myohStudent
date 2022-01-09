@@ -13,7 +13,7 @@ var classArr = [
   },
   {
     "id": "02",
-    "title": "자이로의 과학 강의",
+    "title": "자이노의 과학 강의",
     "thumbnail": "../img/zyro.jpg"
   },
   {
