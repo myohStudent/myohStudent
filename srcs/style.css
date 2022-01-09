@@ -200,10 +200,10 @@ nav li {display:inline-block; margin-top:0px;padding-left:1vw;}
 .btn1-hover {width:8em;}
 .btn2-hover {width:8em; margin-left: -30px;}
 .btn3-hover {width:8em; margin-left: -20px; padding-top:10px;}
-.btn4-hover {width:8em; margin-left:-20px;}
+.btn4-hover {width:8em; margin-left:-20px; padding-top:10px;}
 .btn6-hover {width:8em; margin-left: -8px;}
 .btn2-smol {font-size:13px;}
-.btn1-hover ul, .btn2-hover ul, .btn3-hover ul, .btn4-hover ul, .btn6-hover ul { margin-left:-10px; padding:0px;}
+.btn1-hover ul, .btn2-hover ul, .btn3-hover ul, .btn4-hover ul, .btn6-hover ul { margin-left:-10px; margin-top:3px;padding:0px;}
 .btn1-hover a, .btn2-hover a, .btn3-hover a, .btn4-hover a, .btn6-hover a {
      color: #585a5d;
      border-left:none; 
