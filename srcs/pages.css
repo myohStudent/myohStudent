@@ -1,4 +1,5 @@
- /*
+@import "http://netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+/*
 ** menutoggle
 */  
   /* hamburger */
@@ -227,6 +228,53 @@ table{border-collapse:collapse;}
     font-size:15px;
 }
 /* video lecture */
+.search {
+    position: relative;
+    text-align: center;
+    width: 350px;
+    font-size:15px;
+    margin: 0 auto;
+}
+.searchbar{
+    width: 70%;
+    border-radius: 20px;
+    border: 1px solid #bbb;
+    margin: 10px 0;
+    padding: 10px 12px;
+    font-family: FontAwesome;
+}
+.searchbar::-webkit-input-placeholder { 
+    font-family: FontAwesome;
+    font-weight: normal;
+    overflow: visible;
+    vertical-align: top;
+    display: inline-block !important;
+    padding-left: 5px;
+    padding-top: 2px;
+    color: hsl(0, 0%, 47%);
+    }
+
+.searchbar::-moz-placeholder  { 
+font-family: FontAwesome;
+font-weight: normal;
+overflow: visible;
+vertical-align: top;
+display: inline-block !important;
+padding-left: 5px;
+padding-top: 2px;
+color: hsl(0, 0%, 47%);
+}
+
+.searchbar:-ms-input-placeholder  { 
+font-family: FontAwesome;
+font-weight: normal;
+overflow: visible;
+vertical-align: top;
+display: inline-block !important;
+padding-left: 5px;
+padding-top: 2px;
+color: hsl(0, 0%, 47%);
+}
 .lecture-name {
     width:70%;
 }
@@ -1171,6 +1219,7 @@ textarea.title{
     /* .registration{min-height:2500px;} */
     .register-btn{width:40%;}
     .input-id {width:100%;}
+    .searchbar { margin-left:-20px; width:190px;}
     /* .page-main{min-height:2800px;} */
     /* .year-select, .semester-select {
         width:100px;
