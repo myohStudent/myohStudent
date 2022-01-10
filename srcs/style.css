@@ -208,6 +208,8 @@ nav li {display:inline-block; margin-top:0px;padding-left:1vw;}
      color: #585a5d;
      border-left:none; 
      border-right:none;
+     opacity:1;
+
 }
 li:hover {cursor:pointer;}
 
@@ -621,7 +623,7 @@ nav {
     left:0;
     background-color:#fff;
     box-shadow:0px 0px 6px gray;
-    opacity:.86;
+    opacity:.8;
 }
 @media screen and (max-width:1400px){
     /* .none-for-4k {width:3%;} */
