@@ -228,6 +228,10 @@ table{border-collapse:collapse;}
 .sub-text.notice{
     font-size:15px;
 }
+/*monthlySchedule*/
+.pdf-viewer{
+    display:none;
+}
 /* video lecture */
 .search {
     position: relative;

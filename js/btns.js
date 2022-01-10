@@ -18,6 +18,12 @@ function loginStudent(){
  window.location = "indexLoggedIn.html"; 
 }
 
+/*pdf viewer showup*/
+function pdfOpen(){
+  $('#pdf').toggleClass('pdf-viewer show-up');
+  // $(".pdf-viewer").style.display = "block";
+}
+
 /* button for goingToSettings */
 function goToSettings(){
   /* 
