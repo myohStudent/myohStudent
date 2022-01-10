@@ -107,10 +107,10 @@
 					<li><img src="../img/clock.svg" width="14px" /> 학사일정
 						<ul class="sub">
 							<li>
-								<a href="../schedule/yearlySchedule.html" class="ham-a">연간학사일정</a>
+								<a href="../schedule/monthlySchedule.html" class="ham-a">월별학사일정 </a>
 							</li>
 							<li>
-								<a href="../schedule/monthlySchedule.html" class="ham-a">월간학사일정</a>
+								<a href="../schedule/weeklySchedule.html" class="ham-a">주간수업계획</a>
 							</li>
 						</ul>
 					</li>
@@ -160,8 +160,8 @@
 			<div class="btn3"><a href="../schedule/monthlySchedule.html">&nbsp;학사일정&nbsp;</a>
 				<div class="btn3-hover">
 					<ul>
-						<li><a href="../schedule/yearlySchedule.html">&nbsp;연간학사일정</a></li>
-						<li><a href="../schedule/monthlySchedule.html">&nbsp;월간학사일정</a></li>
+						<li><a href="../schedule/monthlySchedule.html">&nbsp;월별학사일정 </a></li>
+						<li><a href="../schedule/weeklySchedule.html">&nbsp;주간수업계획</a></li>
 					</ul>
 				</div>
 			</div>
@@ -195,13 +195,18 @@
 		<div class="page-main">
 			<section class="login">
 				<div class="front-text">
-					<a href="../index.html"><img src="../img/home.png" /></a>&nbsp; > &nbsp;&nbsp;학사일정&nbsp; > 연간 학사일정
+					<a href="../index.html"><img src="../img/home.png" /></a>&nbsp; > &nbsp;&nbsp;학사일정&nbsp; > 주간수업계획
 				</div>
 				<div class="login-text">
-					<p>연간 학사일정</p>
+					<p>주간수업계획</p>
 					<hr>
 					<br>
-					<a href="./monthlySchedule.pdf">연간 학사일정 : 2022년도 연간 학사일정.pdf</a>
+					<select name="" id="" class="semester-select plans" onchange="changeItem()">
+						<option value="test1">2022년 3월 1주차 수업계획</option>
+						<option value="test2">2022년 3월 2주차 수업계획</option>
+					</select>
+					<br><br>
+					<a href="./monthlySchedule.pdf">주간수업계획.pdf</a>
 					<br><br>
 					<iframe src="./monthlySchedule.pdf" style="width:100%;height:700px;"></iframe>
 					<br>
@@ -229,7 +234,7 @@
 				<p>주소 : 사북공공도서관 (우:26150)강원도 정선군 사북읍 파랑새길 33</p>
 				<p>대표전화 : 033 592-5757~8 팩스 : 033-592-5759</p>
 				<p>COPYRIGHT (C) JINGGEOMDARI SCHOOL. ALL RIGHTS RESERVED.</p>
-			</h3>	
+			</h3>
 		</div>
 	</footer>
 </body>
