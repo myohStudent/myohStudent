@@ -886,7 +886,6 @@ textarea.title{
 ** my_pages
 */ 
 .none-deco { text-decoration: none; color: rgb(133,133,133);}
-
 /*
 ** lost
 */
@@ -918,21 +917,6 @@ textarea.title{
 
 @media screen and (max-width: 1278px) {
     /* .right-nav, .page-right-nav { display:none;} */
-    .page-nav { 
-        text-decoration:none;
-        background-color: transparent;
-        /* position: absolute; */
-        width:50%;
-        z-index:1;
-        font-size:17px;
-        font-family: 'BMJUA'; 
-        font-weight: normal; 
-        display: inline-block; 
-        height: 115px;
-        padding: 0 0px;
-        line-height: 25px;
-        text-align: center;
-    }
     /* .page-nav a {color:#164097;} */
     .progress-box {
         width:100%;
@@ -958,19 +942,6 @@ textarea.title{
 @media screen and (max-width: 1023px) {
     .page-right-nav, .page-nav {display:none;}
     .right-nav, .page-right-nav  { display:none;}
-    .page-container .dropbtn {display:none;}
-    .page-container .logo {
-        padding: 0px 0;
-        text-align:center;
-        left:50%;
-        margin-top: 0px;
-    }
-    .page-container .logo {
-        text-align:center;
-        width:100px;
-        left:50%;
-    }
-    .page-container .logo img { width:100px; height: auto;}
     .page-main{ margin-top:100px;}
 
     .progress-circle {
@@ -986,13 +957,7 @@ textarea.title{
 
 @media (min-width: 768px) and (max-width:1339) {
     .page-right-nav, .page-nav {display:none;}
-    .page-container .logo {
-        text-align:center;
-        width:80px;
-        left:50%;
-    }
     header {margin-top:0px;}
-    .page-container .logo img { width:80px; height: auto;}
     .progress-box span{
         font-size:10px;
     }
@@ -1016,14 +981,7 @@ textarea.title{
 
 @media screen and (max-width: 767px) {
     .registration{height:2300px;}
-    .page-container .page-nav {display:none;}
     .page-main{ margin-top:100px;}
-    .page-container .logo {
-        text-align:center;
-        width:80px;
-        left:50%;
-        margin-top: 0px;
-    }
     .front-text {padding: 20px 0px 0px 0px;}
     
     /* .select-box {
@@ -1221,29 +1179,16 @@ textarea.title{
 } 
 @media screen and (max-width:456px){
     .noticeBtn{padding-left:0;}
-    /* .registration{min-height:2500px;} */
     .register-btn{width:40%;}
     .input-id {width:100%;}
     .searchbar { margin-left:-20px; width:190px;}
-    /* .page-main{min-height:2800px;} */
-    /* .year-select, .semester-select {
-        width:100px;
-    }
-     */
      .hidden-br { display:block;}
     .mentoring-select-btn {
         width:180px;
         margin:20px 20px 20px 20px;
     }
     .scriptCalendar > tbody > tr > td { 
-   
         font-size:9px;
         padding:1px;
-      
     }
-}
-@media screen and (max-width:392px){
-    /* .registration{min-height:3000px;}
-    .registration-register4terms {min-height:2800px;} */
-    /* .page-main{min-height:3400px;} */
 }

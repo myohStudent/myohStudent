@@ -175,17 +175,20 @@
 				</div>
 			</div>
 			<div class="btn5"><a href="../notice.html">&nbsp;공지사항&nbsp;</a></div>
-			<div class="btn6"><a href="../register.html">&nbsp;회원가입&nbsp;</a></div>
-			<!-- login
-			  <div class = "btn6_loggedin"><a href="./my_pages/mypage.html">&nbsp;마이페이지&nbsp;</a>
+			<!-- <div class="btn6"><a href="../register.html">&nbsp;회원가입&nbsp;</a></div> -->
+			<div class="btn6_loggedin"><a href= "../my_pages/mypage.html">&nbsp;마이페이지&nbsp;</a>
 				<div class="btn6-hover">
-				  <ul><li><a href="./my_pages/mypage.html">&nbsp;내강의</a></li><li><a href="./my_pages/mentoring.html">&nbsp;멘토링보고서</a></li> <li><a href="./my_pages/setting.html">&nbsp;정보수정</a></li> <li><a href="./my_pages/letterbox.html">&nbsp;받은메시지함</a></li></ul>
+					<ul>
+						<li><a href= "../my_pages/mypage.html">&nbsp;내강의</a></li>
+						<li><a href= "../my_pages/mentoring.html">&nbsp;멘토링보고서</a></li>
+						<li><a href= "../my_pages/settings.html">&nbsp;정보수정</a></li>
+						<li><a href= "../my_pages/letterbox.html">&nbsp;받은메시지함</a></li>
+					</ul>
 				</div>
-			  </div> -->
-			<div class="btn7"><a href="../login.html">&nbsp;로그인&nbsp;</a></div>
-			<!--login
-			  <div class = "btn7_loggedin"><a href="./index.html">&nbsp;로그아웃&nbsp;</a></div>
-			  -->
+			</div>
+			<!-- <div class="btn7"><a href="../login.html">&nbsp;로그인&nbsp;</a></div> -->
+			<div class="btn7_loggedin"><a href="./index.html">&nbsp;로그아웃&nbsp;</a></div>
+
 			<div class="right-nav"><a href="http://www.jeongseon.go.kr/intro.html"><img
 						src="../img/jeongsunlogo.png"></a>
 			</div>
@@ -197,90 +200,91 @@
 			<section class="introduction">
 				<div class="front-text">
 					<a href="../index.html"><img src="../img/home.png" /></a>&nbsp; > &nbsp;&nbsp;마이페이지&nbsp; >
-					&nbsp;내 강의</div>
+					&nbsp;내 강의
+				</div>
 				<div class="login-text">
 					<p></p>
 					<p>내 강의</p>
 					<hr>
 					<p>
-						<form method="" name="" action="" target="" value>
-							<div class="mypage-text">수강 학기년도 선택</div>
-							연도 : &nbsp;
-							<select name="" class="year-select">
-								<option value="none">선 택</option>
-								<option value="1">2022</option>0
-								<option value="2">2021</option>
-								<option value="3">2020</option>
-							</select> &nbsp;<br class="hidden-br" />
-							학기 : &nbsp;
-							<select name="" class="semester-select">
-								<option value="none">선 택</option>
-								<option value="1">1학기</option>0
-								<option value="2">2학기</option>
-							</select> &nbsp;
-							<button type="button" class="mentoring-select-btn mypage" id="selectMentoringReport"
-								onclick="selectYearSemester()">
-								확 인
-							</button>
-							<br><br>
-							<div class="mypage-text">공동프로젝트</div>
-							<table class="tables table-mypage-result">
-								<!--if no results were found,-->
-								<!--
-									참여 중인 프로젝트가 없습니다.
-								-->
-								<!-- if not, -->
-								<thead>
-									<tr>
-										<th scope="col">번호</th>
-										<th scope="col">공동프로젝트명</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td data-label="번호">3</td>
-										<td data-label="공동프로젝트명"><a href="project0.html">공동프로젝트명 3</a></td>
-									</tr>
-									<tr>
-										<td data-label="번호">2</td>
-										<td data-label="공동프로젝트명"><a href="project0.html">공동프로젝트명 2</a></td>
-									</tr>
-									<tr>
-										<td data-label="번호">1</td>
-										<td data-label="공동프로젝트명"><a href="project0.html">공동프로젝트명 1</a></td>
-									</tr>
-								</tbody>
-							</table>
-							<div class="verification-space"></div>
-							<div class="mypage-text">수강 반 선택</div>
+					<form method="" name="" action="" target="" value>
+						<div class="mypage-text">수강 학기년도 선택</div>
+						연도 : &nbsp;
+						<select name="" class="year-select">
+							<option value="none">선 택</option>
+							<option value="1">2022</option>0
+							<option value="2">2021</option>
+							<option value="3">2020</option>
+						</select> &nbsp;<br class="hidden-br" />
+						학기 : &nbsp;
+						<select name="" class="semester-select">
+							<option value="none">선 택</option>
+							<option value="1">1학기</option>0
+							<option value="2">2학기</option>
+						</select> &nbsp;
+						<button type="button" class="mentoring-select-btn mypage" id="selectMentoringReport"
+							onclick="selectYearSemester()">
+							확 인
+						</button>
+						<br><br>
+						<div class="mypage-text">공동프로젝트</div>
+						<table class="tables table-mypage-result">
 							<!--if no results were found,-->
 							<!--
+									참여 중인 프로젝트가 없습니다.
+								-->
+							<!-- if not, -->
+							<thead>
+								<tr>
+									<th scope="col">번호</th>
+									<th scope="col">공동프로젝트명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td data-label="번호">3</td>
+									<td data-label="공동프로젝트명"><a href="project0.html">공동프로젝트명 3</a></td>
+								</tr>
+								<tr>
+									<td data-label="번호">2</td>
+									<td data-label="공동프로젝트명"><a href="project0.html">공동프로젝트명 2</a></td>
+								</tr>
+								<tr>
+									<td data-label="번호">1</td>
+									<td data-label="공동프로젝트명"><a href="project0.html">공동프로젝트명 1</a></td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="verification-space"></div>
+						<div class="mypage-text">수강 반 선택</div>
+						<!--if no results were found,-->
+						<!--
 								수강한 내역이 없습니다.
 							-->
-							<!-- if not, -->
-							<select name="" class="year-select">
-								<option value="none">초등 인재반 5학년</option>
-								<option value="1">초등 교양반 5학년</option>0
-							</select>
-							<div class="mypage-text">00000반 0학년 수강과목</div>
-							<div id="class-grid" class="grid-container">
-								<a href="class00.html">
-									<div class="card" id="0">
-										<img src="../img/music.jpg" class-grid="img-grid">
-										<div class="text">하이든&메르의 디지털예술</div>
-									</div>
-								</a>
-								<a href="class00.html">
-									<div class="card" id="1">
-										<img src="../img/design.jpg" class-grid="img-grid">
-										<div class="text">시앙의 디지털디자인</div>
-									</div>
-								</a>
-							</div>
-							<br class="hidden-br" />
+						<!-- if not, -->
+						<select name="" class="year-select">
+							<option value="none">초등 인재반 5학년</option>
+							<option value="1">초등 교양반 5학년</option>0
+						</select>
+						<div class="mypage-text">00000반 0학년 수강과목</div>
+						<div id="class-grid" class="grid-container">
+							<a href="class00.html">
+								<div class="card" id="0">
+									<img src="../img/music.jpg" class-grid="img-grid">
+									<div class="text">하이든&메르의 디지털예술</div>
+								</div>
+							</a>
+							<a href="class00.html">
+								<div class="card" id="1">
+									<img src="../img/design.jpg" class-grid="img-grid">
+									<div class="text">시앙의 디지털디자인</div>
+								</div>
+							</a>
+						</div>
+						<br class="hidden-br" />
 
-						</form>
-						<p></p>
+					</form>
+					<p></p>
 				</div>
 	</main>
 	<footer>
@@ -300,10 +304,10 @@
 				<p>주소 : 사북공공도서관 (우:26150)강원도 정선군 사북읍 파랑새길 33</p>
 				<p>대표전화 : 033 592-5757~8 팩스 : 033-592-5759</p>
 				<p>COPYRIGHT (C) JINGGEOMDARI SCHOOL. ALL RIGHTS RESERVED.</p>
-			</h3>	
+			</h3>
 		</div>
 	</footer>
-    </div>
+	</div>
 </body>
 <script src="../js/index.js"></script>
 <script src="../js/pageMenu.js"></script>
