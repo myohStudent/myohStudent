@@ -141,6 +141,11 @@ $(".btn6_loggedin").hover(function(){
 		},200);
 	}
 );
+
+
+/* main page */
+
+
 	// $(".btn1-hover").on({"mouseenter":function(){},"mouseleave":function(){
 	// 	if($(".btn1-hover").css("display") == "block")
 	// 	{
