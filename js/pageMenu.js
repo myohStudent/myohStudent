@@ -1,5 +1,171 @@
 /* 세부 페이지들 헤더의 팝업메뉴 버튼 기능입니다. */
 
+$(".btn1").hover(function(){
+
+    $(this).css('cursor', 'pointer');
+	$(".btn2-hover").css('display', 'none');
+    $(".btn3-hover").css('display', 'none');
+    $(".btn4-hover").css('display', 'none');
+    $(".btn6-hover").css('display', 'none');
+	$(".btn1-hover").css('opacity', '0');
+	$(".btn1-hover").animate({
+		height: "200px",
+		opacity: "1",
+		}, 500);
+	$(".btn1-hover").css('display', 'block');
+	}, function(){
+		$(".btn1-hover").animate({
+			height: "0px",
+			opacity: "0",
+			}, 500);
+		setTimeout(function(){
+			$(".btn1-hover").css('display', 'none');
+		},200);
+	}
+);
+
+$(".btn2").hover(function(){
+
+    $(this).css('cursor', 'pointer');
+	$(".btn1-hover").css('display', 'none');
+    $(".btn3-hover").css('display', 'none');
+    $(".btn4-hover").css('display', 'none');
+    $(".btn6-hover").css('display', 'none');
+	$(".btn2-hover").css('opacity', '0');
+	$(".btn2-hover").animate({
+		height: "200px",
+		opacity: "1",
+		}, 500);
+	$(".btn2-hover").css('display', 'block');
+	}, function(){
+		$(".btn2-hover").animate({
+			height: "0px",
+			opacity: "0",
+			}, 500);
+		setTimeout(function(){
+			$(".btn2-hover").css('display', 'none');
+		},200);
+	}
+);
+
+$(".btn3").hover(function(){
+
+    $(this).css('cursor', 'pointer');
+	$(".btn1-hover").css('display', 'none');
+    $(".btn2-hover").css('display', 'none');
+    $(".btn4-hover").css('display', 'none');
+    $(".btn6-hover").css('display', 'none');
+	$(".btn3-hover").css('opacity', '0');
+	$(".btn3-hover").animate({
+		height: "200px",
+		opacity: "1",
+		}, 500);
+	$(".btn3-hover").css('display', 'block');
+	}, function(){
+		$(".btn3-hover").animate({
+			height: "0px",
+			opacity: "0",
+			}, 500);
+		setTimeout(function(){
+			$(".btn3-hover").css('display', 'none');
+		},200);
+	}
+);
+$(".btn4").hover(function(){
+
+    $(this).css('cursor', 'pointer');
+	$(".btn1-hover").css('display', 'none');
+    $(".btn2-hover").css('display', 'none');
+    $(".btn3-hover").css('display', 'none');
+    $(".btn6-hover").css('display', 'none');
+	$(".btn4-hover").css('opacity', '0');
+	$(".btn4-hover").animate({
+		height: "200px",
+		opacity: "1",
+		}, 500);
+	$(".btn4-hover").css('display', 'block');
+	}, function(){
+		$(".btn4-hover").animate({
+			height: "0px",
+			opacity: "0",
+			}, 500);
+		setTimeout(function(){
+			$(".btn4-hover").css('display', 'none');
+		},200);
+	}
+);
+$(".btn6").hover(function(){
+
+    $(this).css('cursor', 'pointer');
+	$(".btn1-hover").css('display', 'none');
+    $(".btn2-hover").css('display', 'none');
+    $(".btn3-hover").css('display', 'none');
+    $(".btn4-hover").css('display', 'none');
+	$(".btn6-hover").css('opacity', '0');
+	$(".btn6-hover").animate({
+		height: "200px",
+		opacity: "1",
+		}, 500);
+	$(".btn6-hover").css('display', 'block');
+	}, function(){
+		$(".btn6-hover").animate({
+			height: "0px",
+			opacity: "0",
+			}, 500);
+		setTimeout(function(){
+			$(".btn6-hover").css('display', 'none');
+		},200);
+	}
+);
+
+$(".btn6_loggedin").hover(function(){
+
+    $(this).css('cursor', 'pointer');
+	$(".btn1-hover").css('display', 'none');
+    $(".btn2-hover").css('display', 'none');
+    $(".btn3-hover").css('display', 'none');
+    $(".btn4-hover").css('display', 'none');
+	$(".btn6-hover").css('opacity', '0');
+	$(".btn6-hover").animate({
+		height: "200px",
+		opacity: "1",
+		}, 500);
+	$(".btn6-hover").css('display', 'block');
+	}, function(){
+		$(".btn6-hover").animate({
+			height: "0px",
+			opacity: "0",
+			}, 500);
+		setTimeout(function(){
+			$(".btn6-hover").css('display', 'none');
+		},200);
+	}
+);
+	// $(".btn1-hover").on({"mouseenter":function(){},"mouseleave":function(){
+	// 	if($(".btn1-hover").css("display") == "block")
+	// 	{
+	// 		setTimeout(function(){
+	// 		$(".btn1-hover").css('display', 'none');
+	// 		$(".btn1-hover").css('height', '0');
+	// 		},1);
+	// 	}
+	// }
+// });
+
+
+
+// $(".btn1-hover").on({"mouseenter":function(){
+   
+//     },"mouseleave":function(){
+//         if($(".btn1-hover").css("display") == "block")
+//         {
+// 			$(".btn1-hover").animate({opacity:0},400);
+// 			setTimeout(function(){
+// 				 $(".btn1-hover").css('display', 'none');
+// 			},1);
+//         };
+//     }
+// });
 // $(".m1").on({ "mouseover":function() {
 //     $(this).css('cursor', 'pointer');
 //         if($(".btn1-hover").css("display") == "none")
