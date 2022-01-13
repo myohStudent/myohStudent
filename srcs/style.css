@@ -186,7 +186,8 @@ nav li {display:inline-block; margin-top:0px;padding-left:1vw;}
     text-align: center;
     /* transition:opacity 200ms ease-out 0ms; */
     z-index:1;
-    background-image:url('../img/menu_bg.png');
+    /* background-image:url('../img/menu_bg.png'); */
+    background-image:url('../img/menuBg.png');
     background-repeat:no-repeat;
     background-size:100% 90%;
     height:0px;
@@ -201,7 +202,10 @@ nav li {display:inline-block; margin-top:0px;padding-left:1vw;}
 .btn4-hover {width:8em; margin-left:-20px; padding-top:10px;}
 .btn6-hover {width:8em; margin-left: -15px;}
 .btn2-smol {font-size:13px;}
-.btn1-hover ul, .btn2-hover ul, .btn3-hover ul, .btn4-hover ul, .btn6-hover ul { margin-left:-10px; margin-top:3px;padding:0px;}
+.btn1-hover ul, .btn2-hover ul, .btn3-hover ul, .btn4-hover ul, .btn6-hover ul { margin-left:-10px; margin-top:3px;padding-left:-10px;}
+.btn1-hover ul li, .btn2-hover ul li, .btn3-hover ul li, .btn4-hover ul li , .btn6-hover ul li{
+    padding-left:13px;
+}
 .btn1-hover a, .btn2-hover a, .btn3-hover a, .btn4-hover a, .btn6-hover a {
      color: #585a5d;
      border-left:none; 
@@ -553,6 +557,9 @@ blockquote:before,blockquote:after {
     }
     .btn1-hover, .btn2-hover, .btn3-hover, .btn4-hover, .btn6-hover{
         height:170px;margin-top:18px;width:7.4em;font-size:13px;
+    }
+    .btn1-hover ul li, .btn2-hover ul li, .btn3-hover ul li, .btn4-hover ul li, .btn6-hover ul li{
+        padding-left:20px;
     }
 }
 @media screen and (max-width: 1186px) {
