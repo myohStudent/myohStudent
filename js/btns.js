@@ -80,4 +80,3 @@ function ifInputChecked(){
    /* if not */
 //    window.location = "registrationFailed.html";
 }
-

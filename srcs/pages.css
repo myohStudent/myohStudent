@@ -126,6 +126,32 @@ table{border-collapse:collapse;}
     position: absolute;
     width: 1px;
 }
+.tables.table-vertical.courseDetail {
+    box-shadow:1px 1px 4px rgba(0, 0, 0, 0.2);
+    padding-bottom:0px;
+    margin-top:40px;
+
+}
+.tables.table-vertical.courseDetail tr {
+    margin-bottom:0px;
+    padding-top:20px;
+    border-top:none;
+    /* border-left:1px solid #c2bdbd; */
+    border-left:none; border-right:none;
+    font-size:1.2em;
+    background-color:rgb(247, 251, 251);
+    line-height: 1.5em;
+}
+.tables.table-vertical.courseDetail td {
+    text-align:left;    
+    padding-left:20px;
+    padding-right:20px;
+    border:none;
+}
+.tables.table-vertical.courseDetail th{display:none;}
+.courseLine {
+    border-top:1px solid #164097;
+}
 .tables.table-vertical.project td:before {
     font-size:14px;
     background-color:antiquewhite;
@@ -209,6 +235,9 @@ table{border-collapse:collapse;}
 .tables.table-vertical.homework td:before{
     background-color:#ccc1ec;
     font-size:.8em;
+}
+.tables.table-vertical.courseDetail thead {
+    display:none;
 }
 .tables.td-description { padding-left:10px; }
 .course-description {
@@ -738,6 +767,9 @@ textarea.title{
 .login-profile { width:100px;} 
 .login-text p {text-align:left; color: rgb(141, 141, 141);}
 .login-text hr{ border:1px solid lightgray;}
+hr.courseLine {
+    border:1px solid #164097;
+}
 .login-text h4 {
     text-align:left;
     line-height:1em;
@@ -1144,6 +1176,8 @@ textarea.title{
     .tables.table-vertical.notice td:before{width:40px;margin-right:10px;}
     .tables.table-vertical.homework td:before{margin-right:5px;padding-left:5px;font-size:12px;width:69px;}
     .tables.table-vertical.homework td{text-align:left;}
+    .tables.table-vertical.courseDetail thead th{display:none;}
+    .hidden-thead {display:none;}
     .table-letterbox td:before {
           width:50px;
           text-align:left;

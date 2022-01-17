@@ -142,8 +142,13 @@ $(".btn6_loggedin").hover(function(){
 	}
 );
 
+/* courseMath.html
+*/
+// $('.tables.table-vertical.courseDetail > thead').remove(); 
+// $('.hiddenThead tr').remove();
 
 /* main page */
+
 
 
 	// $(".btn1-hover").on({"mouseenter":function(){},"mouseleave":function(){
