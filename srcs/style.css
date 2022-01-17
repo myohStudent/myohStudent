@@ -516,7 +516,7 @@ blockquote:before,blockquote:after {
     text-decoration-line: none;
     color:#7e7e80;
   }
-  .scriptCalendar > thead > tr > td { width:5vw;height:5vh;text-decoration-line: none;}
+  .scriptCalendar > thead > tr > td { width:5vw;height:7vh;text-decoration-line: none;}
   .scriptCalendar > thead > tr:first-child > td { font-weight:bold;text-decoration-line: none; }
   .scriptCalendar > thead > tr:last-child > td { background-color:rgb(255, 251, 193); text-decoration-line: none;}
   .scriptCalendar > tbody > tr > td { 
@@ -524,7 +524,7 @@ blockquote:before,blockquote:after {
     padding:5px;
     vertical-align:top;
     width:5vw;
-    height:7vh;
+    height:12vh;
     text-decoration-line: none;  
   }
   .cal-text {text-decoration-line: none;  }

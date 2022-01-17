@@ -130,7 +130,6 @@ table{border-collapse:collapse;}
     box-shadow:1px 1px 4px rgba(0, 0, 0, 0.2);
     padding-bottom:0px;
     margin-top:40px;
-
 }
 .tables.table-vertical.courseDetail tr {
     margin-bottom:0px;
@@ -169,6 +168,9 @@ table{border-collapse:collapse;}
 .letter-text {padding-top:30px;padding-bottom:30px;}
 
 /**/
+.tables.schedule-table thead{
+    display:none;
+}
 .tables.monthly-schedule td{
     text-align:left; 
     padding-left:5px;
@@ -329,7 +331,7 @@ color: hsl(0, 0%, 47%);
 .scriptCalendar { 
     text-align:center; 
   }
-  .scriptCalendar > thead > tr > td { width:5vw;height:5vh; }
+  .scriptCalendar > thead > tr > td { width:5vw;height:6vh; }
   .scriptCalendar > thead > tr:first-child > td { font-weight:bold; }
   .scriptCalendar > thead > tr:last-child > td { background-color:rgb(255, 254, 185); }
   .scriptCalendar > tbody > tr > td { 
@@ -337,7 +339,7 @@ color: hsl(0, 0%, 47%);
     padding:5px;
     vertical-align:top;
     width:5vw;
-    height:7vh;
+    height:15vh;
   }
 /* notice board */
 .notice-card {
