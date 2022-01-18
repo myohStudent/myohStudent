@@ -134,12 +134,14 @@ table{border-collapse:collapse;}
 .tables.table-vertical.courseDetail tr {
     margin-bottom:0px;
     padding-top:20px;
+    padding-bottom:20px;
     border-top:none;
     /* border-left:1px solid #c2bdbd; */
     border-left:none; border-right:none;
     font-size:1.2em;
     background-color:rgb(247, 251, 251);
     line-height: 1.5em;
+    border-bottom: 3px solid #fff45d;
 }
 .tables.table-vertical.courseDetail td {
     text-align:left;    
@@ -242,6 +244,22 @@ table{border-collapse:collapse;}
     display:none;
 }
 .tables.td-description { padding-left:10px; }
+.course-table {
+    padding:10px;
+    border-collapse:separate;
+    border-spacing:0 20px;
+    border-radius:50%;
+}
+img.thumbnail {width:40px;}
+
+.course-table thead {display:none;}
+.course-table tr {
+    background-color:#fff;
+    border-top:1px solid #a1a1a1;
+    border-spacing:20px;
+    border-collapse:separate;
+}
+
 .course-description {
     padding:20px 20px 20px 20px;
     border-radius:30px;
@@ -1179,7 +1197,6 @@ hr.courseLine {
     .tables.table-vertical.homework td:before{margin-right:5px;padding-left:5px;font-size:12px;width:69px;}
     .tables.table-vertical.homework td{text-align:left;}
     .tables.table-vertical.courseDetail thead th{display:none;}
-    .hidden-thead {display:none;}
     .table-letterbox td:before {
           width:50px;
           text-align:left;
