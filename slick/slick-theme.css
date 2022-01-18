@@ -210,3 +210,7 @@
     /* color: #3a558e; */
     font-size:23px;
 }
+
+@media screen and (max-width: 767px) {
+    .slick-dots{display:none;}
+}

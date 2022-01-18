@@ -15,3 +15,10 @@ for (var i = 0; i < courseArr; i++){
 		window.location = 'courseMath.html';  
 	});
 }
+
+var courseArr = 4;
+for (var i = 0; i < courseArr; i++){
+	$(".courseCulNo" + i).click(function(){
+		window.location = 'courseDesign.html';  
+	});
+}
