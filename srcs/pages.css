@@ -1230,7 +1230,7 @@ hr.courseLine {
     .info-btn.submit, .info-btn.back {
         font-size:15px;
     }
-    .course-table img {width:100px;}
+    .course-table img {width:100px; padding-top:20px;}
     img.thumbnail {text-align:center; width:18%; height:auto; padding:5px;}
 
 } 

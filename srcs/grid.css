@@ -89,4 +89,5 @@
   .grid-container{ 
     grid-template-columns: auto;
   }
+  .text.detail{font-size:12px;}
 }
