@@ -12,8 +12,9 @@
 	<link href="../srcs/grid.css" rel="stylesheet">
 	<link href="../srcs/footer.css" rel="stylesheet">
 	<link href="../slick/slick.css" rel="stylesheet" type="text/css">
-	<link href="../slick/slick-theme.css" rel="stylesheet" type="text/css"><script src="../js/btns.js"></script>
-	
+	<link href="../slick/slick-theme.css" rel="stylesheet" type="text/css">
+	<script src="../js/btns.js"></script>
+
 
 </head>
 
@@ -195,26 +196,82 @@
 			<section class="introduction">
 				<div class="front-text">
 					<a href="../index.html"><img src="../img/home.png" /></a>&nbsp; > &nbsp;&nbsp;교육과정&nbsp; >
-					&nbsp;중등인재</div>
+					&nbsp;중등인재
+				</div>
 				<div class="login-text">
 					<p></p>
 					<p>중등인재</p>
 					<hr>
-					<p>
-						<form method="" name="" action="" target="" value>
-							학년 : &nbsp;
-							<select name="primarySteam" class="grade-select">
-								<option value="none">선 택</option>
-								<option value="1">1학년</option>
-								<option value="2">2학년</option>0
-								<option value="3">3학년</option>
-							</select> &nbsp;
-							<button type="button" class="select-btn" id="selectPrimaryGrade"
-								onclick="selectPrimaryGrade()">
-								확 인
-							</button>
-							<p></p>
-							<table class="tables schedule-table">
+					<br>
+					<form method="" name="" action="" target="" value>
+						학년 : &nbsp;
+						<select name="primarySteam" class="grade-select">
+							<option value="none">선 택</option>
+							<option value="1">1학년</option>
+							<option value="2">2학년</option>0
+							<option value="3">3학년</option>
+						</select> &nbsp;
+						<button type="button" class="select-btn" id="selectPrimaryGrade" onclick="selectPrimaryGrade()">
+							확 인
+						</button>
+						<p></p>
+
+						<table class="course-table">
+							<thead>
+								<tr>
+									<th scope="col">제목</th>
+									<th scope="col">설명</th>
+								</tr>
+							</thead>
+							<tr style="cursor: pointer;" class="courseNo0">
+								<td col="제목" class="text course">사고력 수학<br /><img src="../img/math.jpg">
+								</td>
+								<td col="설명" class="text detail">강좌 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글
+									강좌 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글
+									<br />
+									<img class="thumbnail" src="../img/math.jpg" />
+									<img class="thumbnail" src="../img/math.jpg" />
+									<img class="thumbnail" src="../img/math.jpg" />
+									<img class="thumbnail" src="../img/math.jpg" />
+									<br />
+									<div class="read-more course">더보기</div>
+								</td>
+							</tr>
+
+							<tr style="cursor: pointer;" class="courseNo0">
+								<td col="제목" class="text course">사고력 수학<br /><img src="../img/math.jpg">
+								</td>
+								<td col="설명" class="text detail">강좌 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글
+									강좌 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글
+									<br />
+									<img class="thumbnail" src="../img/math.jpg" />
+									<img class="thumbnail" src="../img/math.jpg" />
+									<img class="thumbnail" src="../img/math.jpg" />
+									<img class="thumbnail" src="../img/math.jpg" />
+									<br />
+									<div class="read-more course">더보기</div>
+								</td>
+							</tr>
+
+							<tr style="cursor: pointer;" class="courseNo0">
+								<td col="제목" class="text course">사고력 수학<br /><img src="../img/math.jpg">
+								</td>
+								<td col="설명" class="text detail">강좌 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글
+									강좌 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글 설명글
+									<br />
+									<img class="thumbnail" src="../img/math.jpg" />
+									<img class="thumbnail" src="../img/math.jpg" />
+									<img class="thumbnail" src="../img/math.jpg" />
+									<img class="thumbnail" src="../img/math.jpg" />
+									<br />
+									<div class="read-more course">더보기</div>
+								</td>
+							</tr>
+
+
+						</table>
+
+						<!-- <table class="tables schedule-table">
 								<thead>
 									<tr>
 										<th scope="col">No</th>
@@ -255,20 +312,19 @@
 										<td data-label="접수기간">02.22 09:00<br /> ~ 02.22 18:00</td>
 									</tr>
 								</tbody>
-							</table>
 							</tr>
 							</thead>
-							</table>
-						</form>
-						<p></p>
-						<button type="button" class="courses-btn" id="steam1Registration"
-							onclick="var returnValue = confirm('수강신청을 하시겠습니까?');location.href='./submitted.html';">
-							수강신청
-						</button>
-						<button type="button" class="courses-btn-conf" id="steam1Confirmation"
-							onclick="location.href='./candidateList.html';">
-							접수확인
-						</button>
+							</table> -->
+					</form>
+					<p></p>
+					<button type="button" class="courses-btn" id="steam1Registration"
+						onclick="var returnValue = confirm('수강신청을 하시겠습니까?');location.href='./submitted.html';">
+						수강신청
+					</button>
+					<button type="button" class="courses-btn-conf" id="steam1Confirmation"
+						onclick="location.href='./candidateList.html';">
+						접수확인
+					</button>
 					</p>
 
 				</div>
@@ -290,11 +346,12 @@
 				<p>주소 : 사북공공도서관 (우:26150)강원도 정선군 사북읍 파랑새길 33</p>
 				<p>대표전화 : 033 592-5757~8 팩스 : 033-592-5759</p>
 				<p>COPYRIGHT (C) JINGGEOMDARI SCHOOL. ALL RIGHTS RESERVED.</p>
-			</h3>	
+			</h3>
 		</div>
 	</footer>
 </body>
 <script src="../js/index.js"></script>
 <script src="../js/pageMenu.js"></script>
 <!--메인페이지 이외의 페이지들에게 필요함-->
+
 </html>
