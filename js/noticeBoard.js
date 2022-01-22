@@ -41,6 +41,7 @@ function generateNoticeCard(noticeData) {
     var sub = document.createElement('span');
     sub.className = "sub-text";
     title.innerHTML = noticeData.title + "<br/>";
+    // sub.innerHTML = noticeData.content;
     sub.innerHTML = (noticeData.content).substr(0, 18) + " " + "[더보기]";
     card.appendChild(thumbnail);
 

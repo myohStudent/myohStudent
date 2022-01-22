@@ -127,6 +127,7 @@ table{border-collapse:collapse;}
     width: 1px;
 }
 .tables.table-vertical.courseDetail {
+    table-layout: fixed;
     box-shadow:1px 1px 4px rgba(0, 0, 0, 0.2);
     padding-bottom:0px;
     margin-top:40px;
@@ -274,6 +275,7 @@ img.thumbnail {width:70px; height:60px; padding:10px;}
     text-align:left;
     color:#707070;
 }
+
 .sub-text.notice{
     font-size:15px;
 }
