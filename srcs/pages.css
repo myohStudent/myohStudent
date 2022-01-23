@@ -250,6 +250,8 @@ table{border-collapse:collapse;}
     border-collapse:separate;
     border-spacing:0 20px;
     border-radius:50%;
+    table-layout: fixed;
+    width:100%;
 }
 img.thumbnail {width:70px; height:60px; padding:10px;}
 
@@ -260,7 +262,7 @@ img.thumbnail {width:70px; height:60px; padding:10px;}
     border-spacing:20px;
     border-collapse:separate;
 }
-
+/* .courseNo0{width:100%;} */
 .course-description {
     padding:20px 20px 20px 20px;
     border-radius:30px;

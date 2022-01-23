@@ -51,12 +51,25 @@
 .text.course{
   font-size:18px;
   padding:15px;
-  max-width:230px;
+  width:40%;
+}
+.img-box{
+  width:100%;
+  white-space: normal;
+  padding-top:10px;
 }
 .text.detail{
   padding:20px;
   font-weight:normal;
+  width:90%;
+  height:177px;
   text-align:left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* border: 1px solid grey; */
+  
+  /* padding-right: 0 !important; */
 }
 .notice-text {
   text-align:center; 
