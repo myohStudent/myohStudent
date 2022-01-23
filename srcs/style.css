@@ -202,10 +202,10 @@ nav li {display:inline-block; margin-top:0px;padding-left:1vw;}
 .btn4-hover {width:8em; margin-left:-20px; padding-top:10px;}
 .btn6-hover {width:8em; margin-left: -15px;}
 .btn2-smol {font-size:13px;}
-.btn1-hover ul, .btn2-hover ul, .btn3-hover ul, .btn4-hover ul, .btn6-hover ul { margin-left:-10px; margin-top:3px;padding-left:-10px;}
+.btn1-hover ul, .btn2-hover ul, .btn3-hover ul, .btn4-hover ul, .btn6-hover ul { margin-left:-5px; margin-top:3px;padding-left:-10px;}
 .btn3-hover ul, .btn4-hover ul {margin-top:-6px;}
 .btn1-hover ul li, .btn2-hover ul li, .btn3-hover ul li, .btn4-hover ul li , .btn6-hover ul li{
-    padding-left:5px;
+    padding-left:0px;
 }
 .beaker.upper{
     background-repeat: no-repeat;
@@ -578,11 +578,16 @@ blockquote:before,blockquote:after {
         text-align: center;
     }
     .btn1-hover, .btn2-hover, .btn3-hover, .btn4-hover, .btn6-hover{
-        height:170px;margin-top:18px;width:7.4em;font-size:13px;
+        height:170px;margin-top:16px;width:7.4em;font-size:13px;
+        margin-left:-10px;
     }
+    .btn3-hover, .btn4-hover{margin-top:13px;}
     .btn1-hover ul li, .btn2-hover ul li, .btn3-hover ul li, .btn4-hover ul li, .btn6-hover ul li{
-        padding-left:20px;
+        margin-top:0px;
     }
+    .btn2-hover, .btn3-hover{margin-left:-30px;}
+    .btn4-hover {margin-left:-24px;}
+    .btn6-hover {margin-left:-25px;}
 }
 @media screen and (max-width: 1186px) {
     .index-main{margin-top:-4px;}
