@@ -63,7 +63,7 @@ main {
     margin-left:0px;
     padding: 0 0px;
     font-size: 1.5rem; line-height: 1.2;
-    font-family: 'BMJUA', 'Nanum Gothic', 'Lato', Calibri, Arial, sans-serif;;
+    font-family: 'BMJUA', 'Nanum Gothic', 'Lato', img-libri, Arial, sans-serif;;
 }
 .index-main {
     background-color: #f3f3f3; 
