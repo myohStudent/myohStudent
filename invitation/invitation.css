@@ -36,7 +36,13 @@ footer {
     font-size:8px;
 }
 
-.logo {width:40px;padding-bottom:10px;}
+.logo {width:40px;padding:10px;}
+.jeongsun{
+    width:40px; padding:10px;
+}
+.jeongsun2{
+    width:65px; padding:10px;
+}
 main img {width:70%;}
 main{
     padding:10px;
@@ -106,9 +112,9 @@ main img{width:100%;}
 .main-schedule{font-size:0.7em;}
 .title.second{font-size:1em;}
 .button{
-    font-size:0.7em;
+    font-size:0.8em;
     padding:5px;
-    width:80px;
+    width:81px;
     margin:6px;
 }
 iframe{
