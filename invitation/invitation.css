@@ -15,7 +15,6 @@ body {
     line-height: 1.0em;
     /* overflow-x:hidden; */
     /* overflow-y:hidden; */
-
 }
 header {
     padding:5px;
@@ -49,6 +48,8 @@ main{
     text-align:center;
     line-height: 1.2em;
     color:#74777a;
+    margin-bottom:10px;
+
 }
 .main-title{
     padding:0px;
