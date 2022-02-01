@@ -11,7 +11,7 @@ body {
     left:0;
     top:0;
     margin:0;
-    background-color: #fbffe8;
+    background-color: rgb(201, 235, 245);
     line-height: 1.0em;
 }
 header {
@@ -19,17 +19,21 @@ header {
     text-align:center;
     color:rgb(112, 191, 212);
     font-size:.7em;
-    background-color: rgba(156, 234, 240, 0.7);
+    background-color: #0b4b6d;
+}
+header a {
+    text-decoration:none;
+    color:rgb(112,191,212);
 }
 footer {
     padding:5px;
     text-align:center;
-    background-color: rgba(156, 234, 240, 0.7);
+    background-color: #0b4b6d;
     color:rgb(112, 191, 212);
     font-size:8px;
 }
 
-.logo {width:50px;padding-bottom:10px;}
+.logo {width:40px;padding-bottom:10px;}
 main img {width:70%;}
 main{
     padding:10px;
@@ -40,12 +44,12 @@ main{
 .main-title{
     padding:0px;
     font-size:1em;
-    color:#93979b;
+    color:#6381a0;
 }
 .title.first {
     font-size:30px;
     font-weight:700;
-    color:#535557;
+    color:#0b4b6d;
 }
 .title.second {
     padding-top:10px;
@@ -57,15 +61,23 @@ main{
 .hidden {display:none;}
 button {
     font-family:'Nixgon';
-    background-color: rgba(156, 234, 240, 0.7);
+    color:rgb(112,191,212);
+    background-color: #0b4b6d;
     width:100px;
     margin:10px;
     padding:10px;
     border:0;
     border-radius:30px;
 }
+
+.greetings.text {
+    font-size:1em;
+    line-height:1.5em;
+    padding:10px;
+}
 @media screen and (max-width: 500px) {
 .logo{padding-bottom:0px;}
+main img{width:100%;}
 .main-title{
     font-size:.9em;
 }
@@ -76,7 +88,7 @@ button {
 }
 .title.secon{font-size:0.9em;}
 .button{
-    font-size:0.7em;
+    font-size:0.8em;
     padding:5px;
     width:80px;
     margin:6px;
