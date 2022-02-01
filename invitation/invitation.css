@@ -13,6 +13,9 @@ body {
     margin:0;
     background-color: rgb(201, 235, 245);
     line-height: 1.0em;
+    /* overflow-x:hidden; */
+    /* overflow-y:hidden; */
+
 }
 header {
     padding:5px;
@@ -76,17 +79,20 @@ button {
     padding:10px;
 }
 @media screen and (max-width: 500px) {
+header{
+    font-size: .6em;
+}
 .logo{padding-bottom:0px;}
 main img{width:100%;}
 .main-title{
-    font-size:.9em;
+    font-size:.8em;
 }
 .hidden {display:block;}
 .title.first{
-    font-size:1.4em;
+    font-size:1.2em;
     line-height: 1.5em;
 }
-.title.secon{font-size:0.9em;}
+.title.second{font-size:0.8em;}
 .button{
     font-size:0.8em;
     padding:5px;
